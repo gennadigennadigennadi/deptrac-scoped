@@ -1,0 +1,5 @@
+#!/usr/bin/env php
+<?php 
+namespace DEPTRAC_1700753084;
+
+require_once __DIR__ . '/deptrac.php';
