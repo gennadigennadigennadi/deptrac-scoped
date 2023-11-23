@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Scalar;
+namespace DEPTRAC_1700756462\PhpParser\Node\Scalar;
 
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar;
 class Encapsed extends Scalar
 {
     /** @var Expr[] list of string parts */

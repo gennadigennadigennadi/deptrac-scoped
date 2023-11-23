@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use Exception;
-use DEPTRAC_1700753084\PhpParser\Node\Param;
+use DEPTRAC_1700756462\PhpParser\Node\Param;
 use ReflectionParameter;
 use stdClass;
 use function in_array;

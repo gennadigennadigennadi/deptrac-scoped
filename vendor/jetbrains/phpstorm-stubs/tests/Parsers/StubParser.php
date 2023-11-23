@@ -1,25 +1,25 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\Parsers;
+namespace DEPTRAC_1700756462\StubTests\Parsers;
 
 use FilesystemIterator;
 use JsonException;
 use LogicException;
-use DEPTRAC_1700753084\PhpParser\NodeTraverser;
-use DEPTRAC_1700753084\PhpParser\NodeVisitor\NameResolver;
-use DEPTRAC_1700753084\PhpParser\NodeVisitorAbstract;
-use DEPTRAC_1700753084\PhpParser\ParserFactory;
+use DEPTRAC_1700756462\PhpParser\NodeTraverser;
+use DEPTRAC_1700756462\PhpParser\NodeVisitor\NameResolver;
+use DEPTRAC_1700756462\PhpParser\NodeVisitorAbstract;
+use DEPTRAC_1700756462\PhpParser\ParserFactory;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
 use SplFileInfo;
-use DEPTRAC_1700753084\StubTests\Model\CommonUtils;
-use DEPTRAC_1700753084\StubTests\Model\StubsContainer;
-use DEPTRAC_1700753084\StubTests\Parsers\Visitors\ASTVisitor;
-use DEPTRAC_1700753084\StubTests\Parsers\Visitors\CoreStubASTVisitor;
-use DEPTRAC_1700753084\StubTests\Parsers\Visitors\ParentConnector;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\Stubs\PhpCoreStubsProvider;
+use DEPTRAC_1700756462\StubTests\Model\CommonUtils;
+use DEPTRAC_1700756462\StubTests\Model\StubsContainer;
+use DEPTRAC_1700756462\StubTests\Parsers\Visitors\ASTVisitor;
+use DEPTRAC_1700756462\StubTests\Parsers\Visitors\CoreStubASTVisitor;
+use DEPTRAC_1700756462\StubTests\Parsers\Visitors\ParentConnector;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\Stubs\PhpCoreStubsProvider;
 use UnexpectedValueException;
 use function dirname;
 use function in_array;

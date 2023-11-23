@@ -1,18 +1,18 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\Parsers;
+namespace DEPTRAC_1700756462\StubTests\Parsers;
 
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Deprecated;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Since;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Deprecated;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Since;
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\Model\BasePHPElement;
-use DEPTRAC_1700753084\StubTests\Model\CommonUtils;
-use DEPTRAC_1700753084\StubTests\Model\PHPConst;
-use DEPTRAC_1700753084\StubTests\Model\PHPMethod;
-use DEPTRAC_1700753084\StubTests\Model\PhpVersions;
-use DEPTRAC_1700753084\StubTests\Model\Tags\RemovedTag;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\StubTests\Model\BasePHPElement;
+use DEPTRAC_1700756462\StubTests\Model\CommonUtils;
+use DEPTRAC_1700756462\StubTests\Model\PHPConst;
+use DEPTRAC_1700756462\StubTests\Model\PHPMethod;
+use DEPTRAC_1700756462\StubTests\Model\PhpVersions;
+use DEPTRAC_1700756462\StubTests\Model\Tags\RemovedTag;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
 class ParserUtils
 {
     public static function tagDoesNotHaveZeroPatchVersion(Since|RemovedTag|Deprecated $tag) : bool

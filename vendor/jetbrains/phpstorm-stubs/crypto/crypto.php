@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084\Crypto;
+namespace DEPTRAC_1700756462\Crypto;
 
 /**
  * Class providing cipher algorithms

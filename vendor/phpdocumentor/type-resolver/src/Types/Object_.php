@@ -9,11 +9,11 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\Reflection\Types;
+namespace DEPTRAC_1700756462\phpDocumentor\Reflection\Types;
 
 use InvalidArgumentException;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Fqsen;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Type;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Fqsen;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Type;
 use function strpos;
 /**
  * Value Object representing an object.

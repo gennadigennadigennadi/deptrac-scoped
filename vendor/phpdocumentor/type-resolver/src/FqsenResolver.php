@@ -9,10 +9,10 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\Reflection;
+namespace DEPTRAC_1700756462\phpDocumentor\Reflection;
 
 use InvalidArgumentException;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Types\Context;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Types\Context;
 use function explode;
 use function implode;
 use function strpos;

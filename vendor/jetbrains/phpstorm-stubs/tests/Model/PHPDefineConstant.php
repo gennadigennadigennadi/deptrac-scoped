@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
-use DEPTRAC_1700753084\PhpParser\Node\Expr\FuncCall;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\FuncCall;
 use function in_array;
 use function is_float;
 use function is_resource;

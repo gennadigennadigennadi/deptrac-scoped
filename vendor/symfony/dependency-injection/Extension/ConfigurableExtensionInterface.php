@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Extension;
+namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Extension;
 
-use DEPTRAC_1700753084\Symfony\Component\Config\Definition\ConfigurableInterface;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use DEPTRAC_1700756462\Symfony\Component\Config\Definition\ConfigurableInterface;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 /**
  * @author Yonel Ceruto <yonelceruto@gmail.com>
  */

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 /**
  * Returns the name of the error

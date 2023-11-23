@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of mcrypt v.
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
 /**
  * Encrypt/decrypt data in ECB mode
  * @link https://php.net/manual/en/function.mcrypt-ecb.php

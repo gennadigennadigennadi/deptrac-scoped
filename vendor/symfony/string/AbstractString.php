@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\String;
+namespace DEPTRAC_1700756462\Symfony\Component\String;
 
-use DEPTRAC_1700753084\Symfony\Component\String\Exception\ExceptionInterface;
-use DEPTRAC_1700753084\Symfony\Component\String\Exception\InvalidArgumentException;
-use DEPTRAC_1700753084\Symfony\Component\String\Exception\RuntimeException;
+use DEPTRAC_1700756462\Symfony\Component\String\Exception\ExceptionInterface;
+use DEPTRAC_1700756462\Symfony\Component\String\Exception\InvalidArgumentException;
+use DEPTRAC_1700756462\Symfony\Component\String\Exception\RuntimeException;
 /**
  * Represents a string of abstract characters.
  *

@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of gettext v.
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
 /**
  * Sets the default domain
  * @link https://php.net/manual/en/function.textdomain.php

@@ -1,19 +1,19 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use Exception;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Deprecated;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Generic;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Link;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Param;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Return_;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\See;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Since;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Var_;
-use DEPTRAC_1700753084\PhpParser\Node;
-use DEPTRAC_1700753084\StubTests\Model\Tags\RemovedTag;
-use DEPTRAC_1700753084\StubTests\Parsers\DocFactoryProvider;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Deprecated;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Generic;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Link;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Param;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Return_;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\See;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Since;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Var_;
+use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_1700756462\StubTests\Model\Tags\RemovedTag;
+use DEPTRAC_1700756462\StubTests\Parsers\DocFactoryProvider;
 trait PHPDocElement
 {
     /**

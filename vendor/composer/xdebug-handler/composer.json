@@ -29,12 +29,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Composer\\XdebugHandler\\": "src"
+            "DEPTRAC_1700756462\\Composer\\XdebugHandler\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Composer\\XdebugHandler\\Tests\\": "tests"
+            "DEPTRAC_1700756462\\Composer\\XdebugHandler\\Tests\\": "tests"
         }
     },
     "scripts": {

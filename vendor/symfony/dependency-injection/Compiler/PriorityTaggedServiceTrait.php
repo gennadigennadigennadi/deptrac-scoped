@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Attribute\AsTaggedItem;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\TypedReference;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Attribute\AsTaggedItem;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\TypedReference;
 /**
  * Trait that allows a generic method to find and sort service by priority option in the tag.
  *

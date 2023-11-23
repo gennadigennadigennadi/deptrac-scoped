@@ -9,15 +9,15 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\GraphViz\PHPStan;
+namespace DEPTRAC_1700756462\phpDocumentor\GraphViz\PHPStan;
 
-use DEPTRAC_1700753084\Mockery as m;
-use DEPTRAC_1700753084\phpDocumentor\GraphViz\Graph;
-use DEPTRAC_1700753084\phpDocumentor\GraphViz\Node;
-use DEPTRAC_1700753084\PHPStan\Reflection\ClassReflection;
-use DEPTRAC_1700753084\PHPStan\Type\FloatType;
-use DEPTRAC_1700753084\PHPStan\Type\StringType;
-use DEPTRAC_1700753084\PHPUnit\Framework\TestCase;
+use DEPTRAC_1700756462\Mockery as m;
+use DEPTRAC_1700756462\phpDocumentor\GraphViz\Graph;
+use DEPTRAC_1700756462\phpDocumentor\GraphViz\Node;
+use DEPTRAC_1700756462\PHPStan\Reflection\ClassReflection;
+use DEPTRAC_1700756462\PHPStan\Type\FloatType;
+use DEPTRAC_1700756462\PHPStan\Type\StringType;
+use DEPTRAC_1700756462\PHPUnit\Framework\TestCase;
 final class MethodReflectionExtensionTest extends TestCase
 {
     /** @var MethodReflectionExtension */

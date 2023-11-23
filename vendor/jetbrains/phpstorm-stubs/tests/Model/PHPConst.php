@@ -1,15 +1,15 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use Exception;
-use DEPTRAC_1700753084\PhpParser\Node\Const_;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\Cast;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\ConstFetch;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\UnaryMinus;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\ClassConst;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\Namespace_;
-use DEPTRAC_1700753084\PhpParser\NodeAbstract;
+use DEPTRAC_1700756462\PhpParser\Node\Const_;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\Cast;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\ConstFetch;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\UnaryMinus;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\ClassConst;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\Namespace_;
+use DEPTRAC_1700756462\PhpParser\NodeAbstract;
 use ReflectionClassConstant;
 use stdClass;
 use function in_array;

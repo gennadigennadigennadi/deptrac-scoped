@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700753084\PhpParser;
+namespace DEPTRAC_1700756462\PhpParser;
 
 use function array_merge;
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar;
 /**
  * Evaluates constant expressions.
  *

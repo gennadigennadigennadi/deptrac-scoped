@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\Parsers;
+namespace DEPTRAC_1700756462\StubTests\Parsers;
 
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
 class ExpectedFunctionArgumentsInfo
 {
     /**

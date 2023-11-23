@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Internal;
+namespace DEPTRAC_1700756462\PhpParser\Internal;
 
-use DEPTRAC_1700753084\PhpParser\Node;
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
 /**
  * This node is used internally by the format-preserving pretty printer to print anonymous classes.
  *

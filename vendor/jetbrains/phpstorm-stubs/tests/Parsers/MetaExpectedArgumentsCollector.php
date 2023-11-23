@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\Parsers;
+namespace DEPTRAC_1700756462\StubTests\Parsers;
 
 use LogicException;
-use DEPTRAC_1700753084\PhpParser\Node;
-use DEPTRAC_1700753084\PhpParser\Node\Arg;
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\BinaryOp\BitwiseOr;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\FuncCall;
-use DEPTRAC_1700753084\PhpParser\NodeVisitorAbstract;
+use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_1700756462\PhpParser\Node\Arg;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\BinaryOp\BitwiseOr;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\FuncCall;
+use DEPTRAC_1700756462\PhpParser\NodeVisitorAbstract;
 use RuntimeException;
 use SplFileInfo;
 use UnexpectedValueException;

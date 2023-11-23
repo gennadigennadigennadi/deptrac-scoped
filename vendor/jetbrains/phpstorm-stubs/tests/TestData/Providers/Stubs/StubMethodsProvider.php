@@ -1,18 +1,18 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\TestData\Providers\Stubs;
+namespace DEPTRAC_1700756462\StubTests\TestData\Providers\Stubs;
 
 use Generator;
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\Model\PHPClass;
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
-use DEPTRAC_1700753084\StubTests\Model\PHPInterface;
-use DEPTRAC_1700753084\StubTests\Model\PHPMethod;
-use DEPTRAC_1700753084\StubTests\Model\StubProblemType;
-use DEPTRAC_1700753084\StubTests\Parsers\ParserUtils;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\EntitiesFilter;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\StubTests\Model\PHPClass;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\Model\PHPInterface;
+use DEPTRAC_1700756462\StubTests\Model\PHPMethod;
+use DEPTRAC_1700756462\StubTests\Model\StubProblemType;
+use DEPTRAC_1700756462\StubTests\Parsers\ParserUtils;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\EntitiesFilter;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
 class StubMethodsProvider
 {
     public static function allMethodsProvider() : ?Generator

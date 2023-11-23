@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\CodeStyle;
+namespace DEPTRAC_1700756462\StubTests\CodeStyle;
 
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
-use DEPTRAC_1700753084\PhpCsFixer\Fixer\FixerInterface;
-use DEPTRAC_1700753084\PhpCsFixer\FixerDefinition\CodeSample;
-use DEPTRAC_1700753084\PhpCsFixer\FixerDefinition\FixerDefinition;
-use DEPTRAC_1700753084\PhpCsFixer\FixerDefinition\FixerDefinitionInterface;
-use DEPTRAC_1700753084\PhpCsFixer\Tokenizer\Token;
-use DEPTRAC_1700753084\PhpCsFixer\Tokenizer\Tokens;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\PhpCsFixer\Fixer\FixerInterface;
+use DEPTRAC_1700756462\PhpCsFixer\FixerDefinition\CodeSample;
+use DEPTRAC_1700756462\PhpCsFixer\FixerDefinition\FixerDefinition;
+use DEPTRAC_1700756462\PhpCsFixer\FixerDefinition\FixerDefinitionInterface;
+use DEPTRAC_1700756462\PhpCsFixer\Tokenizer\Token;
+use DEPTRAC_1700756462\PhpCsFixer\Tokenizer\Tokens;
 use SplFileInfo;
 final class BracesOneLineFixer implements FixerInterface
 {

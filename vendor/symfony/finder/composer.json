@@ -23,7 +23,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Symfony\\Component\\Finder\\": ""
+            "DEPTRAC_1700756462\\Symfony\\Component\\Finder\\": ""
         },
         "exclude-from-classmap": [
             "\/Tests\/"

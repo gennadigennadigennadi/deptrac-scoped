@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 /**
  * The MIT License (MIT)
@@ -232,4 +232,4 @@ class RedisSentinel
  * @author  Tawana Musewe <tawana@aeonis.co.za>
  * @link    https://github.com/tbtmuse/phpredis-sentinel-phpdoc
  */
-\class_alias('DEPTRAC_1700753084\\RedisSentinel', 'RedisSentinel', \false);
+\class_alias('DEPTRAC_1700756462\\RedisSentinel', 'RedisSentinel', \false);

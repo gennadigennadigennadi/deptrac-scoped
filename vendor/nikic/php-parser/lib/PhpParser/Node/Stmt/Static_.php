@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Stmt;
+namespace DEPTRAC_1700756462\PhpParser\Node\Stmt;
 
-use DEPTRAC_1700753084\PhpParser\Node\Stmt;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt;
 class Static_ extends Stmt
 {
     /** @var StaticVar[] Variable definitions */

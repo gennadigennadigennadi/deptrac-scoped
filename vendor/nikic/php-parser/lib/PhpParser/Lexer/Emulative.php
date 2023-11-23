@@ -1,24 +1,24 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Lexer;
+namespace DEPTRAC_1700756462\PhpParser\Lexer;
 
-use DEPTRAC_1700753084\PhpParser\Error;
-use DEPTRAC_1700753084\PhpParser\ErrorHandler;
-use DEPTRAC_1700753084\PhpParser\Lexer;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\AttributeEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\EnumTokenEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\CoaleseEqualTokenEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\ExplicitOctalEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\FlexibleDocStringEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\FnTokenEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\MatchTokenEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\NullsafeTokenEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\NumericLiteralSeparatorEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\ReadonlyFunctionTokenEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\ReadonlyTokenEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\ReverseEmulator;
-use DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator\TokenEmulator;
+use DEPTRAC_1700756462\PhpParser\Error;
+use DEPTRAC_1700756462\PhpParser\ErrorHandler;
+use DEPTRAC_1700756462\PhpParser\Lexer;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\AttributeEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\EnumTokenEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\CoaleseEqualTokenEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\ExplicitOctalEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\FlexibleDocStringEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\FnTokenEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\MatchTokenEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\NullsafeTokenEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\NumericLiteralSeparatorEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\ReadonlyFunctionTokenEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\ReadonlyTokenEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\ReverseEmulator;
+use DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator\TokenEmulator;
 class Emulative extends Lexer
 {
     const PHP_7_3 = '7.3dev';

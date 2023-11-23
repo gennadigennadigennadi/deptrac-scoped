@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
 /**
  * Attaches a custom attribute (key/value pair) to the current transaction and the current span (if enabled).
  *
@@ -640,7 +640,7 @@ function newrelic_insert_distributed_trace_headers(array $headers) : bool
 function newrelic_is_sampled() : bool
 {
 }
-namespace DEPTRAC_1700753084\newrelic;
+namespace DEPTRAC_1700756462\newrelic;
 
 /**
  * This object has two methods that will render a distributed trace payload as text.

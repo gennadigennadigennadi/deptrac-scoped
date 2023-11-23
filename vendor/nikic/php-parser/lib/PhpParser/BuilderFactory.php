@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser;
+namespace DEPTRAC_1700756462\PhpParser;
 
-use DEPTRAC_1700753084\PhpParser\Node\Arg;
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\BinaryOp\Concat;
-use DEPTRAC_1700753084\PhpParser\Node\Identifier;
-use DEPTRAC_1700753084\PhpParser\Node\Name;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar\String_;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\Use_;
+use DEPTRAC_1700756462\PhpParser\Node\Arg;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\BinaryOp\Concat;
+use DEPTRAC_1700756462\PhpParser\Node\Identifier;
+use DEPTRAC_1700756462\PhpParser\Node\Name;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar\String_;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\Use_;
 class BuilderFactory
 {
     /**

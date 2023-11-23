@@ -1,7 +1,7 @@
 <?php
 
 // Start of FFI v.0.1.0
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 use FFI\CData;
 use FFI\CType;
@@ -263,8 +263,8 @@ class FFI
  *
  * @since 7.4
  */
-\class_alias('DEPTRAC_1700753084\\FFI', 'FFI', \false);
-namespace DEPTRAC_1700753084\FFI;
+\class_alias('DEPTRAC_1700756462\\FFI', 'FFI', \false);
+namespace DEPTRAC_1700756462\FFI;
 
 /**
  * General FFI exception.

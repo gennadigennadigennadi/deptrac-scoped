@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast\PhpDoc;
+namespace DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\PhpDoc;
 
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast\NodeAttributes;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Parser\ParserException;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\NodeAttributes;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Parser\ParserException;
 use function sprintf;
 use function trigger_error;
 use const E_USER_WARNING;

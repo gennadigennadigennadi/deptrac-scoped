@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Stmt;
+namespace DEPTRAC_1700756462\PhpParser\Node\Stmt;
 
-use DEPTRAC_1700753084\PhpParser\Node;
-use DEPTRAC_1700753084\PhpParser\Node\FunctionLike;
+use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_1700756462\PhpParser\Node\FunctionLike;
 class Function_ extends Node\Stmt implements FunctionLike
 {
     /** @var bool Whether function returns by reference */

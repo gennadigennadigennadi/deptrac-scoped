@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast;
+namespace DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast;
 
 final class Attribute
 {

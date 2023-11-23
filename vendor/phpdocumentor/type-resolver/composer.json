@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\phpDocumentor\\Reflection\\": "src"
+            "DEPTRAC_1700756462\\phpDocumentor\\Reflection\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DEPTRAC_1700753084\\phpDocumentor\\Reflection\\": [
+            "DEPTRAC_1700756462\\phpDocumentor\\Reflection\\": [
                 "tests\/unit",
                 "tests\/benchmark"
             ]

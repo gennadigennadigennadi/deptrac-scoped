@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084\parallel;
+namespace DEPTRAC_1700756462\parallel;
 
 /**
  * The Sync class provides access to low level synchronization primitives, mutex, condition variables, and allows the

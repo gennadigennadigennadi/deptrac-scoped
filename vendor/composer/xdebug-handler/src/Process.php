@@ -9,9 +9,9 @@
  * the LICENSE file that was distributed with this source code.
  */
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\Composer\XdebugHandler;
+namespace DEPTRAC_1700756462\Composer\XdebugHandler;
 
-use DEPTRAC_1700753084\Composer\Pcre\Preg;
+use DEPTRAC_1700756462\Composer\Pcre\Preg;
 /**
  * Process utility functions
  *

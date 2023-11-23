@@ -1,27 +1,27 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\Parsers\Visitors;
+namespace DEPTRAC_1700756462\StubTests\Parsers\Visitors;
 
 use Exception;
-use DEPTRAC_1700753084\PhpParser\Node;
-use DEPTRAC_1700753084\PhpParser\Node\Const_;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\FuncCall;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\Class_;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\ClassMethod;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\Function_;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\Interface_;
-use DEPTRAC_1700753084\PhpParser\NodeVisitorAbstract;
+use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_1700756462\PhpParser\Node\Const_;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\FuncCall;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\Class_;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\ClassMethod;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\Function_;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\Interface_;
+use DEPTRAC_1700756462\PhpParser\NodeVisitorAbstract;
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\Model\CommonUtils;
-use DEPTRAC_1700753084\StubTests\Model\PHPClass;
-use DEPTRAC_1700753084\StubTests\Model\PHPConst;
-use DEPTRAC_1700753084\StubTests\Model\PHPDefineConstant;
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
-use DEPTRAC_1700753084\StubTests\Model\PHPInterface;
-use DEPTRAC_1700753084\StubTests\Model\PHPMethod;
-use DEPTRAC_1700753084\StubTests\Model\PHPProperty;
-use DEPTRAC_1700753084\StubTests\Model\StubsContainer;
+use DEPTRAC_1700756462\StubTests\Model\CommonUtils;
+use DEPTRAC_1700756462\StubTests\Model\PHPClass;
+use DEPTRAC_1700756462\StubTests\Model\PHPConst;
+use DEPTRAC_1700756462\StubTests\Model\PHPDefineConstant;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\Model\PHPInterface;
+use DEPTRAC_1700756462\StubTests\Model\PHPMethod;
+use DEPTRAC_1700756462\StubTests\Model\PHPProperty;
+use DEPTRAC_1700756462\StubTests\Model\StubsContainer;
 class ASTVisitor extends NodeVisitorAbstract
 {
     public function __construct(protected StubsContainer $stubs, protected bool $isStubCore = \false, public ?string $sourceFilePath = null)

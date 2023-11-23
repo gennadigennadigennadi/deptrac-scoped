@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\Psr\EventDispatcher;
+namespace DEPTRAC_1700756462\Psr\EventDispatcher;
 
 /**
  * An Event whose processing may be interrupted when the event has been handled.

@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\TestData\Providers\Stubs;
+namespace DEPTRAC_1700756462\StubTests\TestData\Providers\Stubs;
 
 use Generator;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
 class StubsCompositeMixedProvider
 {
     public function expectedFunctionsMixedFalseReturnProvider() : ?Generator

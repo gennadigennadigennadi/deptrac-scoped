@@ -27,7 +27,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "DEPTRAC_1700753084\\StubTests\\": "tests\/"
+            "DEPTRAC_1700756462\\StubTests\\": "tests\/"
         }
     },
     "scripts": {

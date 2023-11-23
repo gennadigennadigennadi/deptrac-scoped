@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 class ffmpeg_movie
 {
@@ -174,7 +174,7 @@ class ffmpeg_movie
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\ffmpeg_movie', 'ffmpeg_movie', \false);
+\class_alias('DEPTRAC_1700756462\\ffmpeg_movie', 'ffmpeg_movie', \false);
 class ffmpeg_frame
 {
     /**
@@ -238,7 +238,7 @@ class ffmpeg_frame
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\ffmpeg_frame', 'ffmpeg_frame', \false);
+\class_alias('DEPTRAC_1700756462\\ffmpeg_frame', 'ffmpeg_frame', \false);
 class ffmpeg_animated_gif
 {
     /**
@@ -258,4 +258,4 @@ class ffmpeg_animated_gif
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\ffmpeg_animated_gif', 'ffmpeg_animated_gif', \false);
+\class_alias('DEPTRAC_1700756462\\ffmpeg_animated_gif', 'ffmpeg_animated_gif', \false);

@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of sysvshm v.
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * Creates or open a shared memory segment
  * @link https://php.net/manual/en/function.shm-attach.php
@@ -128,5 +128,5 @@ final class SysvSharedMemory
 /**
  * @since 8.0
  */
-\class_alias('DEPTRAC_1700753084\\SysvSharedMemory', 'SysvSharedMemory', \false);
+\class_alias('DEPTRAC_1700756462\\SysvSharedMemory', 'SysvSharedMemory', \false);
 // End of sysvshm v.

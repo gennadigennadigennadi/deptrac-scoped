@@ -9,19 +9,19 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\GraphViz\PHPStan;
+namespace DEPTRAC_1700756462\phpDocumentor\GraphViz\PHPStan;
 
-use DEPTRAC_1700753084\phpDocumentor\GraphViz\AttributeNotFound;
-use DEPTRAC_1700753084\PHPStan\Reflection\ClassMemberReflection;
-use DEPTRAC_1700753084\PHPStan\Reflection\ClassReflection;
-use DEPTRAC_1700753084\PHPStan\Reflection\FunctionVariant;
-use DEPTRAC_1700753084\PHPStan\Reflection\MethodReflection;
-use DEPTRAC_1700753084\PHPStan\Reflection\ParametersAcceptor;
-use DEPTRAC_1700753084\PHPStan\Reflection\Php\DummyParameter;
-use DEPTRAC_1700753084\PHPStan\TrinaryLogic;
-use DEPTRAC_1700753084\PHPStan\Type\Generic\TemplateTypeMap;
-use DEPTRAC_1700753084\PHPStan\Type\ObjectType;
-use DEPTRAC_1700753084\PHPStan\Type\Type;
+use DEPTRAC_1700756462\phpDocumentor\GraphViz\AttributeNotFound;
+use DEPTRAC_1700756462\PHPStan\Reflection\ClassMemberReflection;
+use DEPTRAC_1700756462\PHPStan\Reflection\ClassReflection;
+use DEPTRAC_1700756462\PHPStan\Reflection\FunctionVariant;
+use DEPTRAC_1700756462\PHPStan\Reflection\MethodReflection;
+use DEPTRAC_1700756462\PHPStan\Reflection\ParametersAcceptor;
+use DEPTRAC_1700756462\PHPStan\Reflection\Php\DummyParameter;
+use DEPTRAC_1700756462\PHPStan\TrinaryLogic;
+use DEPTRAC_1700756462\PHPStan\Type\Generic\TemplateTypeMap;
+use DEPTRAC_1700756462\PHPStan\Type\ObjectType;
+use DEPTRAC_1700756462\PHPStan\Type\Type;
 final class AttributeSetterMethodReflection implements MethodReflection
 {
     /** @var ClassReflection */

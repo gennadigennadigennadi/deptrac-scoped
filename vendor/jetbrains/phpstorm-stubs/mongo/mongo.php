@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 /*
  * Mongo extension stubs
@@ -9,7 +9,7 @@ namespace DEPTRAC_1700753084;
  *
  * MongoClient: https://github.com/djsipe/PHP-Stubs
  */
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
 /**
  * A connection between PHP and MongoDB. This class is used to create and manage connections
  * See MongoClient::__construct() and the section on connecting for more information about creating connections.
@@ -273,7 +273,7 @@ class MongoClient
  * See MongoClient::__construct() and the section on connecting for more information about creating connections.
  * @link https://secure.php.net/manual/en/class.mongoclient.php
  */
-\class_alias('DEPTRAC_1700753084\\MongoClient', 'MongoClient', \false);
+\class_alias('DEPTRAC_1700756462\\MongoClient', 'MongoClient', \false);
 /**
  * The connection point between MongoDB and PHP.
  * This class is used to initiate a connection and for database server commands.
@@ -460,7 +460,7 @@ class Mongo extends \MongoClient
  * Relying on this feature is highly discouraged. Please use MongoClient instead.
  * @see MongoClient
  */
-\class_alias('DEPTRAC_1700753084\\Mongo', 'Mongo', \false);
+\class_alias('DEPTRAC_1700756462\\Mongo', 'Mongo', \false);
 /**
  * Instances of this class are used to interact with a database.
  * @link https://secure.php.net/manual/en/class.mongodb.php
@@ -897,7 +897,7 @@ class MongoDB
  * Instances of this class are used to interact with a database.
  * @link https://secure.php.net/manual/en/class.mongodb.php
  */
-\class_alias('DEPTRAC_1700753084\\MongoDB', 'MongoDB', \false);
+\class_alias('DEPTRAC_1700756462\\MongoDB', 'MongoDB', \false);
 /**
  * Represents a database collection.
  * @link https://secure.php.net/manual/en/class.mongocollection.php
@@ -1382,7 +1382,7 @@ class MongoCollection
  * Represents a database collection.
  * @link https://secure.php.net/manual/en/class.mongocollection.php
  */
-\class_alias('DEPTRAC_1700753084\\MongoCollection', 'MongoCollection', \false);
+\class_alias('DEPTRAC_1700756462\\MongoCollection', 'MongoCollection', \false);
 /**
  * Result object for database query.
  * @link https://secure.php.net/manual/en/class.mongocursor.php
@@ -1748,7 +1748,7 @@ class MongoCursor implements \Iterator
  * Result object for database query.
  * @link https://secure.php.net/manual/en/class.mongocursor.php
  */
-\class_alias('DEPTRAC_1700753084\\MongoCursor', 'MongoCursor', \false);
+\class_alias('DEPTRAC_1700756462\\MongoCursor', 'MongoCursor', \false);
 class MongoCommandCursor implements \MongoCursorInterface
 {
     /**
@@ -1816,7 +1816,7 @@ class MongoCommandCursor implements \MongoCursorInterface
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoCommandCursor', 'MongoCommandCursor', \false);
+\class_alias('DEPTRAC_1700756462\\MongoCommandCursor', 'MongoCommandCursor', \false);
 interface MongoCursorInterface extends \Iterator
 {
     public function batchSize(int $batchSize) : \MongoCursorInterface;
@@ -1826,7 +1826,7 @@ interface MongoCursorInterface extends \Iterator
     public function setReadPreference(string $read_preference, array $tags = null) : \MongoCursorInterface;
     public function timeout(int $ms) : \MongoCursorInterface;
 }
-\class_alias('DEPTRAC_1700753084\\MongoCursorInterface', 'MongoCursorInterface', \false);
+\class_alias('DEPTRAC_1700756462\\MongoCursorInterface', 'MongoCursorInterface', \false);
 class MongoGridFS extends \MongoCollection
 {
     public const ASCENDING = 1;
@@ -1958,7 +1958,7 @@ class MongoGridFS extends \MongoCollection
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoGridFS', 'MongoGridFS', \false);
+\class_alias('DEPTRAC_1700756462\\MongoGridFS', 'MongoGridFS', \false);
 class MongoGridFSFile
 {
     /**
@@ -2024,7 +2024,7 @@ class MongoGridFSFile
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoGridFSFile', 'MongoGridFSFile', \false);
+\class_alias('DEPTRAC_1700756462\\MongoGridFSFile', 'MongoGridFSFile', \false);
 class MongoGridFSCursor extends \MongoCursor implements \Traversable, \Iterator
 {
     /**
@@ -2073,7 +2073,7 @@ class MongoGridFSCursor extends \MongoCursor implements \Traversable, \Iterator
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoGridFSCursor', 'MongoGridFSCursor', \false);
+\class_alias('DEPTRAC_1700756462\\MongoGridFSCursor', 'MongoGridFSCursor', \false);
 /**
  * A unique identifier created for database objects.
  * @link https://secure.php.net/manual/en/class.mongoid.php
@@ -2168,7 +2168,7 @@ class MongoId
  * A unique identifier created for database objects.
  * @link https://secure.php.net/manual/en/class.mongoid.php
  */
-\class_alias('DEPTRAC_1700753084\\MongoId', 'MongoId', \false);
+\class_alias('DEPTRAC_1700756462\\MongoId', 'MongoId', \false);
 class MongoCode
 {
     /**
@@ -2197,7 +2197,7 @@ class MongoCode
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoCode', 'MongoCode', \false);
+\class_alias('DEPTRAC_1700756462\\MongoCode', 'MongoCode', \false);
 class MongoRegex
 {
     /**
@@ -2227,7 +2227,7 @@ class MongoRegex
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoRegex', 'MongoRegex', \false);
+\class_alias('DEPTRAC_1700756462\\MongoRegex', 'MongoRegex', \false);
 class MongoDate
 {
     /**
@@ -2266,7 +2266,7 @@ class MongoDate
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoDate', 'MongoDate', \false);
+\class_alias('DEPTRAC_1700756462\\MongoDate', 'MongoDate', \false);
 class MongoBinData
 {
     /**
@@ -2332,7 +2332,7 @@ class MongoBinData
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoBinData', 'MongoBinData', \false);
+\class_alias('DEPTRAC_1700756462\\MongoBinData', 'MongoBinData', \false);
 class MongoDBRef
 {
     /**
@@ -2377,7 +2377,7 @@ class MongoDBRef
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoDBRef', 'MongoDBRef', \false);
+\class_alias('DEPTRAC_1700756462\\MongoDBRef', 'MongoDBRef', \false);
 class MongoWriteBatch
 {
     public const COMMAND_INSERT = 1;
@@ -2476,7 +2476,7 @@ class MongoWriteBatch
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoWriteBatch', 'MongoWriteBatch', \false);
+\class_alias('DEPTRAC_1700756462\\MongoWriteBatch', 'MongoWriteBatch', \false);
 class MongoUpdateBatch extends \MongoWriteBatch
 {
     /**
@@ -2499,27 +2499,27 @@ class MongoUpdateBatch extends \MongoWriteBatch
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoUpdateBatch', 'MongoUpdateBatch', \false);
+\class_alias('DEPTRAC_1700756462\\MongoUpdateBatch', 'MongoUpdateBatch', \false);
 class MongoException extends \Exception
 {
 }
-\class_alias('DEPTRAC_1700753084\\MongoException', 'MongoException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoException', 'MongoException', \false);
 class MongoCursorException extends \MongoException
 {
 }
-\class_alias('DEPTRAC_1700753084\\MongoCursorException', 'MongoCursorException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoCursorException', 'MongoCursorException', \false);
 class MongoCursorTimeoutException extends \MongoCursorException
 {
 }
-\class_alias('DEPTRAC_1700753084\\MongoCursorTimeoutException', 'MongoCursorTimeoutException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoCursorTimeoutException', 'MongoCursorTimeoutException', \false);
 class MongoConnectionException extends \MongoException
 {
 }
-\class_alias('DEPTRAC_1700753084\\MongoConnectionException', 'MongoConnectionException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoConnectionException', 'MongoConnectionException', \false);
 class MongoGridFSException extends \MongoException
 {
 }
-\class_alias('DEPTRAC_1700753084\\MongoGridFSException', 'MongoGridFSException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoGridFSException', 'MongoGridFSException', \false);
 /**
  * <p>(PECL mongo &gt;= 1.5.0)</p>
  * @link https://php.net/manual/en/class.mongowriteconcernexception.php#class.mongowriteconcernexception
@@ -2539,7 +2539,7 @@ class MongoWriteConcernException extends \MongoCursorException
  * <p>(PECL mongo &gt;= 1.5.0)</p>
  * @link https://php.net/manual/en/class.mongowriteconcernexception.php#class.mongowriteconcernexception
  */
-\class_alias('DEPTRAC_1700753084\\MongoWriteConcernException', 'MongoWriteConcernException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoWriteConcernException', 'MongoWriteConcernException', \false);
 /**
  * <p>(PECL mongo &gt;= 1.5.0)</p>
  * @link https://php.net/manual/en/class.mongoexecutiontimeoutexception.php
@@ -2551,7 +2551,7 @@ class MongoExecutionTimeoutException extends \MongoException
  * <p>(PECL mongo &gt;= 1.5.0)</p>
  * @link https://php.net/manual/en/class.mongoexecutiontimeoutexception.php
  */
-\class_alias('DEPTRAC_1700753084\\MongoExecutionTimeoutException', 'MongoExecutionTimeoutException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoExecutionTimeoutException', 'MongoExecutionTimeoutException', \false);
 /**
  * <p>(PECL mongo &gt;= 1.5.0)</p>
  */
@@ -2561,7 +2561,7 @@ class MongoProtocolException extends \MongoException
 /**
  * <p>(PECL mongo &gt;= 1.5.0)</p>
  */
-\class_alias('DEPTRAC_1700753084\\MongoProtocolException', 'MongoProtocolException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoProtocolException', 'MongoProtocolException', \false);
 /**
  * <p>(PECL mongo &gt;= 1.5.0)</p>
  * @link https://php.net/manual/en/class.mongoduplicatekeyexception.php
@@ -2573,7 +2573,7 @@ class MongoDuplicateKeyException extends \MongoWriteConcernException
  * <p>(PECL mongo &gt;= 1.5.0)</p>
  * @link https://php.net/manual/en/class.mongoduplicatekeyexception.php
  */
-\class_alias('DEPTRAC_1700753084\\MongoDuplicateKeyException', 'MongoDuplicateKeyException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoDuplicateKeyException', 'MongoDuplicateKeyException', \false);
 /**
  * <p>(PECL mongo &gt;= 1.3.0)</p>
  * @link https://php.net/manual/en/class.mongoresultexception.php#mongoresultexception.props.document
@@ -2595,7 +2595,7 @@ class MongoResultException extends \MongoException
  * <p>(PECL mongo &gt;= 1.3.0)</p>
  * @link https://php.net/manual/en/class.mongoresultexception.php#mongoresultexception.props.document
  */
-\class_alias('DEPTRAC_1700753084\\MongoResultException', 'MongoResultException', \false);
+\class_alias('DEPTRAC_1700756462\\MongoResultException', 'MongoResultException', \false);
 class MongoTimestamp
 {
     /**
@@ -2628,7 +2628,7 @@ class MongoTimestamp
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoTimestamp', 'MongoTimestamp', \false);
+\class_alias('DEPTRAC_1700756462\\MongoTimestamp', 'MongoTimestamp', \false);
 class MongoInt32
 {
     /**
@@ -2652,7 +2652,7 @@ class MongoInt32
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoInt32', 'MongoInt32', \false);
+\class_alias('DEPTRAC_1700756462\\MongoInt32', 'MongoInt32', \false);
 class MongoInt64
 {
     /**
@@ -2676,7 +2676,7 @@ class MongoInt64
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoInt64', 'MongoInt64', \false);
+\class_alias('DEPTRAC_1700756462\\MongoInt64', 'MongoInt64', \false);
 class MongoLog
 {
     /**
@@ -2802,7 +2802,7 @@ class MongoLog
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoLog', 'MongoLog', \false);
+\class_alias('DEPTRAC_1700756462\\MongoLog', 'MongoLog', \false);
 class MongoPool
 {
     /**
@@ -2855,12 +2855,12 @@ class MongoPool
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\MongoPool', 'MongoPool', \false);
+\class_alias('DEPTRAC_1700756462\\MongoPool', 'MongoPool', \false);
 class MongoMaxKey
 {
 }
-\class_alias('DEPTRAC_1700753084\\MongoMaxKey', 'MongoMaxKey', \false);
+\class_alias('DEPTRAC_1700756462\\MongoMaxKey', 'MongoMaxKey', \false);
 class MongoMinKey
 {
 }
-\class_alias('DEPTRAC_1700753084\\MongoMinKey', 'MongoMinKey', \false);
+\class_alias('DEPTRAC_1700756462\\MongoMinKey', 'MongoMinKey', \false);

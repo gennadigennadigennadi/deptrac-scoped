@@ -14,14 +14,14 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\phpDocumentor\\GraphViz\\": "src\/phpDocumentor\/GraphViz",
-            "DEPTRAC_1700753084\\phpDocumentor\\GraphViz\\PHPStan\\": ".\/src\/phpDocumentor\/PHPStan"
+            "DEPTRAC_1700756462\\phpDocumentor\\GraphViz\\": "src\/phpDocumentor\/GraphViz",
+            "DEPTRAC_1700756462\\phpDocumentor\\GraphViz\\PHPStan\\": ".\/src\/phpDocumentor\/PHPStan"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DEPTRAC_1700753084\\phpDocumentor\\GraphViz\\Test\\": ".\/tests\/phpDocumentor\/GraphViz\/Test",
-            "DEPTRAC_1700753084\\phpDocumentor\\GraphViz\\PHPStan\\": ".\/tests\/phpDocumentor\/PHPStan"
+            "DEPTRAC_1700756462\\phpDocumentor\\GraphViz\\Test\\": ".\/tests\/phpDocumentor\/GraphViz\/Test",
+            "DEPTRAC_1700756462\\phpDocumentor\\GraphViz\\PHPStan\\": ".\/tests\/phpDocumentor\/PHPStan"
         }
     },
     "require-dev": {

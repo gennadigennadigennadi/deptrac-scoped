@@ -5,7 +5,7 @@
  * https://pecl.php.net/package/zstd
  * https://github.com/kjdev/php-ext-zstd
  */
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 /**
  * Minimal compress level value
@@ -119,7 +119,7 @@ function zstd_uncompress_usingcdict(string $data, string $dict) : string|false
 function zstd_decompress_usingcdict(string $data, string $dict) : string|false
 {
 }
-namespace DEPTRAC_1700753084\Zstd;
+namespace DEPTRAC_1700756462\Zstd;
 
 /**
  * Zstandard compression.

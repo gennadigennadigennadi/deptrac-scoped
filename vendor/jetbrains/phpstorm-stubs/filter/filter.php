@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of filter v.0.11.0
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
 /**
  * Gets a specific external variable by name and optionally filters it
  * @link https://php.net/manual/en/function.filter-input.php

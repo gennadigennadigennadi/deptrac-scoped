@@ -1,11 +1,11 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use Exception;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\PropertyRead;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlockFactory;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\Class_;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\PropertyRead;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlockFactory;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\Class_;
 use ReflectionClass;
 use RuntimeException;
 use stdClass;

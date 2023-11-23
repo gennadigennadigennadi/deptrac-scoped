@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PHPStan\PhpDocParser\Parser;
+namespace DEPTRAC_1700756462\PHPStan\PhpDocParser\Parser;
 
 use Exception;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Lexer\Lexer;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Lexer\Lexer;
 use function assert;
 use function json_encode;
 use function sprintf;

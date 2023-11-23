@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use RuntimeException;
 use function array_key_exists;

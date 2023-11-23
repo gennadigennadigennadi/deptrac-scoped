@@ -1,13 +1,13 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of mbstring v.
-use DEPTRAC_1700753084\JetBrains\PhpStorm\ArrayShape;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\ArrayShape;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
 /**
  * Perform case folding on a string
  * @link https://php.net/manual/en/function.mb-convert-case.php

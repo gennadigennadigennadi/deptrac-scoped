@@ -27,12 +27,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\PhpParser\\": "lib\/PhpParser"
+            "DEPTRAC_1700756462\\PhpParser\\": "lib\/PhpParser"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DEPTRAC_1700753084\\PhpParser\\": "test\/PhpParser\/"
+            "DEPTRAC_1700756462\\PhpParser\\": "test\/PhpParser\/"
         }
     },
     "bin": [

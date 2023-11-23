@@ -5,7 +5,7 @@ namespace Qossmic\Deptrac\Core\Ast\Parser\Cache;
 
 use Qossmic\Deptrac\Contract\Ast\PostCreateAstMapEvent;
 use Qossmic\Deptrac\Contract\Ast\PreCreateAstMapEvent;
-use DEPTRAC_1700753084\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_1700756462\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class CacheableFileSubscriber implements EventSubscriberInterface
 {
     public function __construct(private readonly \Qossmic\Deptrac\Core\Ast\Parser\Cache\AstFileReferenceDeferredCacheInterface $deferredCache)

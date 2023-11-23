@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 /**
  * <b>Reflector</b> is an interface implemented by all
@@ -34,4 +34,4 @@ interface Reflector extends \Stringable
  *
  * @link https://php.net/manual/en/class.reflector.php
  */
-\class_alias('DEPTRAC_1700753084\\Reflector', 'Reflector', \false);
+\class_alias('DEPTRAC_1700756462\\Reflector', 'Reflector', \false);

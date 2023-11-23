@@ -9,11 +9,11 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\GraphViz\Test;
+namespace DEPTRAC_1700756462\phpDocumentor\GraphViz\Test;
 
-use DEPTRAC_1700753084\phpDocumentor\GraphViz\AttributeNotFound;
-use DEPTRAC_1700753084\phpDocumentor\GraphViz\Node;
-use DEPTRAC_1700753084\PHPUnit\Framework\TestCase;
+use DEPTRAC_1700756462\phpDocumentor\GraphViz\AttributeNotFound;
+use DEPTRAC_1700756462\phpDocumentor\GraphViz\Node;
+use DEPTRAC_1700756462\PHPUnit\Framework\TestCase;
 /**
  * Test for the the class representing a GraphViz node.
  */
@@ -118,7 +118,7 @@ DOT;
     {
         $this->fixture->setfontsize(12);
         $this->fixture->setfontname('Bitstream Vera Sans');
-        $this->fixture->setLabel('DEPTRAC_1700753084\\phpDocumentor\\Descriptor\\ProjectDescriptor');
+        $this->fixture->setLabel('DEPTRAC_1700756462\\phpDocumentor\\Descriptor\\ProjectDescriptor');
         $dot = <<<DOT
 "name" [
 label="\\\\phpDocumentor\\\\Descriptor\\\\ProjectDescriptor"

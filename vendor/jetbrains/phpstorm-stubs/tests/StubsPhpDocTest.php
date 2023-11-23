@@ -1,22 +1,22 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Deprecated;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Link;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Reference\Url;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\See;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Since;
-use DEPTRAC_1700753084\PHPUnit\Framework\Exception;
-use DEPTRAC_1700753084\StubTests\Model\BasePHPClass;
-use DEPTRAC_1700753084\StubTests\Model\BasePHPElement;
-use DEPTRAC_1700753084\StubTests\Model\PHPConst;
-use DEPTRAC_1700753084\StubTests\Model\PHPDocElement;
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
-use DEPTRAC_1700753084\StubTests\Model\PHPMethod;
-use DEPTRAC_1700753084\StubTests\Model\Tags\RemovedTag;
-use DEPTRAC_1700753084\StubTests\Parsers\ParserUtils;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Deprecated;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Link;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Reference\Url;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\See;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Since;
+use DEPTRAC_1700756462\PHPUnit\Framework\Exception;
+use DEPTRAC_1700756462\StubTests\Model\BasePHPClass;
+use DEPTRAC_1700756462\StubTests\Model\BasePHPElement;
+use DEPTRAC_1700756462\StubTests\Model\PHPConst;
+use DEPTRAC_1700756462\StubTests\Model\PHPDocElement;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\Model\PHPMethod;
+use DEPTRAC_1700756462\StubTests\Model\Tags\RemovedTag;
+use DEPTRAC_1700756462\StubTests\Parsers\ParserUtils;
 use function trim;
 class StubsPhpDocTest extends AbstractBaseStubsTestCase
 {

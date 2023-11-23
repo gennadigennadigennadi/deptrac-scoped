@@ -27,14 +27,14 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\PHPStan\\PhpDocParser\\": [
+            "DEPTRAC_1700756462\\PHPStan\\PhpDocParser\\": [
                 "src\/"
             ]
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DEPTRAC_1700753084\\PHPStan\\PhpDocParser\\": [
+            "DEPTRAC_1700756462\\PHPStan\\PhpDocParser\\": [
                 "tests\/PHPStan"
             ]
         }

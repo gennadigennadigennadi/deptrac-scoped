@@ -40,7 +40,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Symfony\\Component\\DependencyInjection\\": ""
+            "DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\": ""
         },
         "exclude-from-classmap": [
             "\/Tests\/"

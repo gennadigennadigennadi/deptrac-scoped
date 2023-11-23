@@ -9,7 +9,7 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\GraphViz;
+namespace DEPTRAC_1700756462\phpDocumentor\GraphViz;
 
 use InvalidArgumentException;
 use function array_merge;

@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084\Mosquitto;
+namespace DEPTRAC_1700756462\Mosquitto;
 
 /**
  * @link https://mosquitto-php.readthedocs.io/en/latest/client.html

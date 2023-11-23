@@ -28,7 +28,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Symfony\\Contracts\\EventDispatcher\\": ""
+            "DEPTRAC_1700756462\\Symfony\\Contracts\\EventDispatcher\\": ""
         }
     },
     "minimum-stability": "dev",

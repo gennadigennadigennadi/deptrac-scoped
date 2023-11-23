@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Stubs for ext-uv: https://github.com/bwoebi/php-uv
 /**

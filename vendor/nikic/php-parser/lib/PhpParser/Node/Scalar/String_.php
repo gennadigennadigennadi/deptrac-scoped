@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Scalar;
+namespace DEPTRAC_1700756462\PhpParser\Node\Scalar;
 
-use DEPTRAC_1700753084\PhpParser\Error;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar;
+use DEPTRAC_1700756462\PhpParser\Error;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar;
 class String_ extends Scalar
 {
     /* For use in "kind" attribute */

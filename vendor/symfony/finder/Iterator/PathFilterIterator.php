@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Finder\Iterator;
+namespace DEPTRAC_1700756462\Symfony\Component\Finder\Iterator;
 
-use DEPTRAC_1700753084\Symfony\Component\Finder\SplFileInfo;
+use DEPTRAC_1700756462\Symfony\Component\Finder\SplFileInfo;
 /**
  * PathFilterIterator filters files by path patterns (e.g. some/special/dir).
  *

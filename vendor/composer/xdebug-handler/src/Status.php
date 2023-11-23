@@ -9,10 +9,10 @@
  * the LICENSE file that was distributed with this source code.
  */
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\Composer\XdebugHandler;
+namespace DEPTRAC_1700756462\Composer\XdebugHandler;
 
-use DEPTRAC_1700753084\Psr\Log\LoggerInterface;
-use DEPTRAC_1700753084\Psr\Log\LogLevel;
+use DEPTRAC_1700756462\Psr\Log\LoggerInterface;
+use DEPTRAC_1700756462\Psr\Log\LogLevel;
 /**
  * @author John Stevenson <john-stevenson@blueyonder.co.uk>
  * @internal

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\Psr\Container;
+namespace DEPTRAC_1700756462\Psr\Container;
 
 /**
  * Describes the interface of a container that exposes methods to read its entries.

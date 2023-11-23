@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084\RdKafka;
+namespace DEPTRAC_1700756462\RdKafka;
 
 class Message
 {

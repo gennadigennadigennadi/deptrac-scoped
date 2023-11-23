@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Attribute;
+namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Attribute;
 
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Exception\LogicException;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\LogicException;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Reference;
 /**
  * Attribute to tell which callable to give to an argument of type Closure.
  */

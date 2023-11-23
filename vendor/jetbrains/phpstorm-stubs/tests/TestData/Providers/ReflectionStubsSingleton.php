@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\TestData\Providers;
+namespace DEPTRAC_1700756462\StubTests\TestData\Providers;
 
-use DEPTRAC_1700753084\StubTests\Model\StubsContainer;
-use DEPTRAC_1700753084\StubTests\Parsers\PHPReflectionParser;
+use DEPTRAC_1700756462\StubTests\Model\StubsContainer;
+use DEPTRAC_1700756462\StubTests\Parsers\PHPReflectionParser;
 class ReflectionStubsSingleton
 {
     /**

@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Console\CommandLoader;
+namespace DEPTRAC_1700756462\Symfony\Component\Console\CommandLoader;
 
-use DEPTRAC_1700753084\Psr\Container\ContainerInterface;
-use DEPTRAC_1700753084\Symfony\Component\Console\Command\Command;
-use DEPTRAC_1700753084\Symfony\Component\Console\Exception\CommandNotFoundException;
+use DEPTRAC_1700756462\Psr\Container\ContainerInterface;
+use DEPTRAC_1700756462\Symfony\Component\Console\Command\Command;
+use DEPTRAC_1700756462\Symfony\Component\Console\Exception\CommandNotFoundException;
 /**
  * Loads commands from a PSR-11 container.
  *

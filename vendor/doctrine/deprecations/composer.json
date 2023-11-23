@@ -21,13 +21,13 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Doctrine\\Deprecations\\": "lib\/Doctrine\/Deprecations"
+            "DEPTRAC_1700756462\\Doctrine\\Deprecations\\": "lib\/Doctrine\/Deprecations"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DEPTRAC_1700753084\\DeprecationTests\\": "test_fixtures\/src",
-            "DEPTRAC_1700753084\\Doctrine\\Foo\\": "test_fixtures\/vendor\/doctrine\/foo"
+            "DEPTRAC_1700756462\\DeprecationTests\\": "test_fixtures\/src",
+            "DEPTRAC_1700756462\\Doctrine\\Foo\\": "test_fixtures\/vendor\/doctrine\/foo"
         }
     },
     "config": {

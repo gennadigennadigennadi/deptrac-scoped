@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
-use DEPTRAC_1700753084\JetBrains\PhpStorm\ArrayShape;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\ArrayShape;
 /**
  * (PHP 5 &gt;= 5.5.5, PECL ZendOpcache &gt;= 7.0.2 )<br/>
  * Compiles and caches a PHP script without executing it

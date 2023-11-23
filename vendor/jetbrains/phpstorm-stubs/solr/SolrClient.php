@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -521,4 +521,4 @@ final class SolrClient
  * not supported.
  * @link https://php.net/manual/en/class.solrclient.php
  */
-\class_alias('DEPTRAC_1700753084\\SolrClient', 'SolrClient', \false);
+\class_alias('DEPTRAC_1700756462\\SolrClient', 'SolrClient', \false);

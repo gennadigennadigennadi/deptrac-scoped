@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Stub for ext-meminfo: https://github.com/BitOne/php-meminfo
 /**

@@ -41,7 +41,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Symfony\\Component\\String\\": ""
+            "DEPTRAC_1700756462\\Symfony\\Component\\String\\": ""
         },
         "files": [
             "Resources\/functions.php"

@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of date v.5.3.2-0.dotdeb.1
 \define('DATE_ATOM', "Y-m-d\\TH:i:sP");

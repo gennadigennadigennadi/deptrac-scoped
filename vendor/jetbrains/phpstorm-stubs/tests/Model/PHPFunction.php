@@ -1,20 +1,20 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use Exception;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Param;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Return_;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Types\Compound;
-use DEPTRAC_1700753084\PhpParser\Comment\Doc;
-use DEPTRAC_1700753084\PhpParser\Node\FunctionLike;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\Function_;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Param;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Return_;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Types\Compound;
+use DEPTRAC_1700756462\PhpParser\Comment\Doc;
+use DEPTRAC_1700756462\PhpParser\Node\FunctionLike;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\Function_;
 use ReflectionFunction;
 use ReflectionFunctionAbstract;
 use RuntimeException;
 use stdClass;
-use DEPTRAC_1700753084\StubTests\Parsers\DocFactoryProvider;
+use DEPTRAC_1700756462\StubTests\Parsers\DocFactoryProvider;
 class PHPFunction extends BasePHPElement
 {
     /**

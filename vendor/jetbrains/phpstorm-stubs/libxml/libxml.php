@@ -1,11 +1,11 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of libxml v.
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
 /**
  * Contains various information about errors thrown by libxml. The error codes
  * are described within the official
@@ -69,7 +69,7 @@ class LibXMLError
  * xmlError API documentation.
  * @link https://php.net/manual/en/class.libxmlerror.php
  */
-\class_alias('DEPTRAC_1700753084\\LibXMLError', 'LibXMLError', \false);
+\class_alias('DEPTRAC_1700756462\\LibXMLError', 'LibXMLError', \false);
 /**
  * Set the streams context for the next libxml document load or write
  * @link https://php.net/manual/en/function.libxml-set-streams-context.php

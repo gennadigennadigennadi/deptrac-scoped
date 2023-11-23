@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
 use RecursiveArrayIterator;
 use RecursiveIteratorIterator;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\Stubs\PhpCoreStubsProvider;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\Stubs\PhpCoreStubsProvider;
 class StubsStructureTest extends AbstractBaseStubsTestCase
 {
     /**

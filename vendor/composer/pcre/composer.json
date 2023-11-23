@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Composer\\Pcre\\": "src"
+            "DEPTRAC_1700756462\\Composer\\Pcre\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Composer\\Pcre\\": "tests"
+            "DEPTRAC_1700756462\\Composer\\Pcre\\": "tests"
         }
     },
     "extra": {

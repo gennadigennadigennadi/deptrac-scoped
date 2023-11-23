@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Lexer\TokenEmulator;
+namespace DEPTRAC_1700756462\PhpParser\Lexer\TokenEmulator;
 
-use DEPTRAC_1700753084\PhpParser\Lexer\Emulative;
+use DEPTRAC_1700756462\PhpParser\Lexer\Emulative;
 final class FnTokenEmulator extends KeywordEmulator
 {
     public function getPhpVersion() : string

@@ -8,20 +8,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_1700753084\Psr\Container\ContainerInterface as PsrContainerInterface;
-use DEPTRAC_1700753084\Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Argument\BoundArgument;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\ContainerInterface;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\TypedReference;
-use DEPTRAC_1700753084\Symfony\Component\HttpFoundation\Session\SessionInterface;
-use DEPTRAC_1700753084\Symfony\Contracts\Service\Attribute\SubscribedService;
-use DEPTRAC_1700753084\Symfony\Contracts\Service\ServiceProviderInterface;
-use DEPTRAC_1700753084\Symfony\Contracts\Service\ServiceSubscriberInterface;
+use DEPTRAC_1700756462\Psr\Container\ContainerInterface as PsrContainerInterface;
+use DEPTRAC_1700756462\Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\BoundArgument;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ContainerInterface;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\TypedReference;
+use DEPTRAC_1700756462\Symfony\Component\HttpFoundation\Session\SessionInterface;
+use DEPTRAC_1700756462\Symfony\Contracts\Service\Attribute\SubscribedService;
+use DEPTRAC_1700756462\Symfony\Contracts\Service\ServiceProviderInterface;
+use DEPTRAC_1700756462\Symfony\Contracts\Service\ServiceSubscriberInterface;
 /**
  * Compiler pass to register tagged services that require a service locator.
  *

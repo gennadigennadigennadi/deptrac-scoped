@@ -1,11 +1,11 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
 /**
  * <p>IntlChar provides access to a number of utility methods that can be used to access information about Unicode characters.</p>
  * <p>The methods and constants adhere closely to the names and behavior used by the underlying ICU library.</p>
@@ -1511,4 +1511,4 @@ class IntlChar
  * <p>The methods and constants adhere closely to the names and behavior used by the underlying ICU library.</p>
  * @since 7.0
  */
-\class_alias('DEPTRAC_1700753084\\IntlChar', 'IntlChar', \false);
+\class_alias('DEPTRAC_1700756462\\IntlChar', 'IntlChar', \false);

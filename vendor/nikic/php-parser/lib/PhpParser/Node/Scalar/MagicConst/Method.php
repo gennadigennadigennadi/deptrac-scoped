@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Scalar\MagicConst;
+namespace DEPTRAC_1700756462\PhpParser\Node\Scalar\MagicConst;
 
-use DEPTRAC_1700753084\PhpParser\Node\Scalar\MagicConst;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar\MagicConst;
 class Method extends MagicConst
 {
     public function getName() : string

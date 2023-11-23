@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\phpDocumentor\\Reflection\\": "src\/"
+            "DEPTRAC_1700756462\\phpDocumentor\\Reflection\\": "src\/"
         }
     },
     "require-dev": {},

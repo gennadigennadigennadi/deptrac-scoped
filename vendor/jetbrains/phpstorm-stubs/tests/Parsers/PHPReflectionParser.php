@@ -1,15 +1,15 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Parsers;
+namespace DEPTRAC_1700756462\StubTests\Parsers;
 
 use ReflectionClass;
 use ReflectionFunction;
-use DEPTRAC_1700753084\StubTests\Model\CommonUtils;
-use DEPTRAC_1700753084\StubTests\Model\PHPClass;
-use DEPTRAC_1700753084\StubTests\Model\PHPDefineConstant;
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
-use DEPTRAC_1700753084\StubTests\Model\PHPInterface;
-use DEPTRAC_1700753084\StubTests\Model\StubsContainer;
+use DEPTRAC_1700756462\StubTests\Model\CommonUtils;
+use DEPTRAC_1700756462\StubTests\Model\PHPClass;
+use DEPTRAC_1700756462\StubTests\Model\PHPDefineConstant;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\Model\PHPInterface;
+use DEPTRAC_1700756462\StubTests\Model\StubsContainer;
 class PHPReflectionParser
 {
     /**

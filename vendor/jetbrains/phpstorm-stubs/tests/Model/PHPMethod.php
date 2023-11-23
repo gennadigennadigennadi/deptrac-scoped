@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use Exception;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\Param;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\ClassMethod;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\Param;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\ClassMethod;
 use ReflectionMethod;
 use RuntimeException;
 use stdClass;

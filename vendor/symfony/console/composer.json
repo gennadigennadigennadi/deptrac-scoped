@@ -48,7 +48,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Symfony\\Component\\Console\\": ""
+            "DEPTRAC_1700756462\\Symfony\\Component\\Console\\": ""
         },
         "exclude-from-classmap": [
             "\/Tests\/"

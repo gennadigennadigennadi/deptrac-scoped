@@ -10,11 +10,11 @@
  *
  */
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\phpDocumentor\Reflection\PseudoTypes;
+namespace DEPTRAC_1700756462\phpDocumentor\Reflection\PseudoTypes;
 
-use DEPTRAC_1700753084\phpDocumentor\Reflection\PseudoType;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Type;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Types\Float_;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\PseudoType;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Type;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Types\Float_;
 /** @psalm-immutable */
 class FloatValue implements PseudoType
 {

@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Console\Tester;
+namespace DEPTRAC_1700756462\Symfony\Component\Console\Tester;
 
-use DEPTRAC_1700753084\Symfony\Component\Console\Command\Command;
-use DEPTRAC_1700753084\Symfony\Component\Console\Completion\CompletionInput;
-use DEPTRAC_1700753084\Symfony\Component\Console\Completion\CompletionSuggestions;
+use DEPTRAC_1700756462\Symfony\Component\Console\Command\Command;
+use DEPTRAC_1700756462\Symfony\Component\Console\Completion\CompletionInput;
+use DEPTRAC_1700756462\Symfony\Component\Console\Completion\CompletionSuggestions;
 /**
  * Eases the testing of command completion.
  *

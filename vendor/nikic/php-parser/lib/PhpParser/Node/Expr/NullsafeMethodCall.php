@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Expr;
+namespace DEPTRAC_1700756462\PhpParser\Node\Expr;
 
-use DEPTRAC_1700753084\PhpParser\Node\Arg;
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
-use DEPTRAC_1700753084\PhpParser\Node\Identifier;
-use DEPTRAC_1700753084\PhpParser\Node\VariadicPlaceholder;
+use DEPTRAC_1700756462\PhpParser\Node\Arg;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node\Identifier;
+use DEPTRAC_1700756462\PhpParser\Node\VariadicPlaceholder;
 class NullsafeMethodCall extends CallLike
 {
     /** @var Expr Variable holding object */

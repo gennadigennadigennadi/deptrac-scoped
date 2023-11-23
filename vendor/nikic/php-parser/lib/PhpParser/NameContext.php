@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser;
+namespace DEPTRAC_1700756462\PhpParser;
 
-use DEPTRAC_1700753084\PhpParser\Node\Name;
-use DEPTRAC_1700753084\PhpParser\Node\Name\FullyQualified;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt;
+use DEPTRAC_1700756462\PhpParser\Node\Name;
+use DEPTRAC_1700756462\PhpParser\Node\Name\FullyQualified;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt;
 class NameContext
 {
     /** @var null|Name Current namespace */

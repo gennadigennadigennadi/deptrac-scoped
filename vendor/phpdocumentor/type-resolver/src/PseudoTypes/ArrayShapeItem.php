@@ -10,10 +10,10 @@
  *
  */
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\phpDocumentor\Reflection\PseudoTypes;
+namespace DEPTRAC_1700756462\phpDocumentor\Reflection\PseudoTypes;
 
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Type;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Types\Mixed_;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Type;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Types\Mixed_;
 use function sprintf;
 final class ArrayShapeItem
 {

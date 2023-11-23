@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
-use DEPTRAC_1700753084\PHPUnit\Framework\TestCase;
+use DEPTRAC_1700756462\PHPUnit\Framework\TestCase;
 class CheckStubMapTest extends TestCase
 {
     private $oldMapFile = __DIR__ . '/../PhpStormStubsMap.php';

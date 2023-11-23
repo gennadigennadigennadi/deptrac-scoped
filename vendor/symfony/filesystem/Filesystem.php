@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Filesystem;
+namespace DEPTRAC_1700756462\Symfony\Component\Filesystem;
 
-use DEPTRAC_1700753084\Symfony\Component\Filesystem\Exception\FileNotFoundException;
-use DEPTRAC_1700753084\Symfony\Component\Filesystem\Exception\InvalidArgumentException;
-use DEPTRAC_1700753084\Symfony\Component\Filesystem\Exception\IOException;
+use DEPTRAC_1700756462\Symfony\Component\Filesystem\Exception\FileNotFoundException;
+use DEPTRAC_1700756462\Symfony\Component\Filesystem\Exception\InvalidArgumentException;
+use DEPTRAC_1700756462\Symfony\Component\Filesystem\Exception\IOException;
 /**
  * Provides basic utility to manipulate the file system.
  *

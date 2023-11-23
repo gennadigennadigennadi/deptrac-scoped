@@ -9,15 +9,15 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\GraphViz\PHPStan;
+namespace DEPTRAC_1700756462\phpDocumentor\GraphViz\PHPStan;
 
-use DEPTRAC_1700753084\phpDocumentor\GraphViz\Graph;
-use DEPTRAC_1700753084\phpDocumentor\GraphViz\Node;
-use DEPTRAC_1700753084\PHPStan\Reflection\Annotations\AnnotationPropertyReflection;
-use DEPTRAC_1700753084\PHPStan\Reflection\ClassReflection;
-use DEPTRAC_1700753084\PHPStan\Reflection\PropertiesClassReflectionExtension;
-use DEPTRAC_1700753084\PHPStan\Reflection\PropertyReflection;
-use DEPTRAC_1700753084\PHPStan\Type\ObjectType;
+use DEPTRAC_1700756462\phpDocumentor\GraphViz\Graph;
+use DEPTRAC_1700756462\phpDocumentor\GraphViz\Node;
+use DEPTRAC_1700756462\PHPStan\Reflection\Annotations\AnnotationPropertyReflection;
+use DEPTRAC_1700756462\PHPStan\Reflection\ClassReflection;
+use DEPTRAC_1700756462\PHPStan\Reflection\PropertiesClassReflectionExtension;
+use DEPTRAC_1700756462\PHPStan\Reflection\PropertyReflection;
+use DEPTRAC_1700756462\PHPStan\Type\ObjectType;
 final class GraphNodeReflectionExtension implements PropertiesClassReflectionExtension
 {
     public function hasProperty(ClassReflection $classReflection, string $propertyName) : bool

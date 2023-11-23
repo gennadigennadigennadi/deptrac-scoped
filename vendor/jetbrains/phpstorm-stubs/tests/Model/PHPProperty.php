@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use Exception;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt\Property;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt\Property;
 use ReflectionProperty;
 use stdClass;
 class PHPProperty extends BasePHPElement

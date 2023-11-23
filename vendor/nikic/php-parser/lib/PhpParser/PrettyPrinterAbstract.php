@@ -1,17 +1,17 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser;
+namespace DEPTRAC_1700756462\PhpParser;
 
-use DEPTRAC_1700753084\PhpParser\Internal\DiffElem;
-use DEPTRAC_1700753084\PhpParser\Internal\PrintableNewAnonClassNode;
-use DEPTRAC_1700753084\PhpParser\Internal\TokenStream;
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\AssignOp;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\BinaryOp;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\Cast;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar;
-use DEPTRAC_1700753084\PhpParser\Node\Stmt;
+use DEPTRAC_1700756462\PhpParser\Internal\DiffElem;
+use DEPTRAC_1700756462\PhpParser\Internal\PrintableNewAnonClassNode;
+use DEPTRAC_1700756462\PhpParser\Internal\TokenStream;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\AssignOp;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\BinaryOp;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\Cast;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar;
+use DEPTRAC_1700756462\PhpParser\Node\Stmt;
 abstract class PrettyPrinterAbstract
 {
     const FIXUP_PREC_LEFT = 0;

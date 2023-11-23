@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\TestData\Providers\Stubs;
+namespace DEPTRAC_1700756462\StubTests\TestData\Providers\Stubs;
 
 use DirectoryIterator;
 use Generator;
 use SplFileInfo;
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
 use function dirname;
 use function in_array;
 class StubsTestDataProviders

@@ -1,66 +1,66 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of http v.1.6.6
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
 class HttpException extends \Exception
 {
     public $innerException;
 }
-\class_alias('DEPTRAC_1700753084\\HttpException', 'HttpException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpException', 'HttpException', \false);
 class HttpRuntimeException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpRuntimeException', 'HttpRuntimeException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpRuntimeException', 'HttpRuntimeException', \false);
 class HttpInvalidParamException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpInvalidParamException', 'HttpInvalidParamException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpInvalidParamException', 'HttpInvalidParamException', \false);
 class HttpHeaderException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpHeaderException', 'HttpHeaderException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpHeaderException', 'HttpHeaderException', \false);
 class HttpMalformedHeadersException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpMalformedHeadersException', 'HttpMalformedHeadersException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpMalformedHeadersException', 'HttpMalformedHeadersException', \false);
 class HttpRequestMethodException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpRequestMethodException', 'HttpRequestMethodException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpRequestMethodException', 'HttpRequestMethodException', \false);
 class HttpMessageTypeException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpMessageTypeException', 'HttpMessageTypeException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpMessageTypeException', 'HttpMessageTypeException', \false);
 class HttpEncodingException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpEncodingException', 'HttpEncodingException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpEncodingException', 'HttpEncodingException', \false);
 class HttpRequestException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpRequestException', 'HttpRequestException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpRequestException', 'HttpRequestException', \false);
 class HttpRequestPoolException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpRequestPoolException', 'HttpRequestPoolException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpRequestPoolException', 'HttpRequestPoolException', \false);
 class HttpSocketException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpSocketException', 'HttpSocketException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpSocketException', 'HttpSocketException', \false);
 class HttpResponseException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpResponseException', 'HttpResponseException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpResponseException', 'HttpResponseException', \false);
 class HttpUrlException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpUrlException', 'HttpUrlException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpUrlException', 'HttpUrlException', \false);
 class HttpQueryStringException extends \HttpException
 {
 }
-\class_alias('DEPTRAC_1700753084\\HttpQueryStringException', 'HttpQueryStringException', \false);
+\class_alias('DEPTRAC_1700756462\\HttpQueryStringException', 'HttpQueryStringException', \false);
 /**
  * @link https://php.net/manual/en/class.httpdeflatestream.php
  */
@@ -146,7 +146,7 @@ class HttpDeflateStream
 /**
  * @link https://php.net/manual/en/class.httpdeflatestream.php
  */
-\class_alias('DEPTRAC_1700753084\\HttpDeflateStream', 'HttpDeflateStream', \false);
+\class_alias('DEPTRAC_1700756462\\HttpDeflateStream', 'HttpDeflateStream', \false);
 /**
  * @link https://php.net/manual/en/class.httpinflatestream.php
  */
@@ -221,7 +221,7 @@ class HttpInflateStream
 /**
  * @link https://php.net/manual/en/class.httpinflatestream.php
  */
-\class_alias('DEPTRAC_1700753084\\HttpInflateStream', 'HttpInflateStream', \false);
+\class_alias('DEPTRAC_1700756462\\HttpInflateStream', 'HttpInflateStream', \false);
 /**
  * @link https://php.net/manual/en/class.httpmessage.php
  */
@@ -643,7 +643,7 @@ class HttpMessage implements \Countable, \Serializable, \Iterator
 /**
  * @link https://php.net/manual/en/class.httpmessage.php
  */
-\class_alias('DEPTRAC_1700753084\\HttpMessage', 'HttpMessage', \false);
+\class_alias('DEPTRAC_1700756462\\HttpMessage', 'HttpMessage', \false);
 /**
  * @link https://php.net/manual/en/class.httpquerystring.php
  */
@@ -912,7 +912,7 @@ class HttpQueryString implements \Serializable, \ArrayAccess
 /**
  * @link https://php.net/manual/en/class.httpquerystring.php
  */
-\class_alias('DEPTRAC_1700753084\\HttpQueryString', 'HttpQueryString', \false);
+\class_alias('DEPTRAC_1700756462\\HttpQueryString', 'HttpQueryString', \false);
 /**
  * @link https://php.net/manual/en/class.httprequest.php
  */
@@ -1698,7 +1698,7 @@ class HttpRequest
 /**
  * @link https://php.net/manual/en/class.httprequest.php
  */
-\class_alias('DEPTRAC_1700753084\\HttpRequest', 'HttpRequest', \false);
+\class_alias('DEPTRAC_1700756462\\HttpRequest', 'HttpRequest', \false);
 class HttpRequestDataShare implements \Countable
 {
     private static $instance;
@@ -1741,7 +1741,7 @@ class HttpRequestDataShare implements \Countable
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\HttpRequestDataShare', 'HttpRequestDataShare', \false);
+\class_alias('DEPTRAC_1700756462\\HttpRequestDataShare', 'HttpRequestDataShare', \false);
 /**
  * @link https://php.net/manual/en/class.httprequestpool.php
  */
@@ -1881,7 +1881,7 @@ class HttpRequestPool implements \Countable, \Iterator
 /**
  * @link https://php.net/manual/en/class.httprequestpool.php
  */
-\class_alias('DEPTRAC_1700753084\\HttpRequestPool', 'HttpRequestPool', \false);
+\class_alias('DEPTRAC_1700756462\\HttpRequestPool', 'HttpRequestPool', \false);
 /**
  * @link https://php.net/manual/en/class.httpresponse.php
  */
@@ -2294,7 +2294,7 @@ class HttpResponse
 /**
  * @link https://php.net/manual/en/class.httpresponse.php
  */
-\class_alias('DEPTRAC_1700753084\\HttpResponse', 'HttpResponse', \false);
+\class_alias('DEPTRAC_1700756462\\HttpResponse', 'HttpResponse', \false);
 class HttpUtil
 {
     /**
@@ -2420,7 +2420,7 @@ class HttpUtil
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\HttpUtil', 'HttpUtil', \false);
+\class_alias('DEPTRAC_1700756462\\HttpUtil', 'HttpUtil', \false);
 /**
  * (PECL pecl_http &gt;= 0.1.0)<br/>
  * Compose HTTP RFC compliant date

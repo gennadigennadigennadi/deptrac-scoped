@@ -1,26 +1,26 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
-use DEPTRAC_1700753084\PhpParser\Node\Expr\Array_;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\BinaryOp\BitwiseOr;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\ClassConstFetch;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\ConstFetch;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\UnaryMinus;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar\DNumber;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar\LNumber;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar\String_;
-use DEPTRAC_1700753084\PHPUnit\Framework\Exception;
-use DEPTRAC_1700753084\PHPUnit\Framework\TestCase;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\Array_;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\BinaryOp\BitwiseOr;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\ClassConstFetch;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\ConstFetch;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\UnaryMinus;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar\DNumber;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar\LNumber;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar\String_;
+use DEPTRAC_1700756462\PHPUnit\Framework\Exception;
+use DEPTRAC_1700756462\PHPUnit\Framework\TestCase;
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\Model\PHPClass;
-use DEPTRAC_1700753084\StubTests\Model\PHPConst;
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
-use DEPTRAC_1700753084\StubTests\Model\PHPInterface;
-use DEPTRAC_1700753084\StubTests\Parsers\ParserUtils;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\ReflectionStubsSingleton;
+use DEPTRAC_1700756462\StubTests\Model\PHPClass;
+use DEPTRAC_1700756462\StubTests\Model\PHPConst;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\Model\PHPInterface;
+use DEPTRAC_1700756462\StubTests\Parsers\ParserUtils;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\ReflectionStubsSingleton;
 use function array_filter;
 use function array_pop;
 use function property_exists;

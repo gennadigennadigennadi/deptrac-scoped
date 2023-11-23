@@ -1,17 +1,17 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PHPStan\PhpDocParser\Parser;
+namespace DEPTRAC_1700756462\PHPStan\PhpDocParser\Parser;
 
 use LogicException;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprIntegerNode;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprStringNode;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast\ConstExpr\ConstFetchNode;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
-use DEPTRAC_1700753084\PHPStan\PhpDocParser\Lexer\Lexer;
-use DEPTRAC_1700753084\PHPStan\ShouldNotHappenException;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprIntegerNode;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprStringNode;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\ConstExpr\ConstFetchNode;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
+use DEPTRAC_1700756462\PHPStan\PhpDocParser\Lexer\Lexer;
+use DEPTRAC_1700756462\PHPStan\ShouldNotHappenException;
 use function array_key_exists;
 use function array_values;
 use function count;

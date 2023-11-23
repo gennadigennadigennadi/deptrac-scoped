@@ -7,7 +7,7 @@ use Qossmic\Deptrac\Contract\Ast\AstFileAnalysedEvent;
 use Qossmic\Deptrac\Contract\Ast\PostCreateAstMapEvent;
 use Qossmic\Deptrac\Contract\Ast\PreCreateAstMapEvent;
 use Qossmic\Deptrac\Contract\OutputFormatter\OutputInterface;
-use DEPTRAC_1700753084\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_1700756462\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class ProgressSubscriber implements EventSubscriberInterface
 {
     public function __construct(private readonly OutputInterface $output)

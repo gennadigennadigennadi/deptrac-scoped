@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
-use DEPTRAC_1700753084\PHPUnit\Framework\Exception;
+use DEPTRAC_1700756462\PHPUnit\Framework\Exception;
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
 /**
  * Class to test typehints of some Reflection* classes as reflection for these classes returns null.
  */

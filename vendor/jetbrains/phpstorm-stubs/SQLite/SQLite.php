@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of SQLite v.2.0-dev
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
 /**
  * @link https://php.net/manual/en/ref.sqlite.php
  */
@@ -247,7 +247,7 @@ class SQLiteDatabase
 /**
  * @link https://php.net/manual/en/ref.sqlite.php
  */
-\class_alias('DEPTRAC_1700753084\\SQLiteDatabase', 'SQLiteDatabase', \false);
+\class_alias('DEPTRAC_1700756462\\SQLiteDatabase', 'SQLiteDatabase', \false);
 /**
  * @link https://php.net/manual/en/ref.sqlite.php
  */
@@ -500,7 +500,7 @@ final class SQLiteResult implements \Iterator, \Countable
 /**
  * @link https://php.net/manual/en/ref.sqlite.php
  */
-\class_alias('DEPTRAC_1700753084\\SQLiteResult', 'SQLiteResult', \false);
+\class_alias('DEPTRAC_1700756462\\SQLiteResult', 'SQLiteResult', \false);
 /**
  * Represents an unbuffered SQLite result set. Unbuffered results sets are sequential, forward-seeking only.
  * @link https://php.net/manual/en/ref.sqlite.php
@@ -570,7 +570,7 @@ final class SQLiteUnbuffered
  * Represents an unbuffered SQLite result set. Unbuffered results sets are sequential, forward-seeking only.
  * @link https://php.net/manual/en/ref.sqlite.php
  */
-\class_alias('DEPTRAC_1700753084\\SQLiteUnbuffered', 'SQLiteUnbuffered', \false);
+\class_alias('DEPTRAC_1700756462\\SQLiteUnbuffered', 'SQLiteUnbuffered', \false);
 final class SQLiteException extends \RuntimeException
 {
     protected $message;
@@ -608,7 +608,7 @@ final class SQLiteException extends \RuntimeException
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\SQLiteException', 'SQLiteException', \false);
+\class_alias('DEPTRAC_1700756462\\SQLiteException', 'SQLiteException', \false);
 /**
  * (PHP 5, PECL sqlite &gt;= 1.0.0)<br/>
  * Opens a SQLite database and create the database if it does not exist

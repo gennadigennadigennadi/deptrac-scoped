@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
 class StubsCompositeMixedReturnTypeTest extends AbstractBaseStubsTestCase
 {
     /**

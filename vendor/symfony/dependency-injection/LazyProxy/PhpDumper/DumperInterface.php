@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper;
+namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper;
 
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Definition;
 /**
  * Lazy proxy dumper capable of generating the instantiation logic PHP code for proxied services.
  *

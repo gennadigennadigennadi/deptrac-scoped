@@ -6,7 +6,7 @@ namespace Qossmic\Deptrac\Core\Analyser\EventHandler;
 use Qossmic\Deptrac\Contract\Analyser\EventHelper;
 use Qossmic\Deptrac\Contract\Analyser\PostProcessEvent;
 use Qossmic\Deptrac\Contract\Result\Error;
-use DEPTRAC_1700753084\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_1700756462\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use function sprintf;
 /**
  * @internal

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
-use DEPTRAC_1700753084\StubTests\Model\StubsContainer;
+use DEPTRAC_1700756462\StubTests\Model\StubsContainer;
 require_once __DIR__ . '/../../vendor/autoload.php';
 /** @var StubsContainer $coreStubs */
 $coreStubs = \unserialize(\file_get_contents(__DIR__ . '/../../ReflectionData.json'), ['allowed_classes' => \true]);

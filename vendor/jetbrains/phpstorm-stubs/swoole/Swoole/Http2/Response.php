@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\Swoole\Http2;
+namespace DEPTRAC_1700756462\Swoole\Http2;
 
 class Response
 {

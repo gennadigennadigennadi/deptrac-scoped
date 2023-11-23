@@ -1,11 +1,11 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of xmlreader v.0.2
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\TentativeType;
 /**
  * The XMLReader extension is an XML Pull parser. The reader acts as a
  * cursor going forward on the document stream and stopping at each node
@@ -461,5 +461,5 @@ class XMLReader
  * @property-read string $value The text value of the node
  * @property-read string $xmlLang The xml:lang scope which the node resides
  */
-\class_alias('DEPTRAC_1700753084\\XMLReader', 'XMLReader', \false);
+\class_alias('DEPTRAC_1700756462\\XMLReader', 'XMLReader', \false);
 // End of xmlreader v.0.2

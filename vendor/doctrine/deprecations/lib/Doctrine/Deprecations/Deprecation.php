@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\Doctrine\Deprecations;
+namespace DEPTRAC_1700756462\Doctrine\Deprecations;
 
-use DEPTRAC_1700753084\Psr\Log\LoggerInterface;
+use DEPTRAC_1700756462\Psr\Log\LoggerInterface;
 use function array_key_exists;
 use function array_reduce;
 use function assert;

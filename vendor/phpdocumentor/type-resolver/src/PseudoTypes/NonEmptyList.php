@@ -9,13 +9,13 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\Reflection\PseudoTypes;
+namespace DEPTRAC_1700756462\phpDocumentor\Reflection\PseudoTypes;
 
-use DEPTRAC_1700753084\phpDocumentor\Reflection\PseudoType;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Type;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Types\Array_;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Types\Integer;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Types\Mixed_;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\PseudoType;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Type;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Types\Array_;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Types\Integer;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Types\Mixed_;
 /**
  * Value Object representing the type 'non-empty-list'.
  *

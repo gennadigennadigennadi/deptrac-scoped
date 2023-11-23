@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Attribute;
+namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Attribute;
 
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
 #[\Attribute(\Attribute::TARGET_PARAMETER)]
 class TaggedLocator extends Autowire
 {

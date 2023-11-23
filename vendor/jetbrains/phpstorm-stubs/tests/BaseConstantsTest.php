@@ -1,14 +1,14 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
-use DEPTRAC_1700753084\PHPUnit\Framework\Exception;
+use DEPTRAC_1700756462\PHPUnit\Framework\Exception;
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\Model\PHPClass;
-use DEPTRAC_1700753084\StubTests\Model\PHPConst;
-use DEPTRAC_1700753084\StubTests\Model\PHPInterface;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\StubTests\Model\PHPClass;
+use DEPTRAC_1700756462\StubTests\Model\PHPConst;
+use DEPTRAC_1700756462\StubTests\Model\PHPInterface;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
 class BaseConstantsTest extends AbstractBaseStubsTestCase
 {
     /**

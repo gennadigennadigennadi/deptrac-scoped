@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Console;
+namespace DEPTRAC_1700756462\Symfony\Component\Console;
 
-use DEPTRAC_1700753084\Symfony\Component\Console\Exception\InvalidArgumentException;
+use DEPTRAC_1700756462\Symfony\Component\Console\Exception\InvalidArgumentException;
 /**
  * @author Fabien Potencier <fabien@symfony.com>
  */

@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 /**
  * @link https://php.net/manual/en/class.reflectionenumbackedcase.php
@@ -20,4 +20,4 @@ class ReflectionEnumBackedCase extends \ReflectionEnumUnitCase
  * @link https://php.net/manual/en/class.reflectionenumbackedcase.php
  * @since 8.1
  */
-\class_alias('DEPTRAC_1700753084\\ReflectionEnumBackedCase', 'ReflectionEnumBackedCase', \false);
+\class_alias('DEPTRAC_1700756462\\ReflectionEnumBackedCase', 'ReflectionEnumBackedCase', \false);

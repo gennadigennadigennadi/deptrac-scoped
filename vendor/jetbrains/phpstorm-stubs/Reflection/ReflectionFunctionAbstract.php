@@ -1,12 +1,12 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Immutable;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Immutable;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
 /**
  * A parent class to <b>ReflectionFunction</b>, read its
  * description for details.
@@ -382,4 +382,4 @@ abstract class ReflectionFunctionAbstract implements \Reflector
  *
  * @link https://php.net/manual/en/class.reflectionfunctionabstract.php
  */
-\class_alias('DEPTRAC_1700753084\\ReflectionFunctionAbstract', 'ReflectionFunctionAbstract', \false);
+\class_alias('DEPTRAC_1700756462\\ReflectionFunctionAbstract', 'ReflectionFunctionAbstract', \false);

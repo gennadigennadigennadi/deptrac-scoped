@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\TestData\Providers\Reflection;
+namespace DEPTRAC_1700756462\StubTests\TestData\Providers\Reflection;
 
 use Generator;
-use DEPTRAC_1700753084\StubTests\Model\StubProblemType;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\EntitiesFilter;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\ReflectionStubsSingleton;
+use DEPTRAC_1700756462\StubTests\Model\StubProblemType;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\EntitiesFilter;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\ReflectionStubsSingleton;
 class ReflectionFunctionsProvider
 {
     public static function allFunctionsProvider() : ?Generator

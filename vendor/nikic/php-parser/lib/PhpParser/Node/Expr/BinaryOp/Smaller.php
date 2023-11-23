@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Expr\BinaryOp;
+namespace DEPTRAC_1700756462\PhpParser\Node\Expr\BinaryOp;
 
-use DEPTRAC_1700753084\PhpParser\Node\Expr\BinaryOp;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\BinaryOp;
 class Smaller extends BinaryOp
 {
     public function getOperatorSigil() : string

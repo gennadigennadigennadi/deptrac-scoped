@@ -7,7 +7,7 @@
  * @copyright © 2019 PHP Documentation Group
  * @license CC-BY 3.0, https://www.php.net/manual/en/cc.license.php
  */
-namespace DEPTRAC_1700753084\Ds;
+namespace DEPTRAC_1700756462\Ds;
 
 use Countable;
 use IteratorAggregate;

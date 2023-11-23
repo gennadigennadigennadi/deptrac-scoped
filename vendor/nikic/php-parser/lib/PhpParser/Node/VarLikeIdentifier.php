@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node;
+namespace DEPTRAC_1700756462\PhpParser\Node;
 
 /**
  * Represents a name that is written in source code with a leading dollar,

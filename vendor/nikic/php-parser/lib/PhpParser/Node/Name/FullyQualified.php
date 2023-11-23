@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Name;
+namespace DEPTRAC_1700756462\PhpParser\Node\Name;
 
-class FullyQualified extends \DEPTRAC_1700753084\PhpParser\Node\Name
+class FullyQualified extends \DEPTRAC_1700756462\PhpParser\Node\Name
 {
     /**
      * Checks whether the name is unqualified. (E.g. Name)

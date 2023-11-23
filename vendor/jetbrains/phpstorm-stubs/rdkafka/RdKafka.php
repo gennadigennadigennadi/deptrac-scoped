@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 use RdKafka\Exception;
 use RdKafka\Metadata;
@@ -106,4 +106,4 @@ abstract class RdKafka
     {
     }
 }
-\class_alias('DEPTRAC_1700753084\\RdKafka', 'RdKafka', \false);
+\class_alias('DEPTRAC_1700756462\\RdKafka', 'RdKafka', \false);

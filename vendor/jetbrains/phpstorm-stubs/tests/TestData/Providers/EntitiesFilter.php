@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\TestData\Providers;
+namespace DEPTRAC_1700756462\StubTests\TestData\Providers;
 
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\Model\BasePHPElement;
-use DEPTRAC_1700753084\StubTests\Model\PHPClass;
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
-use DEPTRAC_1700753084\StubTests\Model\PHPInterface;
-use DEPTRAC_1700753084\StubTests\Model\PHPMethod;
-use DEPTRAC_1700753084\StubTests\Model\PHPParameter;
-use DEPTRAC_1700753084\StubTests\Model\StubProblemType;
+use DEPTRAC_1700756462\StubTests\Model\BasePHPElement;
+use DEPTRAC_1700756462\StubTests\Model\PHPClass;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\Model\PHPInterface;
+use DEPTRAC_1700756462\StubTests\Model\PHPMethod;
+use DEPTRAC_1700756462\StubTests\Model\PHPParameter;
+use DEPTRAC_1700756462\StubTests\Model\StubProblemType;
 class EntitiesFilter
 {
     /**

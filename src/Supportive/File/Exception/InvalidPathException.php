@@ -6,7 +6,7 @@ namespace Qossmic\Deptrac\Supportive\File\Exception;
 use Qossmic\Deptrac\Contract\ExceptionInterface;
 use RuntimeException;
 use SplFileInfo;
-use DEPTRAC_1700753084\Symfony\Component\Filesystem\Path;
+use DEPTRAC_1700756462\Symfony\Component\Filesystem\Path;
 use function sprintf;
 final class InvalidPathException extends RuntimeException implements ExceptionInterface
 {

@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Expr;
+namespace DEPTRAC_1700756462\PhpParser\Node\Expr;
 
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
 abstract class BinaryOp extends Expr
 {
     /** @var Expr The left hand side expression */

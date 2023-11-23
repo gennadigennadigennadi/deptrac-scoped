@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Console\Question;
+namespace DEPTRAC_1700756462\Symfony\Component\Console\Question;
 
-use DEPTRAC_1700753084\Symfony\Component\Console\Exception\InvalidArgumentException;
+use DEPTRAC_1700756462\Symfony\Component\Console\Exception\InvalidArgumentException;
 /**
  * Represents a choice question.
  *

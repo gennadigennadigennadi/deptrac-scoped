@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084\PSpell;
+namespace DEPTRAC_1700756462\PSpell;
 
 /**
  * A fully opaque class which replaces a pspell resource as of PHP 8.1.0.

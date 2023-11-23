@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Psr\\Container\\": "src\/"
+            "DEPTRAC_1700756462\\Psr\\Container\\": "src\/"
         }
     },
     "extra": {

@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Psr\\EventDispatcher\\": "src\/"
+            "DEPTRAC_1700756462\\Psr\\EventDispatcher\\": "src\/"
         }
     },
     "extra": {

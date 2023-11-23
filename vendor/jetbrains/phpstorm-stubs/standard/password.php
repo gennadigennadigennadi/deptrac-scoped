@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of password v.
 /**
@@ -39,8 +39,8 @@ namespace DEPTRAC_1700753084;
  * </ul>
  * @link https://secure.php.net/manual/en/password.constants.php
  */
-use DEPTRAC_1700753084\JetBrains\PhpStorm\ArrayShape;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\ArrayShape;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 \define("PASSWORD_DEFAULT", "2y");
 /**
  * <p>

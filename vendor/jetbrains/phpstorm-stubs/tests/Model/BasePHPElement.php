@@ -1,27 +1,27 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model;
+namespace DEPTRAC_1700756462\StubTests\Model;
 
 use Exception;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Type;
-use DEPTRAC_1700753084\PhpParser\Node;
-use DEPTRAC_1700753084\PhpParser\Node\AttributeGroup;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\Array_;
-use DEPTRAC_1700753084\PhpParser\Node\Identifier;
-use DEPTRAC_1700753084\PhpParser\Node\Name;
-use DEPTRAC_1700753084\PhpParser\Node\NullableType;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar\String_;
-use DEPTRAC_1700753084\PhpParser\Node\UnionType;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Type;
+use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_1700756462\PhpParser\Node\AttributeGroup;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\Array_;
+use DEPTRAC_1700756462\PhpParser\Node\Identifier;
+use DEPTRAC_1700756462\PhpParser\Node\Name;
+use DEPTRAC_1700756462\PhpParser\Node\NullableType;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar\String_;
+use DEPTRAC_1700756462\PhpParser\Node\UnionType;
 use ReflectionNamedType;
 use ReflectionType;
 use ReflectionUnionType;
 use Reflector;
 use RuntimeException;
 use stdClass;
-use DEPTRAC_1700753084\StubTests\Parsers\ParserUtils;
+use DEPTRAC_1700756462\StubTests\Parsers\ParserUtils;
 use function array_key_exists;
 use function count;
 use function in_array;

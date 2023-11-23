@@ -9,10 +9,10 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700753084\phpDocumentor\GraphViz\Test;
+namespace DEPTRAC_1700756462\phpDocumentor\GraphViz\Test;
 
-use DEPTRAC_1700753084\phpDocumentor\GraphViz\Attribute;
-use DEPTRAC_1700753084\PHPUnit\Framework\TestCase;
+use DEPTRAC_1700756462\phpDocumentor\GraphViz\Attribute;
+use DEPTRAC_1700756462\PHPUnit\Framework\TestCase;
 /**
  * Test for the the class representing a GraphViz attribute.
  */
@@ -101,7 +101,7 @@ class AttributeTest extends TestCase
     public function testToStringWithSpecials() : void
     {
         $this->fixture = new Attribute('a', 'b');
-        $this->fixture->setValue('DEPTRAC_1700753084\\a\\la');
+        $this->fixture->setValue('DEPTRAC_1700756462\\a\\la');
         $this->assertSame('a="a\\la"', (string) $this->fixture, 'Specials should not be escaped');
         $this->fixture->setValue('a\\l"a');
         $this->assertSame('a="a\\l\\"a"', (string) $this->fixture, 'Specials should not be escaped, but quotes should');

@@ -1,15 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
-use DEPTRAC_1700753084\PHPUnit\Framework\Exception;
+use DEPTRAC_1700756462\PHPUnit\Framework\Exception;
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\Model\PHPMethod;
-use DEPTRAC_1700753084\StubTests\Model\StubProblemType;
-use DEPTRAC_1700753084\StubTests\Parsers\Visitors\MetaOverrideFunctionsParser;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\ReflectionStubsSingleton;
+use DEPTRAC_1700756462\StubTests\Model\PHPMethod;
+use DEPTRAC_1700756462\StubTests\Model\StubProblemType;
+use DEPTRAC_1700756462\StubTests\Parsers\Visitors\MetaOverrideFunctionsParser;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\ReflectionStubsSingleton;
 use function array_filter;
 use function array_pop;
 class StubsMetaInternalTagTest extends AbstractBaseStubsTestCase

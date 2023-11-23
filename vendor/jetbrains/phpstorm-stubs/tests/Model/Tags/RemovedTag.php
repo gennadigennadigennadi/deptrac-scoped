@@ -1,11 +1,11 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests\Model\Tags;
+namespace DEPTRAC_1700756462\StubTests\Model\Tags;
 
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Description;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\DescriptionFactory;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\DocBlock\Tags\BaseTag;
-use DEPTRAC_1700753084\phpDocumentor\Reflection\Types\Context;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Description;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\DescriptionFactory;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\DocBlock\Tags\BaseTag;
+use DEPTRAC_1700756462\phpDocumentor\Reflection\Types\Context;
 class RemovedTag extends BaseTag
 {
     const REGEX_VECTOR = '(?:\\d\\S*|[^\\s\\:]+\\:\\s*\\$[^\\$]+\\$)';

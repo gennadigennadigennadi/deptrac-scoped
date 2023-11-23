@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests\Parsers\Visitors;
+namespace DEPTRAC_1700756462\StubTests\Parsers\Visitors;
 
-use DEPTRAC_1700753084\PhpParser\Node;
-use DEPTRAC_1700753084\PhpParser\NodeVisitorAbstract;
+use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_1700756462\PhpParser\NodeVisitorAbstract;
 use function count;
 /**
  * The visitor is required to provide "parent" attribute to nodes

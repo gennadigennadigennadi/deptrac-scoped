@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of lua v2.0.6.
 // The actual lua version is different from the PECL package version
@@ -90,4 +90,4 @@ class Lua
 /**
  * @link https://secure.php.net/manual/en/class.lua.php
  */
-\class_alias('DEPTRAC_1700753084\\Lua', 'Lua', \false);
+\class_alias('DEPTRAC_1700756462\\Lua', 'Lua', \false);

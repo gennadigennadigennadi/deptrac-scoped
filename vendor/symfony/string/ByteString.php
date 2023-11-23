@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\String;
+namespace DEPTRAC_1700756462\Symfony\Component\String;
 
-use DEPTRAC_1700753084\Symfony\Component\String\Exception\ExceptionInterface;
-use DEPTRAC_1700753084\Symfony\Component\String\Exception\InvalidArgumentException;
-use DEPTRAC_1700753084\Symfony\Component\String\Exception\RuntimeException;
+use DEPTRAC_1700756462\Symfony\Component\String\Exception\ExceptionInterface;
+use DEPTRAC_1700756462\Symfony\Component\String\Exception\InvalidArgumentException;
+use DEPTRAC_1700756462\Symfony\Component\String\Exception\RuntimeException;
 /**
  * Represents a binary-safe string of bytes.
  *
@@ -275,7 +275,7 @@ class ByteString extends AbstractString
     public function snake() : static
     {
         $str = $this->camel();
-        $str->string = \strtolower(\preg_replace(['/([A-Z]+)([A-Z][a-z])/', '/([a-z\\d])([A-Z])/'], 'DEPTRAC_1700753084\\1_\\2', $str->string));
+        $str->string = \strtolower(\preg_replace(['/([A-Z]+)([A-Z][a-z])/', '/([a-z\\d])([A-Z])/'], 'DEPTRAC_1700756462\\1_\\2', $str->string));
         return $str;
     }
     public function splice(string $replacement, int $start = 0, int $length = null) : static

@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084\parallel;
+namespace DEPTRAC_1700756462\parallel;
 
 /**
  * ### Unbuffered Channels

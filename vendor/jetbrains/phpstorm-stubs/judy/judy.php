@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 // Start of judy.
 /**
@@ -235,5 +235,5 @@ class Judy implements \ArrayAccess
  * Class Judy.
  * @link https://php.net/manual/en/class.judy.php
  */
-\class_alias('DEPTRAC_1700753084\\Judy', 'Judy', \false);
+\class_alias('DEPTRAC_1700756462\\Judy', 'Judy', \false);
 // End of judy.

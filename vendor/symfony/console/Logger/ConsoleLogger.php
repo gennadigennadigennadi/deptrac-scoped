@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Console\Logger;
+namespace DEPTRAC_1700756462\Symfony\Component\Console\Logger;
 
-use DEPTRAC_1700753084\Psr\Log\AbstractLogger;
-use DEPTRAC_1700753084\Psr\Log\InvalidArgumentException;
-use DEPTRAC_1700753084\Psr\Log\LogLevel;
-use DEPTRAC_1700753084\Symfony\Component\Console\Output\ConsoleOutputInterface;
-use DEPTRAC_1700753084\Symfony\Component\Console\Output\OutputInterface;
+use DEPTRAC_1700756462\Psr\Log\AbstractLogger;
+use DEPTRAC_1700756462\Psr\Log\InvalidArgumentException;
+use DEPTRAC_1700756462\Psr\Log\LogLevel;
+use DEPTRAC_1700756462\Symfony\Component\Console\Output\ConsoleOutputInterface;
+use DEPTRAC_1700756462\Symfony\Component\Console\Output\OutputInterface;
 /**
  * PSR-3 compliant console logger.
  *

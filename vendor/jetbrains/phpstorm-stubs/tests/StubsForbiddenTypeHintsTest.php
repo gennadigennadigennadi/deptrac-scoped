@@ -1,13 +1,13 @@
 <?php
 
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
 use RuntimeException;
-use DEPTRAC_1700753084\StubTests\Model\PHPClass;
-use DEPTRAC_1700753084\StubTests\Model\PHPInterface;
-use DEPTRAC_1700753084\StubTests\Model\PHPMethod;
-use DEPTRAC_1700753084\StubTests\Model\PHPParameter;
-use DEPTRAC_1700753084\StubTests\Parsers\ParserUtils;
+use DEPTRAC_1700756462\StubTests\Model\PHPClass;
+use DEPTRAC_1700756462\StubTests\Model\PHPInterface;
+use DEPTRAC_1700756462\StubTests\Model\PHPMethod;
+use DEPTRAC_1700756462\StubTests\Model\PHPParameter;
+use DEPTRAC_1700756462\StubTests\Parsers\ParserUtils;
 class StubsForbiddenTypeHintsTest extends AbstractBaseStubsTestCase
 {
     /**

@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084;
+namespace DEPTRAC_1700756462;
 
 /**
  * @link https://php.net/manual/en/class.reflectionenumunitcase.php
@@ -27,4 +27,4 @@ class ReflectionEnumUnitCase extends \ReflectionClassConstant
  * @link https://php.net/manual/en/class.reflectionenumunitcase.php
  * @since 8.1
  */
-\class_alias('DEPTRAC_1700753084\\ReflectionEnumUnitCase', 'ReflectionEnumUnitCase', \false);
+\class_alias('DEPTRAC_1700756462\\ReflectionEnumUnitCase', 'ReflectionEnumUnitCase', \false);

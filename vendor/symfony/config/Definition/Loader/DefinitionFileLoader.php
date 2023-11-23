@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Config\Definition\Loader;
+namespace DEPTRAC_1700756462\Symfony\Component\Config\Definition\Loader;
 
-use DEPTRAC_1700753084\Symfony\Component\Config\Definition\Builder\TreeBuilder;
-use DEPTRAC_1700753084\Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
-use DEPTRAC_1700753084\Symfony\Component\Config\FileLocatorInterface;
-use DEPTRAC_1700753084\Symfony\Component\Config\Loader\FileLoader;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_1700756462\Symfony\Component\Config\Definition\Builder\TreeBuilder;
+use DEPTRAC_1700756462\Symfony\Component\Config\Definition\Configurator\DefinitionConfigurator;
+use DEPTRAC_1700756462\Symfony\Component\Config\FileLocatorInterface;
+use DEPTRAC_1700756462\Symfony\Component\Config\Loader\FileLoader;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ContainerBuilder;
 /**
  * DefinitionFileLoader loads config definitions from a PHP file.
  *

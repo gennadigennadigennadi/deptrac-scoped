@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Loader\Configurator;
+namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_1700753084\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
 abstract class AbstractServiceConfigurator extends AbstractConfigurator
 {
     protected $parent;

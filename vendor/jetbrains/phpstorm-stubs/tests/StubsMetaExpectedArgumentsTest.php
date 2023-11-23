@@ -1,24 +1,24 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\StubTests;
+namespace DEPTRAC_1700756462\StubTests;
 
-use DEPTRAC_1700753084\JetBrains\PhpStorm\Pure;
-use DEPTRAC_1700753084\PhpParser\Node\Expr;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\ClassConstFetch;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\ConstFetch;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\FuncCall;
-use DEPTRAC_1700753084\PhpParser\Node\Expr\StaticCall;
-use DEPTRAC_1700753084\PhpParser\Node\Scalar\String_;
-use DEPTRAC_1700753084\PHPUnit\Framework\Exception;
-use DEPTRAC_1700753084\StubTests\Model\PHPClass;
-use DEPTRAC_1700753084\StubTests\Model\PHPConst;
-use DEPTRAC_1700753084\StubTests\Model\PHPFunction;
-use DEPTRAC_1700753084\StubTests\Model\PHPMethod;
-use DEPTRAC_1700753084\StubTests\Model\StubsContainer;
-use DEPTRAC_1700753084\StubTests\Parsers\ExpectedFunctionArgumentsInfo;
-use DEPTRAC_1700753084\StubTests\Parsers\MetaExpectedArgumentsCollector;
-use DEPTRAC_1700753084\StubTests\TestData\Providers\PhpStormStubsSingleton;
+use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_1700756462\PhpParser\Node\Expr;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\ClassConstFetch;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\ConstFetch;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\FuncCall;
+use DEPTRAC_1700756462\PhpParser\Node\Expr\StaticCall;
+use DEPTRAC_1700756462\PhpParser\Node\Scalar\String_;
+use DEPTRAC_1700756462\PHPUnit\Framework\Exception;
+use DEPTRAC_1700756462\StubTests\Model\PHPClass;
+use DEPTRAC_1700756462\StubTests\Model\PHPConst;
+use DEPTRAC_1700756462\StubTests\Model\PHPFunction;
+use DEPTRAC_1700756462\StubTests\Model\PHPMethod;
+use DEPTRAC_1700756462\StubTests\Model\StubsContainer;
+use DEPTRAC_1700756462\StubTests\Parsers\ExpectedFunctionArgumentsInfo;
+use DEPTRAC_1700756462\StubTests\Parsers\MetaExpectedArgumentsCollector;
+use DEPTRAC_1700756462\StubTests\TestData\Providers\PhpStormStubsSingleton;
 use function array_key_exists;
 use function array_map;
 use function array_walk_recursive;

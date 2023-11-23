@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700753084\Symfony\Component\Config\Loader;
+namespace DEPTRAC_1700756462\Symfony\Component\Config\Loader;
 
-use DEPTRAC_1700753084\Symfony\Component\Config\Exception\FileLoaderImportCircularReferenceException;
-use DEPTRAC_1700753084\Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
-use DEPTRAC_1700753084\Symfony\Component\Config\Exception\LoaderLoadException;
-use DEPTRAC_1700753084\Symfony\Component\Config\FileLocatorInterface;
-use DEPTRAC_1700753084\Symfony\Component\Config\Resource\FileExistenceResource;
-use DEPTRAC_1700753084\Symfony\Component\Config\Resource\GlobResource;
+use DEPTRAC_1700756462\Symfony\Component\Config\Exception\FileLoaderImportCircularReferenceException;
+use DEPTRAC_1700756462\Symfony\Component\Config\Exception\FileLocatorFileNotFoundException;
+use DEPTRAC_1700756462\Symfony\Component\Config\Exception\LoaderLoadException;
+use DEPTRAC_1700756462\Symfony\Component\Config\FileLocatorInterface;
+use DEPTRAC_1700756462\Symfony\Component\Config\Resource\FileExistenceResource;
+use DEPTRAC_1700756462\Symfony\Component\Config\Resource\GlobResource;
 /**
  * FileLoader is the abstract class used by all built-in loaders that are file based.
  *

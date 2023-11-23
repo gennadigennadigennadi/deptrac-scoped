@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700753084\RdKafka\Metadata;
+namespace DEPTRAC_1700756462\RdKafka\Metadata;
 
 class Broker
 {

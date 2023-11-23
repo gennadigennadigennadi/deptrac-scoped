@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\PhpParser\Node\Stmt;
+namespace DEPTRAC_1700756462\PhpParser\Node\Stmt;
 
-use DEPTRAC_1700753084\PhpParser\Node;
+use DEPTRAC_1700756462\PhpParser\Node;
 class Namespace_ extends Node\Stmt
 {
     /* For use in the "kind" attribute */

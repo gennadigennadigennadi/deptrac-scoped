@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-4": {
-            "DEPTRAC_1700753084\\Psr\\Log\\": "src"
+            "DEPTRAC_1700756462\\Psr\\Log\\": "src"
         }
     },
     "extra": {

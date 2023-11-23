@@ -1,16 +1,16 @@
 #!/usr/bin/env php
 <?php 
 declare (strict_types=1);
-namespace DEPTRAC_1700753084\JetBrains\PHPStormStub;
+namespace DEPTRAC_1700756462\JetBrains\PHPStormStub;
 
 use DirectoryIterator;
 use Exception;
-use DEPTRAC_1700753084\PhpParser\Node;
-use DEPTRAC_1700753084\PhpParser\NodeTraverser;
-use DEPTRAC_1700753084\PhpParser\NodeVisitor\NameResolver;
-use DEPTRAC_1700753084\PhpParser\NodeVisitorAbstract;
-use DEPTRAC_1700753084\PhpParser\ParserFactory;
-use DEPTRAC_1700753084\PhpParser\PrettyPrinter\Standard;
+use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_1700756462\PhpParser\NodeTraverser;
+use DEPTRAC_1700756462\PhpParser\NodeVisitor\NameResolver;
+use DEPTRAC_1700756462\PhpParser\NodeVisitorAbstract;
+use DEPTRAC_1700756462\PhpParser\ParserFactory;
+use DEPTRAC_1700756462\PhpParser\PrettyPrinter\Standard;
 use RecursiveDirectoryIterator;
 use RecursiveIteratorIterator;
 use RuntimeException;
