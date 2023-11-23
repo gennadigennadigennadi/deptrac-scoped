@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\Swoole\Connection;
+namespace DEPTRAC_202311\Swoole\Connection;
 
 class Iterator implements \Iterator, \ArrayAccess, \Countable
 {

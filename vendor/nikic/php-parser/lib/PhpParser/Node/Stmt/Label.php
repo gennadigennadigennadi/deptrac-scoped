@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PhpParser\Node\Stmt;
+namespace DEPTRAC_202311\PhpParser\Node\Stmt;
 
-use DEPTRAC_1700756462\PhpParser\Node\Identifier;
-use DEPTRAC_1700756462\PhpParser\Node\Stmt;
+use DEPTRAC_202311\PhpParser\Node\Identifier;
+use DEPTRAC_202311\PhpParser\Node\Stmt;
 class Label extends Stmt
 {
     /** @var Identifier Name */

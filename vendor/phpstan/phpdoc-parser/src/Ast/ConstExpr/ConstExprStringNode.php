@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\ConstExpr;
+namespace DEPTRAC_202311\PHPStan\PhpDocParser\Ast\ConstExpr;
 
-use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\NodeAttributes;
+use DEPTRAC_202311\PHPStan\PhpDocParser\Ast\NodeAttributes;
 class ConstExprStringNode implements ConstExprNode
 {
     use NodeAttributes;

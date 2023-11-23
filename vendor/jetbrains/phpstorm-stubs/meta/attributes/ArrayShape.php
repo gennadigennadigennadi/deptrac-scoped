@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462\JetBrains\PhpStorm;
+namespace DEPTRAC_202311\JetBrains\PhpStorm;
 
 use Attribute;
 /**

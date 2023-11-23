@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
 /**
  * Returns the full list of error codes.
  * @return array

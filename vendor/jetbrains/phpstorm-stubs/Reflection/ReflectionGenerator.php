@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
 /**
  * The ReflectionGenerator class reports information about a generator.
  *
@@ -113,4 +113,4 @@ class ReflectionGenerator
  *
  * @since 7.0
  */
-\class_alias('DEPTRAC_1700756462\\ReflectionGenerator', 'ReflectionGenerator', \false);
+\class_alias('DEPTRAC_202311\\ReflectionGenerator', 'ReflectionGenerator', \false);

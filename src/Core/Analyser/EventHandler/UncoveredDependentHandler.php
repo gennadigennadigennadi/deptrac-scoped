@@ -3,11 +3,11 @@
 declare (strict_types=1);
 namespace Qossmic\Deptrac\Core\Analyser\EventHandler;
 
-use DEPTRAC_1700756462\JetBrains\PHPStormStub\PhpStormStubsMap;
+use DEPTRAC_202311\JetBrains\PHPStormStub\PhpStormStubsMap;
 use Qossmic\Deptrac\Contract\Analyser\ProcessEvent;
 use Qossmic\Deptrac\Contract\Result\Uncovered;
 use Qossmic\Deptrac\Core\Ast\AstMap\ClassLike\ClassLikeToken;
-use DEPTRAC_1700756462\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 /**
  * @internal
  */

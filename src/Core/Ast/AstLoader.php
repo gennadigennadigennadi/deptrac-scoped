@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Qossmic\Deptrac\Core\Ast;
 
-use DEPTRAC_1700756462\Psr\EventDispatcher\EventDispatcherInterface;
+use DEPTRAC_202311\Psr\EventDispatcher\EventDispatcherInterface;
 use Qossmic\Deptrac\Contract\Ast\AstFileAnalysedEvent;
 use Qossmic\Deptrac\Contract\Ast\AstFileSyntaxErrorEvent;
 use Qossmic\Deptrac\Contract\Ast\CouldNotParseFileException;

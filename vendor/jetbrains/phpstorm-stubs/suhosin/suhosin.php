@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of suhosin v.0.9.32.1
 /**

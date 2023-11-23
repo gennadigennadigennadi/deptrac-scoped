@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Qossmic\Deptrac\Core\Layer\Collector;
 
-use DEPTRAC_1700756462\Psr\Container\ContainerExceptionInterface;
+use DEPTRAC_202311\Psr\Container\ContainerExceptionInterface;
 use Qossmic\Deptrac\Contract\Layer\InvalidCollectorDefinitionException;
 use function array_key_exists;
 use function is_string;

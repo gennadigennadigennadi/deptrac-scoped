@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PhpParser\Builder;
+namespace DEPTRAC_202311\PhpParser\Builder;
 
-use DEPTRAC_1700756462\PhpParser\BuilderHelpers;
-use DEPTRAC_1700756462\PhpParser\Node;
+use DEPTRAC_202311\PhpParser\BuilderHelpers;
+use DEPTRAC_202311\PhpParser\Node;
 abstract class FunctionLike extends Declaration
 {
     protected $returnByRef = \false;

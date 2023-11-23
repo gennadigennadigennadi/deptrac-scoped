@@ -9,9 +9,9 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_1700756462\phpDocumentor\Reflection\Types;
+namespace DEPTRAC_202311\phpDocumentor\Reflection\Types;
 
-use DEPTRAC_1700756462\phpDocumentor\Reflection\Type;
+use DEPTRAC_202311\phpDocumentor\Reflection\Type;
 /**
  * Value Object representing the 'resource' Type.
  *

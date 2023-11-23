@@ -1,14 +1,14 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 //20120405 AG synced to official docs
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Immutable;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Language;
+use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202311\JetBrains\PhpStorm\Immutable;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_202311\JetBrains\PhpStorm\Language;
 /**
  * The DOMNode class
  * @link https://php.net/manual/en/class.domnode.php
@@ -384,7 +384,7 @@ class DOMNode
  * The DOMNode class
  * @link https://php.net/manual/en/class.domnode.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMNode', 'DOMNode', \false);
+\class_alias('DEPTRAC_202311\\DOMNode', 'DOMNode', \false);
 /**
  * DOM operations raise exceptions under particular circumstances, i.e.,
  * when an operation is impossible to perform for logical reasons.
@@ -403,7 +403,7 @@ final class DOMException extends \Exception
  * when an operation is impossible to perform for logical reasons.
  * @link https://php.net/manual/en/class.domexception.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMException', 'DOMException', \false);
+\class_alias('DEPTRAC_202311\\DOMException', 'DOMException', \false);
 class DOMStringList
 {
     /**
@@ -414,7 +414,7 @@ class DOMStringList
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\DOMStringList', 'DOMStringList', \false);
+\class_alias('DEPTRAC_202311\\DOMStringList', 'DOMStringList', \false);
 /**
  * @link https://php.net/manual/en/ref.dom.php
  * @removed 8.0
@@ -440,7 +440,7 @@ class DOMNameList
  * @link https://php.net/manual/en/ref.dom.php
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMNameList', 'DOMNameList', \false);
+\class_alias('DEPTRAC_202311\\DOMNameList', 'DOMNameList', \false);
 /**
  * @removed 8.0
  */
@@ -457,7 +457,7 @@ class DOMImplementationList
 /**
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMImplementationList', 'DOMImplementationList', \false);
+\class_alias('DEPTRAC_202311\\DOMImplementationList', 'DOMImplementationList', \false);
 /**
  * @removed 8.0
  */
@@ -481,7 +481,7 @@ class DOMImplementationSource
 /**
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMImplementationSource', 'DOMImplementationSource', \false);
+\class_alias('DEPTRAC_202311\\DOMImplementationSource', 'DOMImplementationSource', \false);
 /**
  * The DOMImplementation interface provides a number
  * of methods for performing operations that are independent of any
@@ -563,7 +563,7 @@ class DOMImplementation
  * particular instance of the document object model.
  * @link https://php.net/manual/en/class.domimplementation.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMImplementation', 'DOMImplementation', \false);
+\class_alias('DEPTRAC_202311\\DOMImplementation', 'DOMImplementation', \false);
 class DOMNameSpaceNode
 {
     #[LanguageLevelTypeAware(['8.1' => 'DOMNode|null'], default: '')]
@@ -583,7 +583,7 @@ class DOMNameSpaceNode
     #[LanguageLevelTypeAware(['8.1' => 'string'], default: '')]
     public $nodeName;
 }
-\class_alias('DEPTRAC_1700756462\\DOMNameSpaceNode', 'DOMNameSpaceNode', \false);
+\class_alias('DEPTRAC_202311\\DOMNameSpaceNode', 'DOMNameSpaceNode', \false);
 /**
  * The DOMDocumentFragment class
  * @link https://php.net/manual/en/class.domdocumentfragment.php
@@ -628,7 +628,7 @@ class DOMDocumentFragment extends \DOMNode implements \DOMParentNode
  * The DOMDocumentFragment class
  * @link https://php.net/manual/en/class.domdocumentfragment.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMDocumentFragment', 'DOMDocumentFragment', \false);
+\class_alias('DEPTRAC_202311\\DOMDocumentFragment', 'DOMDocumentFragment', \false);
 /**
  * The DOMDocument class represents an entire HTML or XML
  * document; serves as the root of the document tree.
@@ -1245,7 +1245,7 @@ class DOMDocument extends \DOMNode implements \DOMParentNode
  * document; serves as the root of the document tree.
  * @link https://php.net/manual/en/class.domdocument.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMDocument', 'DOMDocument', \false);
+\class_alias('DEPTRAC_202311\\DOMDocument', 'DOMDocument', \false);
 /**
  * The DOMNodeList class
  * @link https://php.net/manual/en/class.domnodelist.php
@@ -1294,7 +1294,7 @@ class DOMNodeList implements \IteratorAggregate, \Countable
  * The DOMNodeList class
  * @link https://php.net/manual/en/class.domnodelist.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMNodeList', 'DOMNodeList', \false);
+\class_alias('DEPTRAC_202311\\DOMNodeList', 'DOMNodeList', \false);
 /**
  * The DOMNamedNodeMap class
  * @link https://php.net/manual/en/class.domnamednodemap.php
@@ -1391,7 +1391,7 @@ class DOMNamedNodeMap implements \IteratorAggregate, \Countable
  * @link https://php.net/manual/en/class.domnamednodemap.php
  * @property-read int $length The number of nodes in the map. The range of valid child node indices is 0 to length - 1 inclusive.
  */
-\class_alias('DEPTRAC_1700756462\\DOMNamedNodeMap', 'DOMNamedNodeMap', \false);
+\class_alias('DEPTRAC_202311\\DOMNamedNodeMap', 'DOMNamedNodeMap', \false);
 /**
  * The DOMCharacterData class represents nodes with character data.
  * No nodes directly correspond to this class, but other nodes do inherit from it.
@@ -1527,7 +1527,7 @@ class DOMCharacterData extends \DOMNode implements \DOMChildNode
  * No nodes directly correspond to this class, but other nodes do inherit from it.
  * @link https://php.net/manual/en/class.domcharacterdata.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMCharacterData', 'DOMCharacterData', \false);
+\class_alias('DEPTRAC_202311\\DOMCharacterData', 'DOMCharacterData', \false);
 /**
  * The DOMAttr interface represents an attribute in an DOMElement object.
  * @link https://php.net/manual/en/class.domattr.php
@@ -1598,7 +1598,7 @@ class DOMAttr extends \DOMNode
  * The DOMAttr interface represents an attribute in an DOMElement object.
  * @link https://php.net/manual/en/class.domattr.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMAttr', 'DOMAttr', \false);
+\class_alias('DEPTRAC_202311\\DOMAttr', 'DOMAttr', \false);
 /**
  * The DOMElement class
  * @link https://php.net/manual/en/class.domelement.php
@@ -1966,7 +1966,7 @@ class DOMElement extends \DOMNode implements \DOMParentNode, \DOMChildNode
  * The DOMElement class
  * @link https://php.net/manual/en/class.domelement.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMElement', 'DOMElement', \false);
+\class_alias('DEPTRAC_202311\\DOMElement', 'DOMElement', \false);
 /**
  * The DOMText class inherits from <classname>DOMCharacterData</classname> and represents the textual content of
  * a <classname>DOMElement</classname> or <classname>DOMAttr</classname>.
@@ -2025,7 +2025,7 @@ class DOMText extends \DOMCharacterData
  * a <classname>DOMElement</classname> or <classname>DOMAttr</classname>.
  * @link https://php.net/manual/en/class.domtext.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMText', 'DOMText', \false);
+\class_alias('DEPTRAC_202311\\DOMText', 'DOMText', \false);
 /**
  * The DOMComment class represents comment nodes,
  * characters delimited by lt;!-- and --&gt;.
@@ -2047,7 +2047,7 @@ class DOMComment extends \DOMCharacterData
  * characters delimited by lt;!-- and --&gt;.
  * @link https://php.net/manual/en/class.domcomment.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMComment', 'DOMComment', \false);
+\class_alias('DEPTRAC_202311\\DOMComment', 'DOMComment', \false);
 /**
  * @removed 8.0
  */
@@ -2057,7 +2057,7 @@ class DOMTypeinfo
 /**
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMTypeinfo', 'DOMTypeinfo', \false);
+\class_alias('DEPTRAC_202311\\DOMTypeinfo', 'DOMTypeinfo', \false);
 /**
  * @removed 8.0
  */
@@ -2070,7 +2070,7 @@ class DOMUserDataHandler
 /**
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMUserDataHandler', 'DOMUserDataHandler', \false);
+\class_alias('DEPTRAC_202311\\DOMUserDataHandler', 'DOMUserDataHandler', \false);
 /**
  * @removed 8.0
  */
@@ -2080,7 +2080,7 @@ class DOMDomError
 /**
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMDomError', 'DOMDomError', \false);
+\class_alias('DEPTRAC_202311\\DOMDomError', 'DOMDomError', \false);
 /**
  * @removed 8.0
  */
@@ -2096,7 +2096,7 @@ class DOMErrorHandler
 /**
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMErrorHandler', 'DOMErrorHandler', \false);
+\class_alias('DEPTRAC_202311\\DOMErrorHandler', 'DOMErrorHandler', \false);
 /**
  * @removed 8.0
  */
@@ -2106,7 +2106,7 @@ class DOMLocator
 /**
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMLocator', 'DOMLocator', \false);
+\class_alias('DEPTRAC_202311\\DOMLocator', 'DOMLocator', \false);
 /**
  * @removed 8.0
  */
@@ -2136,7 +2136,7 @@ class DOMConfiguration
 /**
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMConfiguration', 'DOMConfiguration', \false);
+\class_alias('DEPTRAC_202311\\DOMConfiguration', 'DOMConfiguration', \false);
 /**
  * The DOMCdataSection inherits from DOMText for textural representation of CData constructs.
  * @link https://secure.php.net/manual/en/class.domcdatasection.php
@@ -2156,7 +2156,7 @@ class DOMCdataSection extends \DOMText
  * The DOMCdataSection inherits from DOMText for textural representation of CData constructs.
  * @link https://secure.php.net/manual/en/class.domcdatasection.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMCdataSection', 'DOMCdataSection', \false);
+\class_alias('DEPTRAC_202311\\DOMCdataSection', 'DOMCdataSection', \false);
 /**
  * The DOMDocumentType class
  * @link https://php.net/manual/en/class.domdocumenttype.php
@@ -2210,7 +2210,7 @@ class DOMDocumentType extends \DOMNode
  * The DOMDocumentType class
  * @link https://php.net/manual/en/class.domdocumenttype.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMDocumentType', 'DOMDocumentType', \false);
+\class_alias('DEPTRAC_202311\\DOMDocumentType', 'DOMDocumentType', \false);
 /**
  * The DOMNotation class
  * @link https://php.net/manual/en/class.domnotation.php
@@ -2236,7 +2236,7 @@ class DOMNotation extends \DOMNode
  * The DOMNotation class
  * @link https://php.net/manual/en/class.domnotation.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMNotation', 'DOMNotation', \false);
+\class_alias('DEPTRAC_202311\\DOMNotation', 'DOMNotation', \false);
 /**
  * The DOMEntity class represents a known entity, either parsed or unparsed, in an XML document.
  * @link https://php.net/manual/en/class.domentity.php
@@ -2294,7 +2294,7 @@ class DOMEntity extends \DOMNode
  * The DOMEntity class represents a known entity, either parsed or unparsed, in an XML document.
  * @link https://php.net/manual/en/class.domentity.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMEntity', 'DOMEntity', \false);
+\class_alias('DEPTRAC_202311\\DOMEntity', 'DOMEntity', \false);
 /**
  * Extends DOMNode.
  * @link https://php.net/manual/en/class.domentityreference.php
@@ -2314,7 +2314,7 @@ class DOMEntityReference extends \DOMNode
  * Extends DOMNode.
  * @link https://php.net/manual/en/class.domentityreference.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMEntityReference', 'DOMEntityReference', \false);
+\class_alias('DEPTRAC_202311\\DOMEntityReference', 'DOMEntityReference', \false);
 /**
  * The DOMProcessingInstruction class
  * @link https://php.net/manual/en/class.domprocessinginstruction.php
@@ -2345,7 +2345,7 @@ class DOMProcessingInstruction extends \DOMNode
  * The DOMProcessingInstruction class
  * @link https://php.net/manual/en/class.domprocessinginstruction.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMProcessingInstruction', 'DOMProcessingInstruction', \false);
+\class_alias('DEPTRAC_202311\\DOMProcessingInstruction', 'DOMProcessingInstruction', \false);
 class DOMStringExtend
 {
     /**
@@ -2361,7 +2361,7 @@ class DOMStringExtend
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\DOMStringExtend', 'DOMStringExtend', \false);
+\class_alias('DEPTRAC_202311\\DOMStringExtend', 'DOMStringExtend', \false);
 /**
  * The DOMXPath class (supports XPath 1.0)
  * @link https://php.net/manual/en/class.domxpath.php
@@ -2465,7 +2465,7 @@ class DOMXPath
  * The DOMXPath class (supports XPath 1.0)
  * @link https://php.net/manual/en/class.domxpath.php
  */
-\class_alias('DEPTRAC_1700756462\\DOMXPath', 'DOMXPath', \false);
+\class_alias('DEPTRAC_202311\\DOMXPath', 'DOMXPath', \false);
 /**
  * @property-read DOMElement|null $firstElementChild
  * @property-read DOMElement|null $lastElementChild
@@ -2501,7 +2501,7 @@ interface DOMParentNode
  *
  * @since 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMParentNode', 'DOMParentNode', \false);
+\class_alias('DEPTRAC_202311\\DOMParentNode', 'DOMParentNode', \false);
 /**
  * @property-read DOMElement|null $previousElementSibling
  * @property-read DOMElement|null $nextElementSibling
@@ -2549,4 +2549,4 @@ interface DOMChildNode
  *
  * @since 8.0
  */
-\class_alias('DEPTRAC_1700756462\\DOMChildNode', 'DOMChildNode', \false);
+\class_alias('DEPTRAC_202311\\DOMChildNode', 'DOMChildNode', \false);

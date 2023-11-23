@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of dom v.20031129
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * Gets a <b>DOMElement</b> object from a <b>SimpleXMLElement</b> object
  * @link https://php.net/manual/en/function.dom-import-simplexml.php

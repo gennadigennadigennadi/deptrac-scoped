@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
 /**
  * The ReflectionReference class provides information about a reference.
  *
@@ -58,4 +58,4 @@ class ReflectionReference
  * @link https://www.php.net/manual/en/class.reflectionreference.php
  * @since 7.4
  */
-\class_alias('DEPTRAC_1700756462\\ReflectionReference', 'ReflectionReference', \false);
+\class_alias('DEPTRAC_202311\\ReflectionReference', 'ReflectionReference', \false);

@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
 /**
  * Add two arbitrary precision numbers
  * @link https://php.net/manual/en/function.bcadd.php

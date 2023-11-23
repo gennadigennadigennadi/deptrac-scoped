@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 /**
  * Support Vector Machine Library
@@ -164,4 +164,4 @@ class SVM
  * @since 7.0
  * @link https://www.php.net/manual/en/class.svm.php
  */
-\class_alias('DEPTRAC_1700756462\\SVM', 'SVM', \false);
+\class_alias('DEPTRAC_202311\\SVM', 'SVM', \false);

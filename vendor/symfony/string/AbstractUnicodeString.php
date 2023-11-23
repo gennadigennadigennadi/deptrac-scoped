@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\String;
+namespace DEPTRAC_202311\Symfony\Component\String;
 
-use DEPTRAC_1700756462\Symfony\Component\String\Exception\ExceptionInterface;
-use DEPTRAC_1700756462\Symfony\Component\String\Exception\InvalidArgumentException;
-use DEPTRAC_1700756462\Symfony\Component\String\Exception\RuntimeException;
+use DEPTRAC_202311\Symfony\Component\String\Exception\ExceptionInterface;
+use DEPTRAC_202311\Symfony\Component\String\Exception\InvalidArgumentException;
+use DEPTRAC_202311\Symfony\Component\String\Exception\RuntimeException;
 /**
  * Represents a string of abstract Unicode characters.
  *
@@ -156,7 +156,7 @@ abstract class AbstractUnicodeString extends AbstractString
     public function folded(bool $compat = \true) : static
     {
         $str = clone $this;
-        if (!$compat || !\defined('DEPTRAC_1700756462\\Normalizer::NFKC_CF')) {
+        if (!$compat || !\defined('Normalizer::NFKC_CF')) {
             $str->string = \normalizer_normalize($str->string, $compat ? \Normalizer::NFKC : \Normalizer::NFC);
             $str->string = \mb_strtolower(\str_replace(self::FOLD_FROM, self::FOLD_TO, $this->string), 'UTF-8');
         } else {
@@ -282,7 +282,7 @@ abstract class AbstractUnicodeString extends AbstractString
     public function snake() : static
     {
         $str = $this->camel();
-        $str->string = \mb_strtolower(\preg_replace(['/(\\p{Lu}+)(\\p{Lu}\\p{Ll})/u', '/([\\p{Ll}0-9])(\\p{Lu})/u'], 'DEPTRAC_1700756462\\1_\\2', $str->string), 'UTF-8');
+        $str->string = \mb_strtolower(\preg_replace(['/(\\p{Lu}+)(\\p{Lu}\\p{Ll})/u', '/([\\p{Ll}0-9])(\\p{Lu})/u'], 'DEPTRAC_202311\\1_\\2', $str->string), 'UTF-8');
         return $str;
     }
     public function title(bool $allWords = \false) : static

@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700756462\Parle;
+namespace DEPTRAC_202311\Parle;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Immutable;
+use DEPTRAC_202311\JetBrains\PhpStorm\Immutable;
 class Stack
 {
     /* Properties */

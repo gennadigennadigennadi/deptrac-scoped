@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Contracts\EventDispatcher;
+namespace DEPTRAC_202311\Symfony\Contracts\EventDispatcher;
 
-use DEPTRAC_1700756462\Psr\EventDispatcher\EventDispatcherInterface as PsrEventDispatcherInterface;
+use DEPTRAC_202311\Psr\EventDispatcher\EventDispatcherInterface as PsrEventDispatcherInterface;
 /**
  * Allows providing hooks on domain-specific lifecycles by dispatching events.
  */

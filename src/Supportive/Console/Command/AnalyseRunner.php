@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Qossmic\Deptrac\Supportive\Console\Command;
 
-use DEPTRAC_1700756462\Psr\Container\ContainerExceptionInterface;
+use DEPTRAC_202311\Psr\Container\ContainerExceptionInterface;
 use Qossmic\Deptrac\Contract\OutputFormatter\OutputFormatterInput;
 use Qossmic\Deptrac\Contract\OutputFormatter\OutputInterface;
 use Qossmic\Deptrac\Contract\Result\OutputResult;

@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\ExpectedValues;
+use DEPTRAC_202311\JetBrains\PhpStorm\ExpectedValues;
 /**
  * Read a size of file created by applying a binary diff
  * @link https://www.php.net/manual/en/function.xdiff-file-bdiff-size.php

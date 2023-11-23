@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of posix v.
-use DEPTRAC_1700756462\JetBrains\PhpStorm\ArrayShape;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202311\JetBrains\PhpStorm\ArrayShape;
+use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
 /**
  * Send a signal to a process
  * @link https://php.net/manual/en/function.posix-kill.php

@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PHPStan\PhpDocParser\Parser;
+namespace DEPTRAC_202311\PHPStan\PhpDocParser\Parser;
 
 use LogicException;
-use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast;
-use DEPTRAC_1700756462\PHPStan\PhpDocParser\Lexer\Lexer;
+use DEPTRAC_202311\PHPStan\PhpDocParser\Ast;
+use DEPTRAC_202311\PHPStan\PhpDocParser\Lexer\Lexer;
 use function in_array;
 use function str_replace;
 use function strpos;

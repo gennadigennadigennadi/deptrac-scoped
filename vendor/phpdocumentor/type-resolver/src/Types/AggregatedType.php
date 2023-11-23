@@ -9,11 +9,11 @@
  * @link      http://phpdoc.org
  */
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\phpDocumentor\Reflection\Types;
+namespace DEPTRAC_202311\phpDocumentor\Reflection\Types;
 
 use ArrayIterator;
 use IteratorAggregate;
-use DEPTRAC_1700756462\phpDocumentor\Reflection\Type;
+use DEPTRAC_202311\phpDocumentor\Reflection\Type;
 use function array_key_exists;
 use function implode;
 /**

@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\Config\Definition\Builder;
+namespace DEPTRAC_202311\Symfony\Component\Config\Definition\Builder;
 
 /**
  * This class provides a fluent interface for building a node.
@@ -31,7 +31,7 @@ class NodeBuilder implements NodeParentInterface
     public function setParent(ParentNodeDefinitionInterface $parent = null) : static
     {
         if (1 > \func_num_args()) {
-            \DEPTRAC_1700756462\trigger_deprecation('symfony/form', '6.2', 'Calling "%s()" without any arguments is deprecated, pass null explicitly instead.', __METHOD__);
+            trigger_deprecation('symfony/form', '6.2', 'Calling "%s()" without any arguments is deprecated, pass null explicitly instead.', __METHOD__);
         }
         $this->parent = $parent;
         return $this;

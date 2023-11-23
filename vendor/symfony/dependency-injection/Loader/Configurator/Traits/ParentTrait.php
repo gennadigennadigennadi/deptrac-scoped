@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Loader\Configurator\Traits;
+namespace DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\Configurator\Traits;
 
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ChildDefinition;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\ChildDefinition;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
 trait ParentTrait
 {
     /**
@@ -31,8 +31,8 @@ trait ParentTrait
         } else {
             // cast Definition to ChildDefinition
             $definition = \serialize($this->definition);
-            $definition = \substr_replace($definition, '72', 2, 2);
-            $definition = \substr_replace($definition, 'Child', 63, 0);
+            $definition = \substr_replace($definition, '68', 2, 2);
+            $definition = \substr_replace($definition, 'Child', 59, 0);
             $definition = \unserialize($definition);
             $this->definition = $definition->setParent($parent);
         }

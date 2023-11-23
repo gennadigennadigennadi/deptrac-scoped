@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PhpParser\Node\Expr;
+namespace DEPTRAC_202311\PhpParser\Node\Expr;
 
-use DEPTRAC_1700756462\PhpParser\Node;
-use DEPTRAC_1700756462\PhpParser\Node\Expr;
+use DEPTRAC_202311\PhpParser\Node;
+use DEPTRAC_202311\PhpParser\Node\Expr;
 class FuncCall extends CallLike
 {
     /** @var Node\Name|Expr Function name */

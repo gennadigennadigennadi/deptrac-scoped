@@ -8,15 +8,15 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Extension;
+namespace DEPTRAC_202311\Symfony\Component\DependencyInjection\Extension;
 
-use DEPTRAC_1700756462\Symfony\Component\Config\Definition\ConfigurationInterface;
-use DEPTRAC_1700756462\Symfony\Component\Config\Definition\Processor;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Container;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\BadMethodCallException;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\LogicException;
+use DEPTRAC_202311\Symfony\Component\Config\Definition\ConfigurationInterface;
+use DEPTRAC_202311\Symfony\Component\Config\Definition\Processor;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Container;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\BadMethodCallException;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\LogicException;
 /**
  * Provides useful features shared by many extensions.
  *

@@ -8,42 +8,42 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Dumper;
+namespace DEPTRAC_202311\Symfony\Component\DependencyInjection\Dumper;
 
-use DEPTRAC_1700756462\Composer\Autoload\ClassLoader;
-use DEPTRAC_1700756462\Symfony\Component\Config\Resource\FileResource;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\ArgumentInterface;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\LazyClosure;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\ServiceLocator;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Compiler\AnalyzeServiceReferencesPass;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Compiler\CheckCircularReferencesPass;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Compiler\ServiceReferenceGraphNode;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Container;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ContainerInterface;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\EnvParameterException;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\LogicException;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ExpressionLanguage;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\LazyServiceDumper;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\NullDumper;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Loader\FileLoader;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Parameter;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\ServiceLocator as BaseServiceLocator;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\TypedReference;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Variable;
-use DEPTRAC_1700756462\Symfony\Component\ErrorHandler\DebugClassLoader;
-use DEPTRAC_1700756462\Symfony\Component\ExpressionLanguage\Expression;
-use DEPTRAC_1700756462\Symfony\Component\HttpKernel\Kernel;
+use DEPTRAC_202311\Composer\Autoload\ClassLoader;
+use DEPTRAC_202311\Symfony\Component\Config\Resource\FileResource;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Argument\ArgumentInterface;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Argument\LazyClosure;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Argument\ServiceLocator;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Compiler\AnalyzeServiceReferencesPass;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Compiler\CheckCircularReferencesPass;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Compiler\ServiceReferenceGraphNode;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Container;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\ContainerInterface;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\EnvParameterException;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\LogicException;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\ExpressionLanguage;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\DumperInterface;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\LazyServiceDumper;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\LazyProxy\PhpDumper\NullDumper;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\FileLoader;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Parameter;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\ParameterBag\ParameterBag;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\ServiceLocator as BaseServiceLocator;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\TypedReference;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Variable;
+use DEPTRAC_202311\Symfony\Component\ErrorHandler\DebugClassLoader;
+use DEPTRAC_202311\Symfony\Component\ExpressionLanguage\Expression;
+use DEPTRAC_202311\Symfony\Component\HttpKernel\Kernel;
 /**
  * PhpDumper dumps a service container as a PHP class.
  *
@@ -157,19 +157,19 @@ class PhpDumper extends Dumper
         if (isset($options['inline_factories'])) {
             $this->inlineFactories = $this->asFiles && $options['inline_factories'];
         } elseif (!$options['inline_factories_parameter']) {
-            \DEPTRAC_1700756462\trigger_deprecation('symfony/dependency-injection', '6.3', 'Option "inline_factories_parameter" passed to "%s()" is deprecated, use option "inline_factories" instead.', __METHOD__);
+            trigger_deprecation('symfony/dependency-injection', '6.3', 'Option "inline_factories_parameter" passed to "%s()" is deprecated, use option "inline_factories" instead.', __METHOD__);
         } elseif ($this->container->hasParameter($options['inline_factories_parameter'])) {
-            \DEPTRAC_1700756462\trigger_deprecation('symfony/dependency-injection', '6.3', 'Option "inline_factories_parameter" passed to "%s()" is deprecated, use option "inline_factories" instead.', __METHOD__);
+            trigger_deprecation('symfony/dependency-injection', '6.3', 'Option "inline_factories_parameter" passed to "%s()" is deprecated, use option "inline_factories" instead.', __METHOD__);
             $this->inlineFactories = $this->asFiles && $this->container->getParameter($options['inline_factories_parameter']);
         }
         $this->inlineRequires = $options['debug'];
         if (isset($options['inline_class_loader'])) {
             $this->inlineRequires = $options['inline_class_loader'];
         } elseif (!$options['inline_class_loader_parameter']) {
-            \DEPTRAC_1700756462\trigger_deprecation('symfony/dependency-injection', '6.3', 'Option "inline_class_loader_parameter" passed to "%s()" is deprecated, use option "inline_class_loader" instead.', __METHOD__);
+            trigger_deprecation('symfony/dependency-injection', '6.3', 'Option "inline_class_loader_parameter" passed to "%s()" is deprecated, use option "inline_class_loader" instead.', __METHOD__);
             $this->inlineRequires = \false;
         } elseif ($this->container->hasParameter($options['inline_class_loader_parameter'])) {
-            \DEPTRAC_1700756462\trigger_deprecation('symfony/dependency-injection', '6.3', 'Option "inline_class_loader_parameter" passed to "%s()" is deprecated, use option "inline_class_loader" instead.', __METHOD__);
+            trigger_deprecation('symfony/dependency-injection', '6.3', 'Option "inline_class_loader_parameter" passed to "%s()" is deprecated, use option "inline_class_loader" instead.', __METHOD__);
             $this->inlineRequires = $this->container->getParameter($options['inline_class_loader_parameter']);
         }
         $this->serviceLocatorTag = $options['service_locator_tag'];
@@ -222,8 +222,8 @@ class PhpDumper extends Dumper
             $fileTemplate = <<<EOF
 <?php
 
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\Argument\\RewindableGenerator;
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\Exception\\RuntimeException;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\Argument\\RewindableGenerator;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\Exception\\RuntimeException;
 
 /*{$this->docStar}
  * @internal This class has been auto-generated by the Symfony Dependency Injection Component.
@@ -292,7 +292,7 @@ EOF;
 // This file has been auto-generated by the Symfony Dependency Injection Component
 // You can reference it in the "opcache.preload" php.ini setting on PHP >= 7.4 when preloading is desired
 
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\Dumper\\Preloader;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\Dumper\\Preloader;
 
 if (in_array(PHP_SAPI, ['cli', 'phpdbg'], true)) {
     return;
@@ -1043,14 +1043,14 @@ EOTXT
         $code = <<<EOF
 <?php
 {$namespaceLine}
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\Argument\\RewindableGenerator;
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\ContainerInterface;
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\Container;
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\Exception\\LogicException;
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\Exception\\ParameterNotFoundException;
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\Exception\\RuntimeException;
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\ParameterBag\\FrozenParameterBag;
-use DEPTRAC_1700756462\\Symfony\\Component\\DependencyInjection\\ParameterBag\\ParameterBagInterface;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\Argument\\RewindableGenerator;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\ContainerInterface;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\Container;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\Exception\\LogicException;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\Exception\\ParameterNotFoundException;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\Exception\\RuntimeException;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\ParameterBag\\FrozenParameterBag;
+use DEPTRAC_202311\\Symfony\\Component\\DependencyInjection\\ParameterBag\\ParameterBagInterface;
 
 /*{$this->docStar}
  * @internal This class has been auto-generated by the Symfony Dependency Injection Component.
@@ -1803,7 +1803,7 @@ EOF;
     private function getExpressionLanguage() : ExpressionLanguage
     {
         if (!isset($this->expressionLanguage)) {
-            if (!\class_exists(\DEPTRAC_1700756462\Symfony\Component\ExpressionLanguage\ExpressionLanguage::class)) {
+            if (!\class_exists(\DEPTRAC_202311\Symfony\Component\ExpressionLanguage\ExpressionLanguage::class)) {
                 throw new LogicException('Unable to use expressions as the Symfony ExpressionLanguage component is not installed. Try running "composer require symfony/expression-language".');
             }
             $providers = $this->container->getExpressionLanguageProviders();

@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\ExpectedValues;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Immutable;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\ExpectedValues;
+use DEPTRAC_202311\JetBrains\PhpStorm\Immutable;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * Ev is a singleton providing access to the default loop and to some common operations.
  */
@@ -370,7 +370,7 @@ final class Ev
 /**
  * Ev is a singleton providing access to the default loop and to some common operations.
  */
-\class_alias('DEPTRAC_1700756462\\Ev', 'Ev', \false);
+\class_alias('DEPTRAC_202311\\Ev', 'Ev', \false);
 /**
  * Class EvWatcher
  */
@@ -489,7 +489,7 @@ abstract class EvWatcher
 /**
  * Class EvWatcher
  */
-\class_alias('DEPTRAC_1700756462\\EvWatcher', 'EvWatcher', \false);
+\class_alias('DEPTRAC_202311\\EvWatcher', 'EvWatcher', \false);
 /**
  * Class EvCheck
  *
@@ -552,7 +552,7 @@ final class EvCheck extends \EvWatcher
  * Also, EvCheck watchers should not activate/feed events. While libev fully supports this, they might get executed
  * before other EvCheck watchers did their job.
  */
-\class_alias('DEPTRAC_1700756462\\EvCheck', 'EvCheck', \false);
+\class_alias('DEPTRAC_202311\\EvCheck', 'EvCheck', \false);
 /**
  * Class EvChild
  *
@@ -648,7 +648,7 @@ final class EvChild extends \EvWatcher
  *
  * It is allowed to register EvChild watchers in the default loop only.
  */
-\class_alias('DEPTRAC_1700756462\\EvChild', 'EvChild', \false);
+\class_alias('DEPTRAC_202311\\EvChild', 'EvChild', \false);
 /**
  * Class EvEmbed
  *
@@ -716,7 +716,7 @@ final class EvEmbed extends \EvWatcher
  *
  * Used to embed one event loop into another.
  */
-\class_alias('DEPTRAC_1700756462\\EvEmbed', 'EvEmbed', \false);
+\class_alias('DEPTRAC_202311\\EvEmbed', 'EvEmbed', \false);
 /**
  * Class EvIo
  *
@@ -814,7 +814,7 @@ final class EvIo extends \EvWatcher
  *
  * Always consider using non-blocking mode.
  */
-\class_alias('DEPTRAC_1700756462\\EvIo', 'EvIo', \false);
+\class_alias('DEPTRAC_202311\\EvIo', 'EvIo', \false);
 /**
  * Class EvPeriodic
  *
@@ -942,7 +942,7 @@ final class EvPeriodic extends \EvWatcher
  * are invoked before ones with later time-out values (but this is no longer true when a callback calls EvLoop::run()
  * recursively).
  */
-\class_alias('DEPTRAC_1700756462\\EvPeriodic', 'EvPeriodic', \false);
+\class_alias('DEPTRAC_202311\\EvPeriodic', 'EvPeriodic', \false);
 /**
  * Class EvPrepare
  *
@@ -1016,7 +1016,7 @@ final class EvPrepare extends \EvWatcher
  * Also, EvCheck watchers should not activate/feed events. While libev fully supports this, they might get executed
  * before other EvCheck watchers did their job.
  */
-\class_alias('DEPTRAC_1700756462\\EvPrepare', 'EvPrepare', \false);
+\class_alias('DEPTRAC_202311\\EvPrepare', 'EvPrepare', \false);
 /**
  * Class EvSignal
  *
@@ -1090,7 +1090,7 @@ final class EvSignal extends \EvWatcher
  * system calls should not be unduly interrupted. In case of a problem with system calls getting interrupted by signals,
  * all the signals can be blocked in an EvCheck watcher and unblocked in a EvPrepare watcher.
  */
-\class_alias('DEPTRAC_1700756462\\EvSignal', 'EvSignal', \false);
+\class_alias('DEPTRAC_202311\\EvSignal', 'EvSignal', \false);
 /**
  * Class EvStat
  *
@@ -1214,7 +1214,7 @@ final class EvStat extends \EvWatcher
  * This watcher type is not meant for massive numbers of EvStat watchers, as even with OS-supported change
  * notifications, this can be resource-intensive.
  */
-\class_alias('DEPTRAC_1700756462\\EvStat', 'EvStat', \false);
+\class_alias('DEPTRAC_202311\\EvStat', 'EvStat', \false);
 /**
  * Class EvTimer
  *
@@ -1328,7 +1328,7 @@ final class EvTimer extends \EvWatcher
  * the timer (because it takes longer than those 10 seconds to do) the timer will not fire more than once per event loop
  * iteration.
  */
-\class_alias('DEPTRAC_1700756462\\EvTimer', 'EvTimer', \false);
+\class_alias('DEPTRAC_202311\\EvTimer', 'EvTimer', \false);
 /**
  * Class EvIdle
  *
@@ -1390,7 +1390,7 @@ final class EvIdle extends \EvWatcher
  * The most noticeable effect is that as long as any idle watchers are active, the process will not block when waiting
  * for new events.
  */
-\class_alias('DEPTRAC_1700756462\\EvIdle', 'EvIdle', \false);
+\class_alias('DEPTRAC_202311\\EvIdle', 'EvIdle', \false);
 /**
  * Class EvFork
  *
@@ -1432,7 +1432,7 @@ final class EvFork extends \EvWatcher
  * called, and only in the child after the fork. Note that if someone calls EvLoop::fork() in the wrong process, the
  * fork handlers will be invoked, too.
  */
-\class_alias('DEPTRAC_1700756462\\EvFork', 'EvFork', \false);
+\class_alias('DEPTRAC_202311\\EvFork', 'EvFork', \false);
 /**
  * Class EvLoop
  *
@@ -1751,4 +1751,4 @@ final class EvLoop
  * The default event loop is initialized automatically by Ev. It is accessible via methods of the Ev class, or via
  * EvLoop::defaultLoop() method.
  */
-\class_alias('DEPTRAC_1700756462\\EvLoop', 'EvLoop', \false);
+\class_alias('DEPTRAC_202311\\EvLoop', 'EvLoop', \false);

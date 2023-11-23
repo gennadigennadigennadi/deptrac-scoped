@@ -1,12 +1,12 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of hash v.1.0
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
 /**
  * (PHP 5 &gt;= 5.1.2, PECL hash &gt;= 1.1)<br/>
  * Generate a hash value (message digest)
@@ -488,5 +488,5 @@ final class HashContext
 /**
  * @since 7.2
  */
-\class_alias('DEPTRAC_1700756462\\HashContext', 'HashContext', \false);
+\class_alias('DEPTRAC_202311\\HashContext', 'HashContext', \false);
 // End of hash v.1.0

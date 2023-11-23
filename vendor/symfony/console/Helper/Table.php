@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\Console\Helper;
+namespace DEPTRAC_202311\Symfony\Component\Console\Helper;
 
-use DEPTRAC_1700756462\Symfony\Component\Console\Exception\InvalidArgumentException;
-use DEPTRAC_1700756462\Symfony\Component\Console\Exception\RuntimeException;
-use DEPTRAC_1700756462\Symfony\Component\Console\Formatter\OutputFormatter;
-use DEPTRAC_1700756462\Symfony\Component\Console\Formatter\WrappableOutputFormatterInterface;
-use DEPTRAC_1700756462\Symfony\Component\Console\Output\ConsoleSectionOutput;
-use DEPTRAC_1700756462\Symfony\Component\Console\Output\OutputInterface;
+use DEPTRAC_202311\Symfony\Component\Console\Exception\InvalidArgumentException;
+use DEPTRAC_202311\Symfony\Component\Console\Exception\RuntimeException;
+use DEPTRAC_202311\Symfony\Component\Console\Formatter\OutputFormatter;
+use DEPTRAC_202311\Symfony\Component\Console\Formatter\WrappableOutputFormatterInterface;
+use DEPTRAC_202311\Symfony\Component\Console\Output\ConsoleSectionOutput;
+use DEPTRAC_202311\Symfony\Component\Console\Output\OutputInterface;
 /**
  * Provides helpers to display a table.
  *

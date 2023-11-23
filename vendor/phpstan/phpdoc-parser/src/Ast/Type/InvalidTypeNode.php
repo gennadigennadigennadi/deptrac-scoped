@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\Type;
+namespace DEPTRAC_202311\PHPStan\PhpDocParser\Ast\Type;
 
-use DEPTRAC_1700756462\PHPStan\PhpDocParser\Ast\NodeAttributes;
-use DEPTRAC_1700756462\PHPStan\PhpDocParser\Parser\ParserException;
+use DEPTRAC_202311\PHPStan\PhpDocParser\Ast\NodeAttributes;
+use DEPTRAC_202311\PHPStan\PhpDocParser\Parser\ParserException;
 class InvalidTypeNode implements TypeNode
 {
     use NodeAttributes;

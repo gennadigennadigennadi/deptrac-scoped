@@ -14,7 +14,7 @@ use Qossmic\Deptrac\Contract\Dependency\PreFlattenEvent;
 use Qossmic\Deptrac\Contract\OutputFormatter\OutputInterface;
 use Qossmic\Deptrac\Supportive\Time\Stopwatch;
 use Qossmic\Deptrac\Supportive\Time\StopwatchException;
-use DEPTRAC_1700756462\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 use function sprintf;
 class ConsoleSubscriber implements EventSubscriberInterface
 {

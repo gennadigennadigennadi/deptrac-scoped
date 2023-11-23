@@ -4,7 +4,7 @@ declare (strict_types=1);
 namespace Internal\Qossmic\Deptrac;
 
 use Qossmic\Deptrac\Contract\Analyser\ProcessEvent;
-use DEPTRAC_1700756462\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 class IgnoreDependenciesOnContract implements EventSubscriberInterface
 {
     public function onProcessEvent(ProcessEvent $event) : void

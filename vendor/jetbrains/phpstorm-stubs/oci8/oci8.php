@@ -1,11 +1,11 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of oci8 v.2.0.7
-use DEPTRAC_1700756462\JetBrains\PhpStorm\ArrayShape;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\ArrayShape;
+use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * OCI8 LOB functionality for large binary (BLOB) and character (CLOB) objects.
  * @link https://php.net/manual/en/class.OCI-Lob.php
@@ -303,7 +303,7 @@ class OCI_Lob
  * @link https://php.net/manual/en/class.OCI-Lob.php
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\OCI_Lob', 'OCI_Lob', \false);
+\class_alias('DEPTRAC_202311\\OCI_Lob', 'OCI_Lob', \false);
 /**
  * OCI8 Collection functionality.
  * @link https://php.net/manual/en/class.OCI-Collection.php
@@ -412,7 +412,7 @@ class OCI_Collection
  * @link https://php.net/manual/en/class.OCI-Collection.php
  * @removed 8.0
  */
-\class_alias('DEPTRAC_1700756462\\OCI_Collection', 'OCI_Collection', \false);
+\class_alias('DEPTRAC_202311\\OCI_Collection', 'OCI_Collection', \false);
 /**
  * Register a user-defined callback function for Oracle Database TAF.
  * @link https://www.php.net/manual/en/function.oci-register-taf-callback.php

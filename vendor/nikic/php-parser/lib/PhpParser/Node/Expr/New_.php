@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PhpParser\Node\Expr;
+namespace DEPTRAC_202311\PhpParser\Node\Expr;
 
-use DEPTRAC_1700756462\PhpParser\Node;
-use DEPTRAC_1700756462\PhpParser\Node\Arg;
-use DEPTRAC_1700756462\PhpParser\Node\Expr;
-use DEPTRAC_1700756462\PhpParser\Node\VariadicPlaceholder;
+use DEPTRAC_202311\PhpParser\Node;
+use DEPTRAC_202311\PhpParser\Node\Arg;
+use DEPTRAC_202311\PhpParser\Node\Expr;
+use DEPTRAC_202311\PhpParser\Node\VariadicPlaceholder;
 class New_ extends CallLike
 {
     /** @var Node\Name|Expr|Node\Stmt\Class_ Class name */

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\Psr\EventDispatcher;
+namespace DEPTRAC_202311\Psr\EventDispatcher;
 
 /**
  * Mapper from an event to the listeners that are applicable to that event.

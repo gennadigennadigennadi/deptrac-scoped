@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PhpParser\ErrorHandler;
+namespace DEPTRAC_202311\PhpParser\ErrorHandler;
 
-use DEPTRAC_1700756462\PhpParser\Error;
-use DEPTRAC_1700756462\PhpParser\ErrorHandler;
+use DEPTRAC_202311\PhpParser\Error;
+use DEPTRAC_202311\PhpParser\ErrorHandler;
 /**
  * Error handler that handles all errors by throwing them.
  *

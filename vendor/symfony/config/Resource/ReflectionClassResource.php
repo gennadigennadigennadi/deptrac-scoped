@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\Config\Resource;
+namespace DEPTRAC_202311\Symfony\Component\Config\Resource;
 
-use DEPTRAC_1700756462\Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use DEPTRAC_1700756462\Symfony\Component\Messenger\Handler\MessageSubscriberInterface;
-use DEPTRAC_1700756462\Symfony\Contracts\Service\ServiceSubscriberInterface;
+use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_202311\Symfony\Component\Messenger\Handler\MessageSubscriberInterface;
+use DEPTRAC_202311\Symfony\Contracts\Service\ServiceSubscriberInterface;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  *

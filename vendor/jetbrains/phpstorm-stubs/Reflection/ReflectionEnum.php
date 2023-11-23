@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * @link https://php.net/manual/en/class.reflectionenum.php
  * @since 8.1
@@ -50,4 +50,4 @@ class ReflectionEnum extends \ReflectionClass
  * @link https://php.net/manual/en/class.reflectionenum.php
  * @since 8.1
  */
-\class_alias('DEPTRAC_1700756462\\ReflectionEnum', 'ReflectionEnum', \false);
+\class_alias('DEPTRAC_202311\\ReflectionEnum', 'ReflectionEnum', \false);

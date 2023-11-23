@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\Console\Completion\Output;
+namespace DEPTRAC_202311\Symfony\Component\Console\Completion\Output;
 
-use DEPTRAC_1700756462\Symfony\Component\Console\Completion\CompletionSuggestions;
-use DEPTRAC_1700756462\Symfony\Component\Console\Output\OutputInterface;
+use DEPTRAC_202311\Symfony\Component\Console\Completion\CompletionSuggestions;
+use DEPTRAC_202311\Symfony\Component\Console\Output\OutputInterface;
 /**
  * @author Guillaume Aveline <guillaume.aveline@pm.me>
  */

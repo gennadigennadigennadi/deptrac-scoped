@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462\Parle;
+namespace DEPTRAC_202311\Parle;
 
 class Token
 {

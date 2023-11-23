@@ -1,16 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PhpParser\NodeVisitor;
+namespace DEPTRAC_202311\PhpParser\NodeVisitor;
 
-use DEPTRAC_1700756462\PhpParser\ErrorHandler;
-use DEPTRAC_1700756462\PhpParser\NameContext;
-use DEPTRAC_1700756462\PhpParser\Node;
-use DEPTRAC_1700756462\PhpParser\Node\Expr;
-use DEPTRAC_1700756462\PhpParser\Node\Name;
-use DEPTRAC_1700756462\PhpParser\Node\Name\FullyQualified;
-use DEPTRAC_1700756462\PhpParser\Node\Stmt;
-use DEPTRAC_1700756462\PhpParser\NodeVisitorAbstract;
+use DEPTRAC_202311\PhpParser\ErrorHandler;
+use DEPTRAC_202311\PhpParser\NameContext;
+use DEPTRAC_202311\PhpParser\Node;
+use DEPTRAC_202311\PhpParser\Node\Expr;
+use DEPTRAC_202311\PhpParser\Node\Name;
+use DEPTRAC_202311\PhpParser\Node\Name\FullyQualified;
+use DEPTRAC_202311\PhpParser\Node\Stmt;
+use DEPTRAC_202311\PhpParser\NodeVisitorAbstract;
 class NameResolver extends NodeVisitorAbstract
 {
     /** @var NameContext Naming context */

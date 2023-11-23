@@ -1,14 +1,14 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of intl v.1.1.0
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\ExpectedValues as EV;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware as TypeAware;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable as ElementAvailable;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202311\JetBrains\PhpStorm\ExpectedValues as EV;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware as TypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable as ElementAvailable;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
 class Collator
 {
     public const DEFAULT_VALUE = -1;
@@ -449,7 +449,7 @@ class Collator
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\Collator', 'Collator', \false);
+\class_alias('DEPTRAC_202311\\Collator', 'Collator', \false);
 class NumberFormatter
 {
     public const CURRENCY_ACCOUNTING = 12;
@@ -1103,7 +1103,7 @@ class NumberFormatter
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\NumberFormatter', 'NumberFormatter', \false);
+\class_alias('DEPTRAC_202311\\NumberFormatter', 'NumberFormatter', \false);
 class Normalizer
 {
     public const NFKC_CF = 48;
@@ -1184,7 +1184,7 @@ class Normalizer
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\Normalizer', 'Normalizer', \false);
+\class_alias('DEPTRAC_202311\\Normalizer', 'Normalizer', \false);
 class Locale
 {
     /**
@@ -1524,7 +1524,7 @@ class Locale
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\Locale', 'Locale', \false);
+\class_alias('DEPTRAC_202311\\Locale', 'Locale', \false);
 class MessageFormatter
 {
     /**
@@ -1695,7 +1695,7 @@ class MessageFormatter
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\MessageFormatter', 'MessageFormatter', \false);
+\class_alias('DEPTRAC_202311\\MessageFormatter', 'MessageFormatter', \false);
 class IntlDateFormatter
 {
     /**
@@ -2094,7 +2094,7 @@ class IntlDateFormatter
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\IntlDateFormatter', 'IntlDateFormatter', \false);
+\class_alias('DEPTRAC_202311\\IntlDateFormatter', 'IntlDateFormatter', \false);
 class ResourceBundle implements \IteratorAggregate, \Countable
 {
     /**
@@ -2199,7 +2199,7 @@ class ResourceBundle implements \IteratorAggregate, \Countable
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\ResourceBundle', 'ResourceBundle', \false);
+\class_alias('DEPTRAC_202311\\ResourceBundle', 'ResourceBundle', \false);
 /**
  * @since 5.4
  */
@@ -2335,7 +2335,7 @@ class Transliterator
 /**
  * @since 5.4
  */
-\class_alias('DEPTRAC_1700756462\\Transliterator', 'Transliterator', \false);
+\class_alias('DEPTRAC_202311\\Transliterator', 'Transliterator', \false);
 /**
  * @link https://php.net/manual/en/class.spoofchecker.php
  */
@@ -2425,7 +2425,7 @@ class Spoofchecker
 /**
  * @link https://php.net/manual/en/class.spoofchecker.php
  */
-\class_alias('DEPTRAC_1700756462\\Spoofchecker', 'Spoofchecker', \false);
+\class_alias('DEPTRAC_202311\\Spoofchecker', 'Spoofchecker', \false);
 /**
  * @since 5.5
  */
@@ -2480,7 +2480,7 @@ class IntlGregorianCalendar extends \IntlCalendar
 /**
  * @since 5.5
  */
-\class_alias('DEPTRAC_1700756462\\IntlGregorianCalendar', 'IntlGregorianCalendar', \false);
+\class_alias('DEPTRAC_202311\\IntlGregorianCalendar', 'IntlGregorianCalendar', \false);
 /**
  * @since 5.5
  */
@@ -3327,7 +3327,7 @@ class IntlCalendar
 /**
  * @since 5.5
  */
-\class_alias('DEPTRAC_1700756462\\IntlCalendar', 'IntlCalendar', \false);
+\class_alias('DEPTRAC_202311\\IntlCalendar', 'IntlCalendar', \false);
 /**
  * @since 5.5
  */
@@ -3357,7 +3357,7 @@ class IntlIterator implements \Iterator
 /**
  * @since 5.5
  */
-\class_alias('DEPTRAC_1700756462\\IntlIterator', 'IntlIterator', \false);
+\class_alias('DEPTRAC_202311\\IntlIterator', 'IntlIterator', \false);
 /**
  * @since 5.5
  */
@@ -3367,7 +3367,7 @@ class IntlException extends \Exception
 /**
  * @since 5.5
  */
-\class_alias('DEPTRAC_1700756462\\IntlException', 'IntlException', \false);
+\class_alias('DEPTRAC_202311\\IntlException', 'IntlException', \false);
 /**
  * @since 5.5
  */
@@ -3673,7 +3673,7 @@ class IntlTimeZone
 /**
  * @since 5.5
  */
-\class_alias('DEPTRAC_1700756462\\IntlTimeZone', 'IntlTimeZone', \false);
+\class_alias('DEPTRAC_202311\\IntlTimeZone', 'IntlTimeZone', \false);
 /**
  * (PHP 5 &gt;= 5.3.0, PECL intl &gt;= 1.0.0)<br/>
  * Create a collator
@@ -7333,7 +7333,7 @@ class IntlBreakIterator implements \IteratorAggregate
 /**
  * @since 5.5
  */
-\class_alias('DEPTRAC_1700756462\\IntlBreakIterator', 'IntlBreakIterator', \false);
+\class_alias('DEPTRAC_202311\\IntlBreakIterator', 'IntlBreakIterator', \false);
 class IntlRuleBasedBreakIterator extends \IntlBreakIterator implements \Traversable
 {
     /* Methods */
@@ -7451,7 +7451,7 @@ class IntlRuleBasedBreakIterator extends \IntlBreakIterator implements \Traversa
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\IntlRuleBasedBreakIterator', 'IntlRuleBasedBreakIterator', \false);
+\class_alias('DEPTRAC_202311\\IntlRuleBasedBreakIterator', 'IntlRuleBasedBreakIterator', \false);
 /**
  * @link https://www.php.net/manual/en/class.intlpartsiterator.php
  * @since 5.5
@@ -7481,7 +7481,7 @@ class IntlPartsIterator extends \IntlIterator implements \Iterator
  * @link https://www.php.net/manual/en/class.intlpartsiterator.php
  * @since 5.5
  */
-\class_alias('DEPTRAC_1700756462\\IntlPartsIterator', 'IntlPartsIterator', \false);
+\class_alias('DEPTRAC_202311\\IntlPartsIterator', 'IntlPartsIterator', \false);
 class IntlCodePointBreakIterator extends \IntlBreakIterator implements \Traversable
 {
     /**
@@ -7496,7 +7496,7 @@ class IntlCodePointBreakIterator extends \IntlBreakIterator implements \Traversa
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\IntlCodePointBreakIterator', 'IntlCodePointBreakIterator', \false);
+\class_alias('DEPTRAC_202311\\IntlCodePointBreakIterator', 'IntlCodePointBreakIterator', \false);
 class UConverter
 {
     /* Constants */
@@ -7763,5 +7763,5 @@ class UConverter
     {
     }
 }
-\class_alias('DEPTRAC_1700756462\\UConverter', 'UConverter', \false);
+\class_alias('DEPTRAC_202311\\UConverter', 'UConverter', \false);
 // End of intl v.1.1.0

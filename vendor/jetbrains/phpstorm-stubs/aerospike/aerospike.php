@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 /**
  * Copyright 2013-2017 Aerospike, Inc.
@@ -25,7 +25,7 @@ namespace DEPTRAC_1700756462;
  * @link       https://www.aerospike.com/docs/client/php/
  * @filesource
  */
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
 /**
  * The Aerospike client class
  *
@@ -5164,4 +5164,4 @@ class Aerospike
  * ```
  * @author Robert Marks <robert@aerospike.com>
  */
-\class_alias('DEPTRAC_1700756462\\Aerospike', 'Aerospike', \false);
+\class_alias('DEPTRAC_202311\\Aerospike', 'Aerospike', \false);

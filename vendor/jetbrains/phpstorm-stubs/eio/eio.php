@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 \define('EIO_DEBUG', 0);
 \define('EIO_SEEK_SET', 0);

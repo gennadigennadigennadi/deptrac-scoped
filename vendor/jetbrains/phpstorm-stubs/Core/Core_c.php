@@ -1,13 +1,13 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of Core v.5.3.6-13ubuntu3.2
-use DEPTRAC_1700756462\JetBrains\PhpStorm\ExpectedValues;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202311\JetBrains\PhpStorm\ExpectedValues;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
 /**
  * Created by typecasting to object.
  * @link https://php.net/manual/en/reserved.classes.php
@@ -19,7 +19,7 @@ class stdClass
  * Created by typecasting to object.
  * @link https://php.net/manual/en/reserved.classes.php
  */
-\class_alias('DEPTRAC_1700756462\\stdClass', 'stdClass', \false);
+\class_alias('DEPTRAC_202311\\stdClass', 'stdClass', \false);
 /**
  * @link https://wiki.php.net/rfc/iterable
  */
@@ -29,7 +29,7 @@ interface iterable
 /**
  * @link https://wiki.php.net/rfc/iterable
  */
-\class_alias('DEPTRAC_1700756462\\iterable', 'iterable', \false);
+\class_alias('DEPTRAC_202311\\iterable', 'iterable', \false);
 /**
  * Interface to detect if a class is traversable using foreach.
  * Abstract base interface that cannot be implemented alone.
@@ -55,7 +55,7 @@ interface Traversable extends \iterable
  *
  * @template-implements iterable<TKey, TValue>
  */
-\class_alias('DEPTRAC_1700756462\\Traversable', 'Traversable', \false);
+\class_alias('DEPTRAC_202311\\Traversable', 'Traversable', \false);
 /**
  * Interface to create an external Iterator.
  * @link https://php.net/manual/en/class.iteratoraggregate.php
@@ -82,7 +82,7 @@ interface IteratorAggregate extends \Traversable
  * @template-covariant TValue
  * @template-implements Traversable<TKey, TValue>
  */
-\class_alias('DEPTRAC_1700756462\\IteratorAggregate', 'IteratorAggregate', \false);
+\class_alias('DEPTRAC_202311\\IteratorAggregate', 'IteratorAggregate', \false);
 /**
  * Interface for external iterators or objects that can be iterated
  * themselves internally.
@@ -138,7 +138,7 @@ interface Iterator extends \Traversable
  * @template-covariant TValue
  * @template-implements Traversable<TKey, TValue>
  */
-\class_alias('DEPTRAC_1700756462\\Iterator', 'Iterator', \false);
+\class_alias('DEPTRAC_202311\\Iterator', 'Iterator', \false);
 /**
  * Interface to provide accessing objects as arrays.
  * @link https://php.net/manual/en/class.arrayaccess.php
@@ -200,7 +200,7 @@ interface ArrayAccess
  * @template TKey
  * @template TValue
  */
-\class_alias('DEPTRAC_1700756462\\ArrayAccess', 'ArrayAccess', \false);
+\class_alias('DEPTRAC_202311\\ArrayAccess', 'ArrayAccess', \false);
 /**
  * Interface for customized serializing.<br>
  * As of PHP 8.1.0, a class which implements Serializable without also implementing `__serialize()` and `__unserialize()`
@@ -230,7 +230,7 @@ interface Serializable
  * will generate a deprecation warning.
  * @link https://php.net/manual/en/class.serializable.php
  */
-\class_alias('DEPTRAC_1700756462\\Serializable', 'Serializable', \false);
+\class_alias('DEPTRAC_202311\\Serializable', 'Serializable', \false);
 /**
  * Throwable is the base interface for any object that can be thrown via a throw statement in PHP 7,
  * including Error and Exception.
@@ -311,7 +311,7 @@ interface Throwable extends \Stringable
  * @link https://php.net/manual/en/class.throwable.php
  * @since 7.0
  */
-\class_alias('DEPTRAC_1700756462\\Throwable', 'Throwable', \false);
+\class_alias('DEPTRAC_202311\\Throwable', 'Throwable', \false);
 /**
  * Exception is the base class for
  * all Exceptions.
@@ -446,7 +446,7 @@ class Exception implements \Throwable
  * all Exceptions.
  * @link https://php.net/manual/en/class.exception.php
  */
-\class_alias('DEPTRAC_1700756462\\Exception', 'Exception', \false);
+\class_alias('DEPTRAC_202311\\Exception', 'Exception', \false);
 /**
  * Error is the base class for all internal PHP error exceptions.
  * @link https://php.net/manual/en/class.error.php
@@ -585,11 +585,11 @@ class Error implements \Throwable
  * @link https://php.net/manual/en/class.error.php
  * @since 7.0
  */
-\class_alias('DEPTRAC_1700756462\\Error', 'Error', \false);
+\class_alias('DEPTRAC_202311\\Error', 'Error', \false);
 class ValueError extends \Error
 {
 }
-\class_alias('DEPTRAC_1700756462\\ValueError', 'ValueError', \false);
+\class_alias('DEPTRAC_202311\\ValueError', 'ValueError', \false);
 /**
  * There are three scenarios where a TypeError may be thrown.
  * The first is where the argument type being passed to a function does not match its corresponding declared
@@ -609,7 +609,7 @@ class TypeError extends \Error
  * @link https://php.net/manual/en/class.typeerror.php
  * @since 7.0
  */
-\class_alias('DEPTRAC_1700756462\\TypeError', 'TypeError', \false);
+\class_alias('DEPTRAC_202311\\TypeError', 'TypeError', \false);
 /**
  * ParseError is thrown when an error occurs while parsing PHP code, such as when {@see eval()} is called.
  * @link https://php.net/manual/en/class.parseerror.php
@@ -623,7 +623,7 @@ class ParseError extends \CompileError
  * @link https://php.net/manual/en/class.parseerror.php
  * @since 7.0
  */
-\class_alias('DEPTRAC_1700756462\\ParseError', 'ParseError', \false);
+\class_alias('DEPTRAC_202311\\ParseError', 'ParseError', \false);
 /**
  * ArgumentCountError is thrown when too few arguments are passed to a user
  * defined routine.
@@ -641,7 +641,7 @@ class ArgumentCountError extends \TypeError
  * @since 7.1
  * @see https://php.net/migration71.incompatible#migration71.incompatible.too-few-arguments-exception
  */
-\class_alias('DEPTRAC_1700756462\\ArgumentCountError', 'ArgumentCountError', \false);
+\class_alias('DEPTRAC_202311\\ArgumentCountError', 'ArgumentCountError', \false);
 /**
  * ArithmeticError is thrown when an error occurs while performing mathematical operations.
  * In PHP 7.0, these errors include attempting to perform a bitshift by a negative amount,
@@ -659,7 +659,7 @@ class ArithmeticError extends \Error
  * @link https://php.net/manual/en/class.arithmeticerror.php
  * @since 7.0
  */
-\class_alias('DEPTRAC_1700756462\\ArithmeticError', 'ArithmeticError', \false);
+\class_alias('DEPTRAC_202311\\ArithmeticError', 'ArithmeticError', \false);
 /**
  * Class CompileError
  * @link https://secure.php.net/manual/en/class.compileerror.php
@@ -673,7 +673,7 @@ class CompileError extends \Error
  * @link https://secure.php.net/manual/en/class.compileerror.php
  * @since 7.3
  */
-\class_alias('DEPTRAC_1700756462\\CompileError', 'CompileError', \false);
+\class_alias('DEPTRAC_202311\\CompileError', 'CompileError', \false);
 /**
  * DivisionByZeroError is thrown when an attempt is made to divide a number by zero.
  * @link https://php.net/manual/en/class.divisionbyzeroerror.php
@@ -687,7 +687,7 @@ class DivisionByZeroError extends \ArithmeticError
  * @link https://php.net/manual/en/class.divisionbyzeroerror.php
  * @since 7.0
  */
-\class_alias('DEPTRAC_1700756462\\DivisionByZeroError', 'DivisionByZeroError', \false);
+\class_alias('DEPTRAC_202311\\DivisionByZeroError', 'DivisionByZeroError', \false);
 /**
  * @since 8.0
  */
@@ -697,7 +697,7 @@ class UnhandledMatchError extends \Error
 /**
  * @since 8.0
  */
-\class_alias('DEPTRAC_1700756462\\UnhandledMatchError', 'UnhandledMatchError', \false);
+\class_alias('DEPTRAC_202311\\UnhandledMatchError', 'UnhandledMatchError', \false);
 /**
  * An Error Exception.
  * @link https://php.net/manual/en/class.errorexception.php
@@ -733,7 +733,7 @@ class ErrorException extends \Exception
  * An Error Exception.
  * @link https://php.net/manual/en/class.errorexception.php
  */
-\class_alias('DEPTRAC_1700756462\\ErrorException', 'ErrorException', \false);
+\class_alias('DEPTRAC_202311\\ErrorException', 'ErrorException', \false);
 /**
  * Class used to represent anonymous functions.
  * <p>Anonymous functions, implemented in PHP 5.3, yield objects of this type.
@@ -818,7 +818,7 @@ final class Closure
  * This is for consistency with other classes that implement calling magic, as this method is not used for calling the function.
  * @link https://secure.php.net/manual/en/class.closure.php
  */
-\class_alias('DEPTRAC_1700756462\\Closure', 'Closure', \false);
+\class_alias('DEPTRAC_202311\\Closure', 'Closure', \false);
 /**
  * Classes implementing <b>Countable</b> can be used with the
  * <b>count</b> function.
@@ -842,7 +842,7 @@ interface Countable
  * <b>count</b> function.
  * @link https://php.net/manual/en/class.countable.php
  */
-\class_alias('DEPTRAC_1700756462\\Countable', 'Countable', \false);
+\class_alias('DEPTRAC_202311\\Countable', 'Countable', \false);
 /**
  * Weak references allow the programmer to retain a reference to an
  * object which does not prevent the object from being destroyed.
@@ -891,7 +891,7 @@ final class WeakReference
  * @link https://www.php.net/manual/en/class.weakreference.php
  * @since 7.4
  */
-\class_alias('DEPTRAC_1700756462\\WeakReference', 'WeakReference', \false);
+\class_alias('DEPTRAC_202311\\WeakReference', 'WeakReference', \false);
 /**
  * Weak maps allow creating a map from objects to arbitrary values
  * (similar to SplObjectStorage) without preventing the objects that are used
@@ -973,7 +973,7 @@ final class WeakMap implements \ArrayAccess, \Countable, \IteratorAggregate
  * @template TValue
  * @template-implements IteratorAggregate<TKey, TValue>
  */
-\class_alias('DEPTRAC_1700756462\\WeakMap', 'WeakMap', \false);
+\class_alias('DEPTRAC_202311\\WeakMap', 'WeakMap', \false);
 /**
  * Stringable interface denotes a class as having a __toString() method.
  *
@@ -995,7 +995,7 @@ interface Stringable
  *
  * @since 8.0
  */
-\class_alias('DEPTRAC_1700756462\\Stringable', 'Stringable', \false);
+\class_alias('DEPTRAC_202311\\Stringable', 'Stringable', \false);
 /**
  * @since 8.0
  */
@@ -1047,7 +1047,7 @@ final class Attribute
 /**
  * @since 8.0
  */
-\class_alias('DEPTRAC_1700756462\\Attribute', 'Attribute', \false);
+\class_alias('DEPTRAC_202311\\Attribute', 'Attribute', \false);
 /**
  * @since 8.0
  */
@@ -1075,7 +1075,7 @@ final class InternalIterator implements \Iterator
 /**
  * @since 8.0
  */
-\class_alias('DEPTRAC_1700756462\\InternalIterator', 'InternalIterator', \false);
+\class_alias('DEPTRAC_202311\\InternalIterator', 'InternalIterator', \false);
 /**
  * @since 8.1
  */
@@ -1091,7 +1091,7 @@ interface UnitEnum
 /**
  * @since 8.1
  */
-\class_alias('DEPTRAC_1700756462\\UnitEnum', 'UnitEnum', \false);
+\class_alias('DEPTRAC_202311\\UnitEnum', 'UnitEnum', \false);
 /**
  * @since 8.1
  */
@@ -1114,7 +1114,7 @@ interface BackedEnum extends \UnitEnum
 /**
  * @since 8.1
  */
-\class_alias('DEPTRAC_1700756462\\BackedEnum', 'BackedEnum', \false);
+\class_alias('DEPTRAC_202311\\BackedEnum', 'BackedEnum', \false);
 /**
  * @since 8.1
  * @internal
@@ -1143,6 +1143,13 @@ interface IntBackedEnum extends \BackedEnum
  *
  * Internal interface to ensure precise type inference
  */
+\class_alias('DEPTRAC_202311\\IntBackedEnum', 'IntBackedEnum', \false);
+/**
+ * @since 8.1
+ * @internal
+ *
+ * Internal interface to ensure precise type inference
+ */
 interface StringBackedEnum extends \BackedEnum
 {
     public readonly string $value;
@@ -1151,6 +1158,13 @@ interface StringBackedEnum extends \BackedEnum
     #[Pure]
     public static function tryFrom(string $value) : ?static;
 }
+/**
+ * @since 8.1
+ * @internal
+ *
+ * Internal interface to ensure precise type inference
+ */
+\class_alias('DEPTRAC_202311\\StringBackedEnum', 'StringBackedEnum', \false);
 /**
  * @since 8.1
  *
@@ -1270,7 +1284,7 @@ final class Fiber
  * @template TReturn
  * @template TSuspend
  */
-\class_alias('DEPTRAC_1700756462\\Fiber', 'Fiber', \false);
+\class_alias('DEPTRAC_202311\\Fiber', 'Fiber', \false);
 /**
  * @since 8.1
  */
@@ -1283,7 +1297,7 @@ final class FiberError extends \Error
 /**
  * @since 8.1
  */
-\class_alias('DEPTRAC_1700756462\\FiberError', 'FiberError', \false);
+\class_alias('DEPTRAC_202311\\FiberError', 'FiberError', \false);
 /**
  * @since 8.1
  */
@@ -1297,7 +1311,7 @@ final class ReturnTypeWillChange
 /**
  * @since 8.1
  */
-\class_alias('DEPTRAC_1700756462\\ReturnTypeWillChange', 'ReturnTypeWillChange', \false);
+\class_alias('DEPTRAC_202311\\ReturnTypeWillChange', 'ReturnTypeWillChange', \false);
 /**
  * @since 8.2
  */
@@ -1311,7 +1325,7 @@ final class AllowDynamicProperties
 /**
  * @since 8.2
  */
-\class_alias('DEPTRAC_1700756462\\AllowDynamicProperties', 'AllowDynamicProperties', \false);
+\class_alias('DEPTRAC_202311\\AllowDynamicProperties', 'AllowDynamicProperties', \false);
 /**
  * @since 8.2
  */
@@ -1325,7 +1339,7 @@ final class SensitiveParameter
 /**
  * @since 8.2
  */
-\class_alias('DEPTRAC_1700756462\\SensitiveParameter', 'SensitiveParameter', \false);
+\class_alias('DEPTRAC_202311\\SensitiveParameter', 'SensitiveParameter', \false);
 /**
  * @since 8.2
  */
@@ -1345,4 +1359,4 @@ final class SensitiveParameterValue
 /**
  * @since 8.2
  */
-\class_alias('DEPTRAC_1700756462\\SensitiveParameterValue', 'SensitiveParameterValue', \false);
+\class_alias('DEPTRAC_202311\\SensitiveParameterValue', 'SensitiveParameterValue', \false);

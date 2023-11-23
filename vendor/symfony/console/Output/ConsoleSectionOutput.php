@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\Console\Output;
+namespace DEPTRAC_202311\Symfony\Component\Console\Output;
 
-use DEPTRAC_1700756462\Symfony\Component\Console\Formatter\OutputFormatterInterface;
-use DEPTRAC_1700756462\Symfony\Component\Console\Helper\Helper;
-use DEPTRAC_1700756462\Symfony\Component\Console\Terminal;
+use DEPTRAC_202311\Symfony\Component\Console\Formatter\OutputFormatterInterface;
+use DEPTRAC_202311\Symfony\Component\Console\Helper\Helper;
+use DEPTRAC_202311\Symfony\Component\Console\Terminal;
 /**
  * @author Pierre du Plessis <pdples@gmail.com>
  * @author Gabriel Ostrolucký <gabriel.ostrolucky@gmail.com>

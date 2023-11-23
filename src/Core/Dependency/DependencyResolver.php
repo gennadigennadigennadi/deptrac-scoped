@@ -3,9 +3,9 @@
 declare (strict_types=1);
 namespace Qossmic\Deptrac\Core\Dependency;
 
-use DEPTRAC_1700756462\Psr\Container\ContainerExceptionInterface;
-use DEPTRAC_1700756462\Psr\Container\ContainerInterface;
-use DEPTRAC_1700756462\Psr\EventDispatcher\EventDispatcherInterface;
+use DEPTRAC_202311\Psr\Container\ContainerExceptionInterface;
+use DEPTRAC_202311\Psr\Container\ContainerInterface;
+use DEPTRAC_202311\Psr\EventDispatcher\EventDispatcherInterface;
 use Qossmic\Deptrac\Contract\Dependency\PostEmitEvent;
 use Qossmic\Deptrac\Contract\Dependency\PostFlattenEvent;
 use Qossmic\Deptrac\Contract\Dependency\PreEmitEvent;

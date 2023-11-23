@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\SimpleKafkaClient\Metadata;
+namespace DEPTRAC_202311\SimpleKafkaClient\Metadata;
 
 class Broker
 {

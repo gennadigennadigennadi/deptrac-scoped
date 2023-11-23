@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\DependencyInjection;
+namespace DEPTRAC_202311\Symfony\Component\DependencyInjection;
 
-use DEPTRAC_1700756462\Psr\Container\ContainerInterface;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
+use DEPTRAC_202311\Psr\Container\ContainerInterface;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception\ServiceNotFoundException;
 /**
  * Turns public and "container.reversible" services back to their ids.
  *

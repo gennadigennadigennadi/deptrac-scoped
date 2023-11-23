@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
 /**
  * @link https://php.net/manual/en/class.gmagick.php
  */
@@ -2400,7 +2400,7 @@ class Gmagick
 /**
  * @link https://php.net/manual/en/class.gmagick.php
  */
-\class_alias('DEPTRAC_1700756462\\Gmagick', 'Gmagick', \false);
+\class_alias('DEPTRAC_202311\\Gmagick', 'Gmagick', \false);
 /**
  * @link https://php.net/manual/en/class.gmagickdraw.php
  */
@@ -2839,11 +2839,11 @@ class GmagickDraw
 /**
  * @link https://php.net/manual/en/class.gmagickdraw.php
  */
-\class_alias('DEPTRAC_1700756462\\GmagickDraw', 'GmagickDraw', \false);
+\class_alias('DEPTRAC_202311\\GmagickDraw', 'GmagickDraw', \false);
 class GmagickException extends \Exception
 {
 }
-\class_alias('DEPTRAC_1700756462\\GmagickException', 'GmagickException', \false);
+\class_alias('DEPTRAC_202311\\GmagickException', 'GmagickException', \false);
 /**
  * @link https://php.net/manual/en/class.gmagickpixel.php
  */
@@ -2942,8 +2942,8 @@ class GmagickPixel
 /**
  * @link https://php.net/manual/en/class.gmagickpixel.php
  */
-\class_alias('DEPTRAC_1700756462\\GmagickPixel', 'GmagickPixel', \false);
+\class_alias('DEPTRAC_202311\\GmagickPixel', 'GmagickPixel', \false);
 class GmagickPixelException extends \Exception
 {
 }
-\class_alias('DEPTRAC_1700756462\\GmagickPixelException', 'GmagickPixelException', \false);
+\class_alias('DEPTRAC_202311\\GmagickPixelException', 'GmagickPixelException', \false);

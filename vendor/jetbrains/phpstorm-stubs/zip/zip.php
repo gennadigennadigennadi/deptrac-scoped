@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of zip v.1.14.0
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * A file archive, compressed with Zip.
  * @link https://php.net/manual/en/class.ziparchive.php
@@ -1178,7 +1178,7 @@ class ZipArchive implements \Countable
  * A file archive, compressed with Zip.
  * @link https://php.net/manual/en/class.ziparchive.php
  */
-\class_alias('DEPTRAC_1700756462\\ZipArchive', 'ZipArchive', \false);
+\class_alias('DEPTRAC_202311\\ZipArchive', 'ZipArchive', \false);
 /**
  * (PHP 4 &gt;= 4.1.0, PHP 5 &gt;= 5.2.0, PECL zip &gt;= 1.0.0)<br/>
  * Open a ZIP file archive

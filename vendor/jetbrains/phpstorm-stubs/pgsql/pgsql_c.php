@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462\PgSql;
+namespace DEPTRAC_202311\PgSql;
 
 /**
  * A fully opaque class which replaces a pgsql result resource as of PHP 8.1.0.

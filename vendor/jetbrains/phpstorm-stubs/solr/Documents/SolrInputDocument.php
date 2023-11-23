@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -334,4 +334,4 @@ final class SolrInputDocument
  * This class represents a Solr document that is about to be submitted to the Solr index.
  * @link https://php.net/manual/en/class.solrinputdocument.php
  */
-\class_alias('DEPTRAC_1700756462\\SolrInputDocument', 'SolrInputDocument', \false);
+\class_alias('DEPTRAC_202311\\SolrInputDocument', 'SolrInputDocument', \false);

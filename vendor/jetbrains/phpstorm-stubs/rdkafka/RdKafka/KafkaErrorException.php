@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462\RdKafka;
+namespace DEPTRAC_202311\RdKafka;
 
 class KafkaErrorException extends Exception
 {

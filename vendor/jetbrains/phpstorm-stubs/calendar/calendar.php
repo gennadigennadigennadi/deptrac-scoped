@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 // Start of calendar v.
-use DEPTRAC_1700756462\JetBrains\PhpStorm\ArrayShape;
-use DEPTRAC_1700756462\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202311\JetBrains\PhpStorm\ArrayShape;
+use DEPTRAC_202311\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
 /**
  * Converts Julian Day Count to Gregorian date
  * @link https://php.net/manual/en/function.jdtogregorian.php

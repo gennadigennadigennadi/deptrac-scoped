@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\Swoole\Server;
+namespace DEPTRAC_202311\Swoole\Server;
 
 class StatusInfo
 {

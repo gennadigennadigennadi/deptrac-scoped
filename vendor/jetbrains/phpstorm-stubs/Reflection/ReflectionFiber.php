@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 /**
  * @since 8.1
@@ -29,4 +29,4 @@ final class ReflectionFiber
 /**
  * @since 8.1
  */
-\class_alias('DEPTRAC_1700756462\\ReflectionFiber', 'ReflectionFiber', \false);
+\class_alias('DEPTRAC_202311\\ReflectionFiber', 'ReflectionFiber', \false);

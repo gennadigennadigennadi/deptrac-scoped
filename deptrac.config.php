@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 use Internal\Qossmic\Deptrac\IgnoreDependenciesOnContract;
 use Qossmic\Deptrac\Contract\Config\Collector\BoolConfig;
@@ -11,7 +11,7 @@ use Qossmic\Deptrac\Contract\Config\EmitterType;
 use Qossmic\Deptrac\Contract\Config\Formatter\GraphvizConfig;
 use Qossmic\Deptrac\Contract\Config\Layer;
 use Qossmic\Deptrac\Contract\Config\Ruleset;
-use DEPTRAC_1700756462\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
 return static function (DeptracConfig $config, ContainerConfigurator $containerConfigurator) : void {
     $services = $containerConfigurator->services();
     $services->set(IgnoreDependenciesOnContract::class)->tag('kernel.event_subscriber');

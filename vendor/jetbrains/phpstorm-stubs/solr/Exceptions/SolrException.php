@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -47,4 +47,4 @@ class SolrException extends \Exception
  * This is the base class for all exception thrown by the Solr extension classes.
  * @link https://php.net/manual/en/class.solrexception.php
  */
-\class_alias('DEPTRAC_1700756462\\SolrException', 'SolrException', \false);
+\class_alias('DEPTRAC_202311\\SolrException', 'SolrException', \false);

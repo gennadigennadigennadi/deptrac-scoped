@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_1700756462\PhpParser\Builder;
+namespace DEPTRAC_202311\PhpParser\Builder;
 
-use DEPTRAC_1700756462\PhpParser\Builder;
-use DEPTRAC_1700756462\PhpParser\BuilderHelpers;
-use DEPTRAC_1700756462\PhpParser\Node;
-use DEPTRAC_1700756462\PhpParser\Node\Stmt;
+use DEPTRAC_202311\PhpParser\Builder;
+use DEPTRAC_202311\PhpParser\BuilderHelpers;
+use DEPTRAC_202311\PhpParser\Node;
+use DEPTRAC_202311\PhpParser\Node\Stmt;
 class Use_ implements Builder
 {
     protected $name;

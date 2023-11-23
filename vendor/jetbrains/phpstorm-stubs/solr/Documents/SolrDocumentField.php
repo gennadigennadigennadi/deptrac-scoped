@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -51,4 +51,4 @@ final class SolrDocumentField
  * This class represents a field in a Solr document. All its properties are read-only.
  * @link https://php.net/manual/en/class.solrdocumentfield.php
  */
-\class_alias('DEPTRAC_1700756462\\SolrDocumentField', 'SolrDocumentField', \false);
+\class_alias('DEPTRAC_202311\\SolrDocumentField', 'SolrDocumentField', \false);

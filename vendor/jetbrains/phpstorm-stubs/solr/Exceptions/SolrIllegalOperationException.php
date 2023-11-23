@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_1700756462;
+namespace DEPTRAC_202311;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -41,4 +41,4 @@ class SolrIllegalOperationException extends \SolrException
  * This object is thrown when an illegal or unsupported operation is performed on an object.
  * @link https://php.net/manual/en/class.solrillegaloperationexception.php
  */
-\class_alias('DEPTRAC_1700756462\\SolrIllegalOperationException', 'SolrIllegalOperationException', \false);
+\class_alias('DEPTRAC_202311\\SolrIllegalOperationException', 'SolrIllegalOperationException', \false);

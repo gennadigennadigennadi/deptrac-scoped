@@ -8,14 +8,14 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_1700756462\Symfony\Component\Console\EventListener;
+namespace DEPTRAC_202311\Symfony\Component\Console\EventListener;
 
-use DEPTRAC_1700756462\Psr\Log\LoggerInterface;
-use DEPTRAC_1700756462\Symfony\Component\Console\ConsoleEvents;
-use DEPTRAC_1700756462\Symfony\Component\Console\Event\ConsoleErrorEvent;
-use DEPTRAC_1700756462\Symfony\Component\Console\Event\ConsoleEvent;
-use DEPTRAC_1700756462\Symfony\Component\Console\Event\ConsoleTerminateEvent;
-use DEPTRAC_1700756462\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_202311\Psr\Log\LoggerInterface;
+use DEPTRAC_202311\Symfony\Component\Console\ConsoleEvents;
+use DEPTRAC_202311\Symfony\Component\Console\Event\ConsoleErrorEvent;
+use DEPTRAC_202311\Symfony\Component\Console\Event\ConsoleEvent;
+use DEPTRAC_202311\Symfony\Component\Console\Event\ConsoleTerminateEvent;
+use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 /**
  * @author James Halsall <james.t.halsall@googlemail.com>
  * @author Robin Chalas <robin.chalas@gmail.com>
