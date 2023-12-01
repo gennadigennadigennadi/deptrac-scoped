@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 // Start of xhprof v.0.9.4
 /**

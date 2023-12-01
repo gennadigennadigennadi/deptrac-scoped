@@ -1,16 +1,19 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
-\define('LIB', '(?(DEFINE)
+///////////////////////////////
+/// Utility regex constants ///
+///////////////////////////////
+const LIB = '(?(DEFINE)
     (?<singleQuotedString>\'[^\\\\\']*+(?:\\\\.[^\\\\\']*+)*+\')
     (?<doubleQuotedString>"[^\\\\"]*+(?:\\\\.[^\\\\"]*+)*+")
     (?<string>(?&singleQuotedString)|(?&doubleQuotedString))
     (?<comment>/\\*[^*]*+(?:\\*(?!/)[^*]*+)*+\\*/)
     (?<code>\\{[^\'"/{}]*+(?:(?:(?&string)|(?&comment)|(?&code)|/)[^\'"/{}]*+)*+})
-)');
-\define('PARAMS', '\\[(?<params>[^[\\]]*+(?:\\[(?&params)\\][^[\\]]*+)*+)\\]');
-\define('ARGS', '\\((?<args>[^()]*+(?:\\((?&args)\\)[^()]*+)*+)\\)');
+)';
+const PARAMS = '\\[(?<params>[^[\\]]*+(?:\\[(?&params)\\][^[\\]]*+)*+)\\]';
+const ARGS = '\\((?<args>[^()]*+(?:\\((?&args)\\)[^()]*+)*+)\\)';
 ///////////////////////////////
 /// Preprocessing functions ///
 ///////////////////////////////
@@ -23,10 +26,10 @@ function preprocessGrammar($code)
 }
 function resolveNodes($code)
 {
-    return \preg_replace_callback('~\\b(?<name>[A-Z][a-zA-Z_\\\\]++)\\s*' . \PARAMS . '~', function ($matches) {
+    return \preg_replace_callback('~\\b(?<name>[A-Z][a-zA-Z_\\\\]++)\\s*' . \DEPTRAC_202312\PARAMS . '~', function ($matches) {
         // recurse
         $matches['params'] = resolveNodes($matches['params']);
-        $params = magicSplit('(?:' . \PARAMS . '|' . \ARGS . ')(*SKIP)(*FAIL)|,', $matches['params']);
+        $params = magicSplit('(?:' . \DEPTRAC_202312\PARAMS . '|' . \DEPTRAC_202312\ARGS . ')(*SKIP)(*FAIL)|,', $matches['params']);
         $paramCode = '';
         foreach ($params as $param) {
             $paramCode .= $param . ', ';
@@ -36,11 +39,11 @@ function resolveNodes($code)
 }
 function resolveMacros($code)
 {
-    return \preg_replace_callback('~\\b(?<!::|->)(?!array\\()(?<name>[a-z][A-Za-z]++)' . \ARGS . '~', function ($matches) {
+    return \preg_replace_callback('~\\b(?<!::|->)(?!array\\()(?<name>[a-z][A-Za-z]++)' . \DEPTRAC_202312\ARGS . '~', function ($matches) {
         // recurse
         $matches['args'] = resolveMacros($matches['args']);
         $name = $matches['name'];
-        $args = magicSplit('(?:' . \PARAMS . '|' . \ARGS . ')(*SKIP)(*FAIL)|,', $matches['args']);
+        $args = magicSplit('(?:' . \DEPTRAC_202312\PARAMS . '|' . \DEPTRAC_202312\ARGS . ')(*SKIP)(*FAIL)|,', $matches['args']);
         if ('attributes' === $name) {
             assertArgs(0, $args, $name);
             return '$this->startAttributeStack[#1] + $this->endAttributes';
@@ -110,7 +113,7 @@ function removeTrailingWhitespace($code)
 //////////////////////////////
 function regex($regex)
 {
-    return '~' . \LIB . '(?:' . \str_replace('~', '\\~', $regex) . ')~';
+    return '~' . \DEPTRAC_202312\LIB . '(?:' . \str_replace('~', '\\~', $regex) . ')~';
 }
 function magicSplit($regex, $string)
 {

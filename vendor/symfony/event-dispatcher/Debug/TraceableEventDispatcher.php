@@ -8,17 +8,17 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202311\Symfony\Component\EventDispatcher\Debug;
+namespace DEPTRAC_202312\Symfony\Component\EventDispatcher\Debug;
 
-use DEPTRAC_202311\Psr\EventDispatcher\StoppableEventInterface;
-use DEPTRAC_202311\Psr\Log\LoggerInterface;
-use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventDispatcher;
-use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventDispatcherInterface;
-use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventSubscriberInterface;
-use DEPTRAC_202311\Symfony\Component\HttpFoundation\Request;
-use DEPTRAC_202311\Symfony\Component\HttpFoundation\RequestStack;
-use DEPTRAC_202311\Symfony\Component\Stopwatch\Stopwatch;
-use DEPTRAC_202311\Symfony\Contracts\Service\ResetInterface;
+use DEPTRAC_202312\Psr\EventDispatcher\StoppableEventInterface;
+use DEPTRAC_202312\Psr\Log\LoggerInterface;
+use DEPTRAC_202312\Symfony\Component\EventDispatcher\EventDispatcher;
+use DEPTRAC_202312\Symfony\Component\EventDispatcher\EventDispatcherInterface;
+use DEPTRAC_202312\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_202312\Symfony\Component\HttpFoundation\Request;
+use DEPTRAC_202312\Symfony\Component\HttpFoundation\RequestStack;
+use DEPTRAC_202312\Symfony\Component\Stopwatch\Stopwatch;
+use DEPTRAC_202312\Symfony\Contracts\Service\ResetInterface;
 /**
  * Collects some data about event listeners.
  *

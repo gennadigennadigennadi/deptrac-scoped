@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PhpParser\Node\Expr;
+namespace DEPTRAC_202312\PhpParser\Node\Expr;
 
-use DEPTRAC_202311\PhpParser\Node;
-use DEPTRAC_202311\PhpParser\Node\Expr;
-use DEPTRAC_202311\PhpParser\Node\FunctionLike;
+use DEPTRAC_202312\PhpParser\Node;
+use DEPTRAC_202312\PhpParser\Node\Expr;
+use DEPTRAC_202312\PhpParser\Node\FunctionLike;
 class ArrowFunction extends Expr implements FunctionLike
 {
     /** @var bool */

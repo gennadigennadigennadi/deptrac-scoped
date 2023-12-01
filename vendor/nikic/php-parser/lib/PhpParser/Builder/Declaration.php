@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PhpParser\Builder;
+namespace DEPTRAC_202312\PhpParser\Builder;
 
-use DEPTRAC_202311\PhpParser;
-use DEPTRAC_202311\PhpParser\BuilderHelpers;
+use DEPTRAC_202312\PhpParser;
+use DEPTRAC_202312\PhpParser\BuilderHelpers;
 abstract class Declaration implements PhpParser\Builder
 {
     protected $attributes = [];

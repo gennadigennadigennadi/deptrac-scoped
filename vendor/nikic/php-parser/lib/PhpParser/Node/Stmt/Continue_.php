@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PhpParser\Node\Stmt;
+namespace DEPTRAC_202312\PhpParser\Node\Stmt;
 
-use DEPTRAC_202311\PhpParser\Node;
+use DEPTRAC_202312\PhpParser\Node;
 class Continue_ extends Node\Stmt
 {
     /** @var null|Node\Expr Number of loops to continue */

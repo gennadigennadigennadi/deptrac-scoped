@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
-use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
 class PDFlib
 {
     /**
@@ -1806,7 +1806,7 @@ class PDFlib
     {
     }
 }
-\class_alias('DEPTRAC_202311\\PDFlib', 'PDFlib', \false);
+\class_alias('DEPTRAC_202312\\PDFlib', 'PDFlib', \false);
 /**
  * Activates a previously created structure element or other content item.
  * @param resource $pdf The pDF doc

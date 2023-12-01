@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PhpParser\Node\Stmt\TraitUseAdaptation;
+namespace DEPTRAC_202312\PhpParser\Node\Stmt\TraitUseAdaptation;
 
-use DEPTRAC_202311\PhpParser\Node;
+use DEPTRAC_202312\PhpParser\Node;
 class Alias extends Node\Stmt\TraitUseAdaptation
 {
     /** @var null|int New modifier */

@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 /**
  * Stubs for APC (apcu_bc nowadays) extension
@@ -358,7 +358,7 @@ class APCIterator implements \Iterator
  *
  * @link https://php.net/manual/en/class.apciterator.php
  */
-\class_alias('DEPTRAC_202311\\APCIterator', 'APCIterator', \false);
+\class_alias('DEPTRAC_202312\\APCIterator', 'APCIterator', \false);
 /**
  * Stubs for APCu 5.0.0
  */
@@ -732,4 +732,4 @@ class APCUIterator implements \Iterator
  * @link https://php.net/manual/en/class.apcuiterator.php
  * @since APCu 5.0.0
  */
-\class_alias('DEPTRAC_202311\\APCUIterator', 'APCUIterator', \false);
+\class_alias('DEPTRAC_202312\\APCUIterator', 'APCUIterator', \false);

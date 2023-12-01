@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 /*
  * This file is part of the Symfony package.
@@ -10,7 +10,7 @@ namespace DEPTRAC_202311;
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-if (!\function_exists('DEPTRAC_202311\\trigger_deprecation')) {
+if (!\function_exists('DEPTRAC_202312\\trigger_deprecation')) {
     /**
      * Triggers a silenced deprecation notice.
      *

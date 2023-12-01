@@ -1,12 +1,12 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
-use DEPTRAC_202311\JetBrains\PhpStorm\ArrayShape;
-use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_202311\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202312\JetBrains\PhpStorm\ArrayShape;
+use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202312\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202312\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202312\JetBrains\PhpStorm\Pure;
 /**
  * Retrieve information about the currently installed GD library
  * @link https://php.net/manual/en/function.gd-info.php
@@ -3135,4 +3135,4 @@ final class GdImage
 /**
  * @since 8.0
  */
-\class_alias('DEPTRAC_202311\\GdImage', 'GdImage', \false);
+\class_alias('DEPTRAC_202312\\GdImage', 'GdImage', \false);

@@ -3,8 +3,8 @@
 declare (strict_types=1);
 namespace Qossmic\Deptrac\Core\Ast\Parser\Extractors;
 
-use DEPTRAC_202311\PhpParser\Node;
-use DEPTRAC_202311\PhpParser\Node\Stmt\Property;
+use DEPTRAC_202312\PhpParser\Node;
+use DEPTRAC_202312\PhpParser\Node\Stmt\Property;
 use Qossmic\Deptrac\Core\Ast\AstMap\ReferenceBuilder;
 use Qossmic\Deptrac\Core\Ast\Parser\TypeResolver;
 use Qossmic\Deptrac\Core\Ast\Parser\TypeScope;

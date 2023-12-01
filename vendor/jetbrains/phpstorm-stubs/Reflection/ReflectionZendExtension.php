@@ -1,12 +1,12 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
-use DEPTRAC_202311\JetBrains\PhpStorm\Immutable;
-use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_202311\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_202311\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_202311\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202312\JetBrains\PhpStorm\Immutable;
+use DEPTRAC_202312\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202312\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202312\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_202312\JetBrains\PhpStorm\Pure;
 /**
  * @link https://secure.php.net/manual/en/class.reflectionzendextension.php
  * @since 5.4
@@ -142,4 +142,4 @@ class ReflectionZendExtension implements \Reflector
  * @link https://secure.php.net/manual/en/class.reflectionzendextension.php
  * @since 5.4
  */
-\class_alias('DEPTRAC_202311\\ReflectionZendExtension', 'ReflectionZendExtension', \false);
+\class_alias('DEPTRAC_202312\\ReflectionZendExtension', 'ReflectionZendExtension', \false);

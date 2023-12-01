@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
-use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
 /**
  * Helper autocomplete for php redis extension
  *
@@ -5334,8 +5334,8 @@ class Redis
  * @author Max Kamashev <max.kamashev@gmail.com>
  * @link   https://github.com/ukko/phpredis-phpdoc
  */
-\class_alias('DEPTRAC_202311\\Redis', 'Redis', \false);
+\class_alias('DEPTRAC_202312\\Redis', 'Redis', \false);
 class RedisException extends \Exception
 {
 }
-\class_alias('DEPTRAC_202311\\RedisException', 'RedisException', \false);
+\class_alias('DEPTRAC_202312\\RedisException', 'RedisException', \false);

@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -391,4 +391,4 @@ class SolrDisMaxQuery extends \SolrQuery implements \Serializable
  * Class SolrDisMaxQuery<br/>
  * @link https://php.net/manual/en/class.solrdismaxquery.php
  */
-\class_alias('DEPTRAC_202311\\SolrDisMaxQuery', 'SolrDisMaxQuery', \false);
+\class_alias('DEPTRAC_202312\\SolrDisMaxQuery', 'SolrDisMaxQuery', \false);

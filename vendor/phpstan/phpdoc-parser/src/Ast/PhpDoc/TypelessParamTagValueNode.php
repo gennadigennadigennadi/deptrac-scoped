@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PHPStan\PhpDocParser\Ast\PhpDoc;
+namespace DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc;
 
-use DEPTRAC_202311\PHPStan\PhpDocParser\Ast\NodeAttributes;
+use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\NodeAttributes;
 use function trim;
 class TypelessParamTagValueNode implements PhpDocTagValueNode
 {

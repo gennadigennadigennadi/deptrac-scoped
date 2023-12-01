@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 /**
  * The SVMModel is the end result of the training process. It can be used to classify previously unseen data.
@@ -120,4 +120,4 @@ class SVMModel
  * @since 7.0
  * @link https://www.php.net/manual/en/class.svmmodel.php
  */
-\class_alias('DEPTRAC_202311\\SVMModel', 'SVMModel', \false);
+\class_alias('DEPTRAC_202312\\SVMModel', 'SVMModel', \false);

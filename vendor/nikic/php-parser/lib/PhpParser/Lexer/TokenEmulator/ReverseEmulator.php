@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PhpParser\Lexer\TokenEmulator;
+namespace DEPTRAC_202312\PhpParser\Lexer\TokenEmulator;
 
 /**
  * Reverses emulation direction of the inner emulator.

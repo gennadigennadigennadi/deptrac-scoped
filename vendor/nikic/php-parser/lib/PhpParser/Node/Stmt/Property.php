@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PhpParser\Node\Stmt;
+namespace DEPTRAC_202312\PhpParser\Node\Stmt;
 
-use DEPTRAC_202311\PhpParser\Node;
-use DEPTRAC_202311\PhpParser\Node\ComplexType;
-use DEPTRAC_202311\PhpParser\Node\Identifier;
-use DEPTRAC_202311\PhpParser\Node\Name;
+use DEPTRAC_202312\PhpParser\Node;
+use DEPTRAC_202312\PhpParser\Node\ComplexType;
+use DEPTRAC_202312\PhpParser\Node\Identifier;
+use DEPTRAC_202312\PhpParser\Node\Name;
 class Property extends Node\Stmt
 {
     /** @var int Modifiers */

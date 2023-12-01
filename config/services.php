@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
-use DEPTRAC_202311\PhpParser\Lexer;
-use DEPTRAC_202311\PhpParser\Parser;
-use DEPTRAC_202311\PhpParser\ParserFactory;
-use DEPTRAC_202311\Psr\EventDispatcher\EventDispatcherInterface;
+use DEPTRAC_202312\PhpParser\Lexer;
+use DEPTRAC_202312\PhpParser\Parser;
+use DEPTRAC_202312\PhpParser\ParserFactory;
+use DEPTRAC_202312\Psr\EventDispatcher\EventDispatcherInterface;
 use Qossmic\Deptrac\Contract\Analyser\EventHelper;
 use Qossmic\Deptrac\Contract\Config\CollectorType;
 use Qossmic\Deptrac\Contract\Config\EmitterType;
@@ -106,12 +106,12 @@ use Qossmic\Deptrac\Supportive\OutputFormatter\JsonOutputFormatter;
 use Qossmic\Deptrac\Supportive\OutputFormatter\JUnitOutputFormatter;
 use Qossmic\Deptrac\Supportive\OutputFormatter\TableOutputFormatter;
 use Qossmic\Deptrac\Supportive\OutputFormatter\XMLOutputFormatter;
-use DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
-use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventDispatcher;
-use function DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\Configurator\param;
-use function DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\Configurator\service;
-use function DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\Configurator\tagged_iterator;
-use function DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\Configurator\tagged_locator;
+use DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\Configurator\ContainerConfigurator;
+use DEPTRAC_202312\Symfony\Component\EventDispatcher\EventDispatcher;
+use function DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\Configurator\param;
+use function DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\Configurator\service;
+use function DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\Configurator\tagged_iterator;
+use function DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\Configurator\tagged_locator;
 return static function (ContainerConfigurator $container) : void {
     $services = $container->services();
     $services->defaults()->autowire();
@@ -120,7 +120,7 @@ return static function (ContainerConfigurator $container) : void {
      */
     $services->set(EventDispatcher::class);
     $services->alias(EventDispatcherInterface::class, EventDispatcher::class);
-    $services->alias(\DEPTRAC_202311\Symfony\Component\EventDispatcher\EventDispatcherInterface::class, EventDispatcher::class);
+    $services->alias(\DEPTRAC_202312\Symfony\Component\EventDispatcher\EventDispatcherInterface::class, EventDispatcher::class);
     $services->alias('event_dispatcher', EventDispatcher::class);
     $services->set(FileInputCollector::class)->args(['$paths' => param('paths'), '$excludedFilePatterns' => param('exclude_files'), '$basePath' => param('projectDirectory')]);
     $services->alias(InputCollectorInterface::class, FileInputCollector::class);

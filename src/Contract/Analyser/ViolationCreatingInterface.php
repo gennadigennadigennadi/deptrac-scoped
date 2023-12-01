@@ -3,7 +3,7 @@
 declare (strict_types=1);
 namespace Qossmic\Deptrac\Contract\Analyser;
 
-use DEPTRAC_202311\Symfony\Component\EventDispatcher\EventSubscriberInterface;
+use DEPTRAC_202312\Symfony\Component\EventDispatcher\EventSubscriberInterface;
 /**
  * Every rule that can create a Violation has to implement this interface.
  *

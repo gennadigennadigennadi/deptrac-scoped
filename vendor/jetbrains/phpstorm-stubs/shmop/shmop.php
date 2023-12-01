@@ -1,10 +1,10 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 // Start of shmop v.
-use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202312\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * Create or open shared memory block
  * @link https://php.net/manual/en/function.shmop-open.php
@@ -120,5 +120,5 @@ final class Shmop
 /**
  * @since 8.0
  */
-\class_alias('DEPTRAC_202311\\Shmop', 'Shmop', \false);
+\class_alias('DEPTRAC_202312\\Shmop', 'Shmop', \false);
 // End of shmop v.

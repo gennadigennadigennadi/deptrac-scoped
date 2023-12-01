@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311\Psr\Log;
+namespace DEPTRAC_202312\Psr\Log;
 
 /**
  * Describes a logger instance.

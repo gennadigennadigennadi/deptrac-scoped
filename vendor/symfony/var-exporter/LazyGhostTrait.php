@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202311\Symfony\Component\VarExporter;
+namespace DEPTRAC_202312\Symfony\Component\VarExporter;
 
-use DEPTRAC_202311\Symfony\Component\VarExporter\Internal\Hydrator;
-use DEPTRAC_202311\Symfony\Component\VarExporter\Internal\LazyObjectRegistry as Registry;
-use DEPTRAC_202311\Symfony\Component\VarExporter\Internal\LazyObjectState;
-use DEPTRAC_202311\Symfony\Component\VarExporter\Internal\LazyObjectTrait;
+use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\Hydrator;
+use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\LazyObjectRegistry as Registry;
+use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\LazyObjectState;
+use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\LazyObjectTrait;
 trait LazyGhostTrait
 {
     use LazyObjectTrait;

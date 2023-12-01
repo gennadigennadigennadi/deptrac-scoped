@@ -9,7 +9,7 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_202311\phpDocumentor\Reflection;
+namespace DEPTRAC_202312\phpDocumentor\Reflection;
 
 /**
  * @psalm-immutable

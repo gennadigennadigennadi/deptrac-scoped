@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 // Start of sysvsem v.
-use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202312\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * Get a semaphore id
  * @link https://php.net/manual/en/function.sem-get.php
@@ -85,5 +85,5 @@ final class SysvSemaphore
 /**
  * @since 8.0
  */
-\class_alias('DEPTRAC_202311\\SysvSemaphore', 'SysvSemaphore', \false);
+\class_alias('DEPTRAC_202312\\SysvSemaphore', 'SysvSemaphore', \false);
 // End of sysvsem v.

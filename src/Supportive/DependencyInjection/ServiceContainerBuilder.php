@@ -7,16 +7,16 @@ use Exception;
 use Qossmic\Deptrac\Supportive\DependencyInjection\Exception\CacheFileException;
 use Qossmic\Deptrac\Supportive\DependencyInjection\Exception\CannotLoadConfiguration;
 use SplFileInfo;
-use DEPTRAC_202311\Symfony\Component\Config\Builder\ConfigBuilderGenerator;
-use DEPTRAC_202311\Symfony\Component\Config\FileLocator;
-use DEPTRAC_202311\Symfony\Component\Config\Loader\DelegatingLoader;
-use DEPTRAC_202311\Symfony\Component\Config\Loader\LoaderResolver;
-use DEPTRAC_202311\Symfony\Component\Console\DependencyInjection\AddConsoleCommandPass;
-use DEPTRAC_202311\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
-use DEPTRAC_202311\Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
-use DEPTRAC_202311\Symfony\Component\EventDispatcher\DependencyInjection\RegisterListenersPass;
-use DEPTRAC_202311\Symfony\Component\Filesystem\Path;
+use DEPTRAC_202312\Symfony\Component\Config\Builder\ConfigBuilderGenerator;
+use DEPTRAC_202312\Symfony\Component\Config\FileLocator;
+use DEPTRAC_202312\Symfony\Component\Config\Loader\DelegatingLoader;
+use DEPTRAC_202312\Symfony\Component\Config\Loader\LoaderResolver;
+use DEPTRAC_202312\Symfony\Component\Console\DependencyInjection\AddConsoleCommandPass;
+use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\PhpFileLoader;
+use DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use DEPTRAC_202312\Symfony\Component\EventDispatcher\DependencyInjection\RegisterListenersPass;
+use DEPTRAC_202312\Symfony\Component\Filesystem\Path;
 final class ServiceContainerBuilder
 {
     private ?SplFileInfo $configFile = null;
@@ -101,8 +101,14 @@ final class ServiceContainerBuilder
         if (!$cacheFile instanceof SplFileInfo) {
             return;
         }
-        if (!\file_exists($cacheFile->getPathname()) && !\touch($cacheFile->getPathname()) && !\is_writable($cacheFile->getPathname())) {
-            throw CacheFileException::notWritable($cacheFile);
+        if (!\file_exists($cacheFile->getPathname())) {
+            $dirname = $cacheFile->getPath() ?: '.';
+            if (!\is_dir($dirname) && \mkdir($dirname . '/', 0777, \true) && !\is_dir($dirname)) {
+                throw CacheFileException::notWritable($cacheFile);
+            }
+            if (!\touch($cacheFile->getPathname()) && !\is_writable($cacheFile->getPathname())) {
+                throw CacheFileException::notWritable($cacheFile);
+            }
         }
         $container->setParameter('deptrac.cache_file', $cacheFile->getPathname());
         try {

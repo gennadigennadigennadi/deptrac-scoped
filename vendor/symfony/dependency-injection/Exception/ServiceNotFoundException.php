@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202311\Symfony\Component\DependencyInjection\Exception;
+namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception;
 
-use DEPTRAC_202311\Psr\Container\NotFoundExceptionInterface;
+use DEPTRAC_202312\Psr\Container\NotFoundExceptionInterface;
 /**
  * This exception is thrown when a non-existent service is requested.
  *

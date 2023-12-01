@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PhpParser\Node;
+namespace DEPTRAC_202312\PhpParser\Node;
 
-use DEPTRAC_202311\PhpParser\NodeAbstract;
+use DEPTRAC_202312\PhpParser\NodeAbstract;
 class Param extends NodeAbstract
 {
     /** @var null|Identifier|Name|ComplexType Type declaration */

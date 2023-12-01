@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -173,4 +173,4 @@ class SolrCollapseFunction
  * Class SolrCollapseFunction
  * @link https://php.net/manual/en/class.solrcollapsefunction.php
  */
-\class_alias('DEPTRAC_202311\\SolrCollapseFunction', 'SolrCollapseFunction', \false);
+\class_alias('DEPTRAC_202312\\SolrCollapseFunction', 'SolrCollapseFunction', \false);

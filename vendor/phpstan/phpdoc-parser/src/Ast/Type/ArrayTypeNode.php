@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PHPStan\PhpDocParser\Ast\Type;
+namespace DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type;
 
-use DEPTRAC_202311\PHPStan\PhpDocParser\Ast\NodeAttributes;
+use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\NodeAttributes;
 class ArrayTypeNode implements TypeNode
 {
     use NodeAttributes;

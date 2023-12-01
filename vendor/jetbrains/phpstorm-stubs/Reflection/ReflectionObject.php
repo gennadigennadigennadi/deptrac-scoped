@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
-use DEPTRAC_202311\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_202311\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202312\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
 /**
  * The <b>ReflectionObject</b> class reports
  * information about an object.
@@ -44,4 +44,4 @@ class ReflectionObject extends \ReflectionClass
  *
  * @link https://php.net/manual/en/class.reflectionobject.php
  */
-\class_alias('DEPTRAC_202311\\ReflectionObject', 'ReflectionObject', \false);
+\class_alias('DEPTRAC_202312\\ReflectionObject', 'ReflectionObject', \false);

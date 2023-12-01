@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311\Psr\Container;
+namespace DEPTRAC_202312\Psr\Container;
 
 /**
  * No entry was found in the container.

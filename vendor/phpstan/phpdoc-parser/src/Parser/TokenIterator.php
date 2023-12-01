@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PHPStan\PhpDocParser\Parser;
+namespace DEPTRAC_202312\PHPStan\PhpDocParser\Parser;
 
 use LogicException;
-use DEPTRAC_202311\PHPStan\PhpDocParser\Lexer\Lexer;
+use DEPTRAC_202312\PHPStan\PhpDocParser\Lexer\Lexer;
 use function array_pop;
 use function assert;
 use function count;

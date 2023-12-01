@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311\RdKafka\Metadata;
+namespace DEPTRAC_202312\RdKafka\Metadata;
 
 class Topic
 {

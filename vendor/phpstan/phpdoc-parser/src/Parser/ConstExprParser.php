@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PHPStan\PhpDocParser\Parser;
+namespace DEPTRAC_202312\PHPStan\PhpDocParser\Parser;
 
-use DEPTRAC_202311\PHPStan\PhpDocParser\Ast;
-use DEPTRAC_202311\PHPStan\PhpDocParser\Lexer\Lexer;
+use DEPTRAC_202312\PHPStan\PhpDocParser\Ast;
+use DEPTRAC_202312\PHPStan\PhpDocParser\Lexer\Lexer;
 use function str_replace;
 use function strtolower;
 use function substr;

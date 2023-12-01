@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311;
+namespace DEPTRAC_202312;
 
 /**
  * Stubs for stomp
@@ -151,7 +151,7 @@ class Stomp
  * Stubs for stomp
  * https://pecl.php.net/package/stomp
  */
-\class_alias('DEPTRAC_202311\\Stomp', 'Stomp', \false);
+\class_alias('DEPTRAC_202312\\Stomp', 'Stomp', \false);
 class StompFrame
 {
     /**
@@ -170,7 +170,7 @@ class StompFrame
      */
     public $body;
 }
-\class_alias('DEPTRAC_202311\\StompFrame', 'StompFrame', \false);
+\class_alias('DEPTRAC_202312\\StompFrame', 'StompFrame', \false);
 class StompException extends \Exception
 {
     /**
@@ -182,7 +182,7 @@ class StompException extends \Exception
     {
     }
 }
-\class_alias('DEPTRAC_202311\\StompException', 'StompException', \false);
+\class_alias('DEPTRAC_202312\\StompException', 'StompException', \false);
 /**
  * Get the current version of the stomp extension
  *

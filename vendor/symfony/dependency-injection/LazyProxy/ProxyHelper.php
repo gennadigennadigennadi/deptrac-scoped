@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202311\Symfony\Component\DependencyInjection\LazyProxy;
+namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\LazyProxy;
 
-trigger_deprecation('symfony/dependency-injection', '6.2', 'The "%s" class is deprecated, use "%s" instead.', ProxyHelper::class, \DEPTRAC_202311\Symfony\Component\VarExporter\ProxyHelper::class);
+\DEPTRAC_202312\trigger_deprecation('symfony/dependency-injection', '6.2', 'The "%s" class is deprecated, use "%s" instead.', ProxyHelper::class, \DEPTRAC_202312\Symfony\Component\VarExporter\ProxyHelper::class);
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  *

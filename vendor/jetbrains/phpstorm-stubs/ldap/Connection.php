@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202311\LDAP;
+namespace DEPTRAC_202312\LDAP;
 
 /**
  * @since 8.1

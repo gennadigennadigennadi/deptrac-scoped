@@ -1,13 +1,13 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202311\PhpParser;
+namespace DEPTRAC_202312\PhpParser;
 
-use DEPTRAC_202311\PhpParser\Node\Expr\Include_;
-use DEPTRAC_202311\PhpParser\Node\Stmt\Class_;
-use DEPTRAC_202311\PhpParser\Node\Stmt\GroupUse;
-use DEPTRAC_202311\PhpParser\Node\Stmt\Use_;
-use DEPTRAC_202311\PhpParser\Node\Stmt\UseUse;
+use DEPTRAC_202312\PhpParser\Node\Expr\Include_;
+use DEPTRAC_202312\PhpParser\Node\Stmt\Class_;
+use DEPTRAC_202312\PhpParser\Node\Stmt\GroupUse;
+use DEPTRAC_202312\PhpParser\Node\Stmt\Use_;
+use DEPTRAC_202312\PhpParser\Node\Stmt\UseUse;
 class NodeDumper
 {
     private $dumpComments;
