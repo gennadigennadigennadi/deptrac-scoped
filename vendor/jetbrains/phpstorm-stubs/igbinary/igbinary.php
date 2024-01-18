@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 // Start of igbinary v.1.0.0
 /** Generates a storable representation of a value.

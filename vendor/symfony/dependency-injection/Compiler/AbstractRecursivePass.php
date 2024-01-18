@@ -8,17 +8,17 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\ArgumentInterface;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ChildDefinition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\LogicException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ExpressionLanguage;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_202312\Symfony\Component\ExpressionLanguage\Expression;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\ArgumentInterface;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ChildDefinition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\LogicException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ExpressionLanguage;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Component\ExpressionLanguage\Expression;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */
@@ -29,6 +29,7 @@ abstract class AbstractRecursivePass implements CompilerPassInterface
      */
     protected $container;
     protected $currentId;
+    protected bool $skipScalars = \false;
     private bool $processExpressions = \false;
     private ExpressionLanguage $expressionLanguage;
     private bool $inExpression = \false;
@@ -68,6 +69,9 @@ abstract class AbstractRecursivePass implements CompilerPassInterface
     {
         if (\is_array($value)) {
             foreach ($value as $k => $v) {
+                if ((!$v || \is_scalar($v)) && $this->skipScalars) {
+                    continue;
+                }
                 if ($isRoot) {
                     if ($v->hasTag('container.excluded')) {
                         continue;

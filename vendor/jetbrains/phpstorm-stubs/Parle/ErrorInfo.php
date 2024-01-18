@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312\Parle;
+namespace DEPTRAC_202401\Parle;
 
 class ErrorInfo
 {

@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\VarExporter\Internal;
+namespace DEPTRAC_202401\Symfony\Component\VarExporter\Internal;
 
-use DEPTRAC_202312\Symfony\Component\VarExporter\Exception\ClassNotFoundException;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Exception\ClassNotFoundException;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  *
@@ -18,9 +18,9 @@ use DEPTRAC_202312\Symfony\Component\VarExporter\Exception\ClassNotFoundExceptio
  */
 class Hydrator
 {
-    public static $hydrators = [];
-    public static $simpleHydrators = [];
-    public static $propertyScopes = [];
+    public static array $hydrators = [];
+    public static array $simpleHydrators = [];
+    public static array $propertyScopes = [];
     public $registry;
     public $values;
     public $properties;
@@ -236,10 +236,10 @@ class Hydrator
             }
             $name = $property->name;
             if (\ReflectionProperty::IS_PRIVATE & $flags) {
-                $propertyScopes["\x00{$class}\x00{$name}"] = $propertyScopes[$name] = [$class, $name, $flags & \ReflectionProperty::IS_READONLY ? $class : null];
+                $propertyScopes["\x00{$class}\x00{$name}"] = $propertyScopes[$name] = [$class, $name, $flags & \ReflectionProperty::IS_READONLY ? $class : null, $property];
                 continue;
             }
-            $propertyScopes[$name] = [$class, $name, $flags & \ReflectionProperty::IS_READONLY ? $property->class : null];
+            $propertyScopes[$name] = [$class, $name, $flags & \ReflectionProperty::IS_READONLY ? $property->class : null, $property];
             if (\ReflectionProperty::IS_PROTECTED & $flags) {
                 $propertyScopes["\x00*\x00{$name}"] = $propertyScopes[$name];
             }
@@ -250,8 +250,8 @@ class Hydrator
                 if (!$property->isStatic()) {
                     $name = $property->name;
                     $readonlyScope = $property->isReadOnly() ? $class : null;
-                    $propertyScopes["\x00{$class}\x00{$name}"] = [$class, $name, $readonlyScope];
-                    $propertyScopes[$name] ??= [$class, $name, $readonlyScope];
+                    $propertyScopes["\x00{$class}\x00{$name}"] = [$class, $name, $readonlyScope, $property];
+                    $propertyScopes[$name] ??= [$class, $name, $readonlyScope, $property];
                 }
             }
         }

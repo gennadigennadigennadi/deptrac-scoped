@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 /**
  * Stubs for XXTEA
@@ -39,7 +39,7 @@ class XXTEA
  * Stubs for XXTEA
  * https://pecl.php.net/package/xxtea.
  */
-\class_alias('DEPTRAC_202312\\XXTEA', 'XXTEA', \false);
+\class_alias('DEPTRAC_202401\\XXTEA', 'XXTEA', \false);
 /**
  * Encrypts data.
  *

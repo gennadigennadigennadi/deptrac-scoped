@@ -8,20 +8,21 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Psr\Container\ContainerInterface as PsrContainerInterface;
-use DEPTRAC_202312\Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\BoundArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerInterface;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\TypedReference;
-use DEPTRAC_202312\Symfony\Component\HttpFoundation\Session\SessionInterface;
-use DEPTRAC_202312\Symfony\Contracts\Service\Attribute\SubscribedService;
-use DEPTRAC_202312\Symfony\Contracts\Service\ServiceProviderInterface;
-use DEPTRAC_202312\Symfony\Contracts\Service\ServiceSubscriberInterface;
+use DEPTRAC_202401\Psr\Container\ContainerInterface as PsrContainerInterface;
+use DEPTRAC_202401\Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\BoundArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Attribute\Autowire;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerInterface;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\TypedReference;
+use DEPTRAC_202401\Symfony\Component\HttpFoundation\Session\SessionInterface;
+use DEPTRAC_202401\Symfony\Contracts\Service\Attribute\SubscribedService;
+use DEPTRAC_202401\Symfony\Contracts\Service\ServiceProviderInterface;
+use DEPTRAC_202401\Symfony\Contracts\Service\ServiceSubscriberInterface;
 /**
  * Compiler pass to register tagged services that require a service locator.
  *
@@ -29,6 +30,7 @@ use DEPTRAC_202312\Symfony\Contracts\Service\ServiceSubscriberInterface;
  */
 class RegisterServiceSubscribersPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \true;
     protected function processValue(mixed $value, bool $isRoot = \false) : mixed
     {
         if (!$value instanceof Definition || $value->isAbstract() || $value->isSynthetic() || !$value->hasTag('container.service_subscriber')) {
@@ -69,15 +71,20 @@ class RegisterServiceSubscribersPass extends AbstractRecursivePass
         $subscriberMap = [];
         foreach ($class::getSubscribedServices() as $key => $type) {
             $attributes = [];
+            if (!isset($serviceMap[$key]) && $type instanceof Autowire) {
+                $subscriberMap[$key] = $type;
+                continue;
+            }
             if ($type instanceof SubscribedService) {
-                $key = $type->key;
+                $key = $type->key ?? $key;
                 $attributes = $type->attributes;
                 $type = ($type->nullable ? '?' : '') . ($type->type ?? throw new InvalidArgumentException(\sprintf('When "%s::getSubscribedServices()" returns "%s", a type must be set.', $class, SubscribedService::class)));
             }
             if (!\is_string($type) || !\preg_match('/(?(DEFINE)(?<cn>[a-zA-Z_\\x7f-\\xff][a-zA-Z0-9_\\x7f-\\xff]*+))(?(DEFINE)(?<fqcn>(?&cn)(?:\\\\(?&cn))*+))^\\??(?&fqcn)(?:(?:\\|(?&fqcn))*+|(?:&(?&fqcn))*+)$/', $type)) {
                 throw new InvalidArgumentException(\sprintf('"%s::getSubscribedServices()" must return valid PHP types for service "%s" key "%s", "%s" returned.', $class, $this->currentId, $key, \is_string($type) ? $type : \get_debug_type($type)));
             }
-            if ($optionalBehavior = '?' === $type[0]) {
+            $optionalBehavior = ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE;
+            if ('?' === $type[0]) {
                 $type = \substr($type, 1);
                 $optionalBehavior = ContainerInterface::IGNORE_ON_INVALID_REFERENCE;
             }
@@ -107,7 +114,7 @@ class RegisterServiceSubscribersPass extends AbstractRecursivePass
                 $camelCaseName = \lcfirst(\str_replace(' ', '', \ucwords(\preg_replace('/[^a-zA-Z0-9\\x7f-\\xff]++/', ' ', $name))));
                 $name = $this->container->has($type . ' $' . $camelCaseName) ? $camelCaseName : $name;
             }
-            $subscriberMap[$key] = new TypedReference((string) $serviceMap[$key], $type, $optionalBehavior ?: ContainerInterface::EXCEPTION_ON_INVALID_REFERENCE, $name, $attributes);
+            $subscriberMap[$key] = new TypedReference((string) $serviceMap[$key], $type, $optionalBehavior, $name, $attributes);
             unset($serviceMap[$key]);
         }
         if ($serviceMap = \array_keys($serviceMap)) {

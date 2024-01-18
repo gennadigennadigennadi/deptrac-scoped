@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PhpParser\Parser;
+namespace DEPTRAC_202401\PhpParser\Parser;
 
-use DEPTRAC_202312\PhpParser\Error;
-use DEPTRAC_202312\PhpParser\ErrorHandler;
-use DEPTRAC_202312\PhpParser\Parser;
+use DEPTRAC_202401\PhpParser\Error;
+use DEPTRAC_202401\PhpParser\ErrorHandler;
+use DEPTRAC_202401\PhpParser\Parser;
 class Multiple implements Parser
 {
     /** @var Parser[] List of parsers to try, in order of preference */

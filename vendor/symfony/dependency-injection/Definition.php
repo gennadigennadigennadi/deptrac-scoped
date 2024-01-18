@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\BoundArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\OutOfBoundsException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\BoundArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\OutOfBoundsException;
 /**
  * Definition represents a service definition.
  *
@@ -155,6 +155,8 @@ class Definition
     }
     /**
      * Gets the service class.
+     *
+     * @return class-string|null
      */
     public function getClass() : ?string
     {
@@ -660,7 +662,7 @@ class Definition
      *
      * @return $this
      */
-    public function addError(string|\Closure|Definition $error) : static
+    public function addError(string|\Closure|self $error) : static
     {
         if ($error instanceof self) {
             $this->errors = \array_merge($this->errors, $error->errors);

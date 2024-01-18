@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
 /**
  * Resolves all TaggedIteratorArgument arguments.
  *
@@ -19,6 +19,7 @@ use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\TaggedIterator
 class ResolveTaggedIteratorArgumentPass extends AbstractRecursivePass
 {
     use PriorityTaggedServiceTrait;
+    protected bool $skipScalars = \true;
     protected function processValue(mixed $value, bool $isRoot = \false) : mixed
     {
         if (!$value instanceof TaggedIteratorArgument) {

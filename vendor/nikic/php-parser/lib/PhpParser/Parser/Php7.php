@@ -1,20 +1,20 @@
 <?php
 
-namespace DEPTRAC_202312\PhpParser\Parser;
+namespace DEPTRAC_202401\PhpParser\Parser;
 
-use DEPTRAC_202312\PhpParser\Error;
-use DEPTRAC_202312\PhpParser\Node;
-use DEPTRAC_202312\PhpParser\Node\Expr;
-use DEPTRAC_202312\PhpParser\Node\Name;
-use DEPTRAC_202312\PhpParser\Node\Scalar;
-use DEPTRAC_202312\PhpParser\Node\Stmt;
+use DEPTRAC_202401\PhpParser\Error;
+use DEPTRAC_202401\PhpParser\Node;
+use DEPTRAC_202401\PhpParser\Node\Expr;
+use DEPTRAC_202401\PhpParser\Node\Name;
+use DEPTRAC_202401\PhpParser\Node\Scalar;
+use DEPTRAC_202401\PhpParser\Node\Stmt;
 /* This is an automatically GENERATED file, which should not be manually edited.
  * Instead edit one of the following:
  *  * the grammar files grammar/php5.y or grammar/php7.y
  *  * the skeleton file grammar/parser.template
  *  * the preprocessing script grammar/rebuildParsers.php
  */
-class Php7 extends \DEPTRAC_202312\PhpParser\ParserAbstract
+class Php7 extends \DEPTRAC_202401\PhpParser\ParserAbstract
 {
     protected $tokenToSymbolMapSize = 396;
     protected $actionTableSize = 1241;
@@ -831,6 +831,8 @@ class Php7 extends \DEPTRAC_202312\PhpParser\ParserAbstract
         }, 340 => function ($stackPos) {
             if ($this->semStack[$stackPos - (2 - 2)] !== null) {
                 $this->semStack[$stackPos - (2 - 1)][] = $this->semStack[$stackPos - (2 - 2)];
+                $this->semValue = $this->semStack[$stackPos - (2 - 1)];
+            } else {
                 $this->semValue = $this->semStack[$stackPos - (2 - 1)];
             }
         }, 341 => function ($stackPos) {

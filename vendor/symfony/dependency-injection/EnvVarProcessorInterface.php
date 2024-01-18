@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\RuntimeException;
 /**
  * The EnvVarProcessorInterface is implemented by objects that manage environment-like variables.
  *
@@ -21,7 +21,6 @@ interface EnvVarProcessorInterface
     /**
      * Returns the value of the given variable as managed by the current instance.
      *
-     * @param string                  $prefix The namespace of the variable
      * @param string                  $prefix The namespace of the variable; when the empty string is passed, null values should be kept as is
      * @param string                  $name   The name of the variable within the namespace
      * @param \Closure(string): mixed $getEnv A closure that allows fetching more env vars

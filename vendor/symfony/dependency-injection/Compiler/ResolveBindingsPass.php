@@ -8,24 +8,25 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\BoundArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Attribute\Target;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\TypedReference;
-use DEPTRAC_202312\Symfony\Component\VarExporter\ProxyHelper;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\BoundArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\TaggedIteratorArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Attribute\Target;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\TypedReference;
+use DEPTRAC_202401\Symfony\Component\VarExporter\ProxyHelper;
 /**
  * @author Guilhem Niot <guilhem.niot@gmail.com>
  */
 class ResolveBindingsPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \true;
     private array $usedBindings = [];
     private array $unusedBindings = [];
     private array $errorMessages = [];
@@ -154,20 +155,20 @@ class ResolveBindingsPass extends AbstractRecursivePass
                     continue;
                 }
                 $typeHint = \ltrim(ProxyHelper::exportType($parameter) ?? '', '?');
-                $name = Target::parseName($parameter);
-                if ($typeHint && \array_key_exists($k = \preg_replace('/(^|[(|&])\\\\/', '\\1', $typeHint) . ' $' . $name, $bindings)) {
+                $name = Target::parseName($parameter, parsedName: $parsedName);
+                if ($typeHint && (\array_key_exists($k = \preg_replace('/(^|[(|&])\\\\/', '\\1', $typeHint) . ' $' . $name, $bindings) || \array_key_exists($k = \preg_replace('/(^|[(|&])\\\\/', '\\1', $typeHint) . ' $' . $parsedName, $bindings))) {
                     $arguments[$key] = $this->getBindingValue($bindings[$k]);
                     continue;
                 }
-                if (\array_key_exists('$' . $name, $bindings)) {
-                    $arguments[$key] = $this->getBindingValue($bindings['$' . $name]);
+                if (\array_key_exists($k = '$' . $name, $bindings) || \array_key_exists($k = '$' . $parsedName, $bindings)) {
+                    $arguments[$key] = $this->getBindingValue($bindings[$k]);
                     continue;
                 }
                 if ($typeHint && '\\' === $typeHint[0] && isset($bindings[$typeHint = \substr($typeHint, 1)])) {
                     $arguments[$key] = $this->getBindingValue($bindings[$typeHint]);
                     continue;
                 }
-                if (isset($bindingNames[$name]) || isset($bindingNames[$parameter->name])) {
+                if (isset($bindingNames[$name]) || isset($bindingNames[$parsedName]) || isset($bindingNames[$parameter->name])) {
                     $bindingKey = \array_search($binding, $bindings, \true);
                     $argumentType = \substr($bindingKey, 0, \strpos($bindingKey, ' '));
                     $this->errorMessages[] = \sprintf('Did you forget to add the type "%s" to argument "$%s" of method "%s::%s()"?', $argumentType, $parameter->name, $reflectionMethod->class, $reflectionMethod->name);

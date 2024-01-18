@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Filesystem;
+namespace DEPTRAC_202401\Symfony\Component\Filesystem;
 
-use DEPTRAC_202312\Symfony\Component\Filesystem\Exception\FileNotFoundException;
-use DEPTRAC_202312\Symfony\Component\Filesystem\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\Filesystem\Exception\IOException;
+use DEPTRAC_202401\Symfony\Component\Filesystem\Exception\FileNotFoundException;
+use DEPTRAC_202401\Symfony\Component\Filesystem\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\Filesystem\Exception\IOException;
 /**
  * Provides basic utility to manipulate the file system.
  *
@@ -20,7 +20,7 @@ use DEPTRAC_202312\Symfony\Component\Filesystem\Exception\IOException;
  */
 class Filesystem
 {
-    private static $lastError;
+    private static ?string $lastError = null;
     /**
      * Copies a file.
      *
@@ -633,7 +633,7 @@ class Filesystem
     {
         self::assertFunctionExists($func);
         self::$lastError = null;
-        \set_error_handler(__CLASS__ . '::handleError');
+        \set_error_handler(self::handleError(...));
         try {
             return $func(...$args);
         } finally {

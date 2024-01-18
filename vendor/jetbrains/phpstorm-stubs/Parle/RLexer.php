@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_202312\Parle;
+namespace DEPTRAC_202401\Parle;
 
-use DEPTRAC_202312\JetBrains\PhpStorm\Immutable;
+use DEPTRAC_202401\JetBrains\PhpStorm\Immutable;
 /**
  * Multistate lexer class.
  * Lexemes can be defined on the fly. If the particular lexer instance is meant to be used with Parle\RParser,

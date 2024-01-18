@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Console\Completion;
+namespace DEPTRAC_202401\Symfony\Component\Console\Completion;
 
-use DEPTRAC_202312\Symfony\Component\Console\Input\InputOption;
+use DEPTRAC_202401\Symfony\Component\Console\Input\InputOption;
 /**
  * Stores all completion suggestions for the current input.
  *
@@ -18,8 +18,8 @@ use DEPTRAC_202312\Symfony\Component\Console\Input\InputOption;
  */
 final class CompletionSuggestions
 {
-    private $valueSuggestions = [];
-    private $optionSuggestions = [];
+    private array $valueSuggestions = [];
+    private array $optionSuggestions = [];
     /**
      * Add a suggested value for an input option or argument.
      *

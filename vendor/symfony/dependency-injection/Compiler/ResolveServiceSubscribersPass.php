@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Psr\Container\ContainerInterface;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_202312\Symfony\Contracts\Service\ServiceProviderInterface;
+use DEPTRAC_202401\Psr\Container\ContainerInterface;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Contracts\Service\ServiceProviderInterface;
 /**
  * Compiler pass to inject their service locator to service subscribers.
  *
@@ -21,6 +21,7 @@ use DEPTRAC_202312\Symfony\Contracts\Service\ServiceProviderInterface;
  */
 class ResolveServiceSubscribersPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \true;
     private ?string $serviceLocator = null;
     protected function processValue(mixed $value, bool $isRoot = \false) : mixed
     {

@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_202312\Symfony\Component\VarExporter\ProxyHelper;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Component\VarExporter\ProxyHelper;
 /**
  * Resolves named arguments to their corresponding numeric index.
  *
@@ -22,6 +22,7 @@ use DEPTRAC_202312\Symfony\Component\VarExporter\ProxyHelper;
  */
 class ResolveNamedArgumentsPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \true;
     protected function processValue(mixed $value, bool $isRoot = \false) : mixed
     {
         if ($value instanceof AbstractArgument && $value->getText() . '.' === $value->getTextWithContext()) {

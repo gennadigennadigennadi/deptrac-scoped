@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Attribute\Autoconfigure;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
 /**
  * Reads #[Autoconfigure] attributes on definitions that are autoconfigured
  * and don't have the "container.ignore_attributes" tag.
@@ -22,7 +22,7 @@ use DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\YamlFileLoader;
  */
 final class RegisterAutoconfigureAttributesPass implements CompilerPassInterface
 {
-    private static $registerForAutoconfiguration;
+    private static \Closure $registerForAutoconfiguration;
     public function process(ContainerBuilder $container) : void
     {
         foreach ($container->getDefinitions() as $id => $definition) {
@@ -43,7 +43,7 @@ final class RegisterAutoconfigureAttributesPass implements CompilerPassInterface
     }
     private static function registerForAutoconfiguration(ContainerBuilder $container, \ReflectionClass $class, \ReflectionAttribute $attribute) : void
     {
-        if (self::$registerForAutoconfiguration) {
+        if (isset(self::$registerForAutoconfiguration)) {
             (self::$registerForAutoconfiguration)($container, $class, $attribute);
             return;
         }

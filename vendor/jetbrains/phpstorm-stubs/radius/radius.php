@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 /**
  * Radius constants

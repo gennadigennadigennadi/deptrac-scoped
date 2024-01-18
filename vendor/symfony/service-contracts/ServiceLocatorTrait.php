@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Contracts\Service;
+namespace DEPTRAC_202401\Symfony\Contracts\Service;
 
-use DEPTRAC_202312\Psr\Container\ContainerExceptionInterface;
-use DEPTRAC_202312\Psr\Container\NotFoundExceptionInterface;
+use DEPTRAC_202401\Psr\Container\ContainerExceptionInterface;
+use DEPTRAC_202401\Psr\Container\NotFoundExceptionInterface;
 // Help opcache.preload discover always-needed symbols
 \class_exists(ContainerExceptionInterface::class);
 \class_exists(NotFoundExceptionInterface::class);
@@ -27,7 +27,7 @@ trait ServiceLocatorTrait
     private array $loading = [];
     private array $providedTypes;
     /**
-     * @param callable[] $factories
+     * @param array<string, callable> $factories
      */
     public function __construct(array $factories)
     {

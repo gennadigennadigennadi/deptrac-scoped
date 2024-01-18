@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -41,4 +41,4 @@ class SolrServerException extends \SolrException
  * An exception thrown when there is an error produced by the Solr Server itself.
  * @link https://php.net/manual/en/class.solrserverexception.php
  */
-\class_alias('DEPTRAC_202312\\SolrServerException', 'SolrServerException', \false);
+\class_alias('DEPTRAC_202401\\SolrServerException', 'SolrServerException', \false);

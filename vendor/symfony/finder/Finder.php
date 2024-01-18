@@ -8,20 +8,20 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Finder;
+namespace DEPTRAC_202401\Symfony\Component\Finder;
 
-use DEPTRAC_202312\Symfony\Component\Finder\Comparator\DateComparator;
-use DEPTRAC_202312\Symfony\Component\Finder\Comparator\NumberComparator;
-use DEPTRAC_202312\Symfony\Component\Finder\Exception\DirectoryNotFoundException;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\CustomFilterIterator;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\DateRangeFilterIterator;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\DepthRangeFilterIterator;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\ExcludeDirectoryFilterIterator;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\FilecontentFilterIterator;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\FilenameFilterIterator;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\LazyIterator;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\SizeRangeFilterIterator;
-use DEPTRAC_202312\Symfony\Component\Finder\Iterator\SortableIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Comparator\DateComparator;
+use DEPTRAC_202401\Symfony\Component\Finder\Comparator\NumberComparator;
+use DEPTRAC_202401\Symfony\Component\Finder\Exception\DirectoryNotFoundException;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\CustomFilterIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\DateRangeFilterIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\DepthRangeFilterIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\ExcludeDirectoryFilterIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\FilecontentFilterIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\FilenameFilterIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\LazyIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\SizeRangeFilterIterator;
+use DEPTRAC_202401\Symfony\Component\Finder\Iterator\SortableIterator;
 /**
  * Finder allows to build rules to find files and directories.
  *
@@ -47,6 +47,7 @@ class Finder implements \IteratorAggregate, \Countable
     private array $notNames = [];
     private array $exclude = [];
     private array $filters = [];
+    private array $pruneFilters = [];
     private array $depths = [];
     private array $sizes = [];
     private bool $followLinks = \false;
@@ -521,13 +522,20 @@ class Finder implements \IteratorAggregate, \Countable
      * The anonymous function receives a \SplFileInfo and must return false
      * to remove files.
      *
+     * @param \Closure(SplFileInfo): bool $closure
+     * @param bool                        $prune   Whether to skip traversing directories further
+     *
      * @return $this
      *
      * @see CustomFilterIterator
      */
     public function filter(\Closure $closure) : static
     {
+        $prune = 1 < \func_num_args() ? \func_get_arg(1) : \false;
         $this->filters[] = $closure;
+        if ($prune) {
+            $this->pruneFilters[] = $closure;
+        }
         return $this;
     }
     /**
@@ -658,6 +666,9 @@ class Finder implements \IteratorAggregate, \Countable
     {
         $exclude = $this->exclude;
         $notPaths = $this->notPaths;
+        if ($this->pruneFilters) {
+            $exclude = \array_merge($exclude, $this->pruneFilters);
+        }
         if (static::IGNORE_VCS_FILES === (static::IGNORE_VCS_FILES & $this->ignore)) {
             $exclude = \array_merge($exclude, self::$vcsPatterns);
         }

@@ -10,7 +10,7 @@
  * @see https://grpc.io
  * @see https://github.com/grpc/grpc/tree/master/src/php/ext/grpc
  */
-namespace DEPTRAC_202312\Grpc;
+namespace DEPTRAC_202401\Grpc;
 
 \define('Grpc\\CALL_OK', 0);
 \define('Grpc\\CALL_ERROR', 1);

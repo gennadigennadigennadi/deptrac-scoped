@@ -8,23 +8,23 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\Config\Resource\ClassExistenceResource;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Attribute\Autowire;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Attribute\AutowireCallable;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Attribute\AutowireDecorated;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Attribute\MapDecorated;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Attribute\Target;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerInterface;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\AutowiringFailedException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\TypedReference;
-use DEPTRAC_202312\Symfony\Component\VarExporter\ProxyHelper;
+use DEPTRAC_202401\Symfony\Component\Config\Resource\ClassExistenceResource;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Attribute\Autowire;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Attribute\AutowireCallable;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Attribute\AutowireDecorated;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Attribute\MapDecorated;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Attribute\Target;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerInterface;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\AutowiringFailedException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\TypedReference;
+use DEPTRAC_202401\Symfony\Component\VarExporter\ProxyHelper;
 /**
  * Inspects existing service definitions and wires the autowired ones using the type hints of their classes.
  *
@@ -33,6 +33,7 @@ use DEPTRAC_202312\Symfony\Component\VarExporter\ProxyHelper;
  */
 class AutowirePass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \true;
     private array $types;
     private array $ambiguousServiceTypes;
     private array $autowiringAliases;
@@ -368,29 +369,36 @@ class AutowirePass extends AbstractRecursivePass
             \sort($types);
             $type = \implode($m[0], $types);
         }
-        $name = (\array_filter($reference->getAttributes(), static fn($a) => $a instanceof Target)[0] ?? null)?->name;
+        $name = $target = (\array_filter($reference->getAttributes(), static fn($a) => $a instanceof Target)[0] ?? null)?->name;
         if (null !== ($name ??= $reference->getName())) {
             if ($this->container->has($alias = $type . ' $' . $name) && !$this->container->findDefinition($alias)->isAbstract()) {
                 return new TypedReference($alias, $type, $reference->getInvalidBehavior());
             }
-            if (null !== ($alias = $this->getCombinedAlias($type, $name) ?? null) && !$this->container->findDefinition($alias)->isAbstract()) {
+            if (null !== ($alias = $this->getCombinedAlias($type, $name)) && !$this->container->findDefinition($alias)->isAbstract()) {
                 return new TypedReference($alias, $type, $reference->getInvalidBehavior());
             }
-            if ($this->container->has($name) && !$this->container->findDefinition($name)->isAbstract()) {
+            $parsedName = (new Target($name))->getParsedName();
+            if ($this->container->has($alias = $type . ' $' . $parsedName) && !$this->container->findDefinition($alias)->isAbstract()) {
+                return new TypedReference($alias, $type, $reference->getInvalidBehavior());
+            }
+            if (null !== ($alias = $this->getCombinedAlias($type, $parsedName)) && !$this->container->findDefinition($alias)->isAbstract()) {
+                return new TypedReference($alias, $type, $reference->getInvalidBehavior());
+            }
+            if ($this->container->has($n = $name) && !$this->container->findDefinition($n)->isAbstract() || $this->container->has($n = $parsedName) && !$this->container->findDefinition($n)->isAbstract()) {
                 foreach ($this->container->getAliases() as $id => $alias) {
-                    if ($name === (string) $alias && \str_starts_with($id, $type . ' $')) {
-                        return new TypedReference($name, $type, $reference->getInvalidBehavior());
+                    if ($n === (string) $alias && \str_starts_with($id, $type . ' $')) {
+                        return new TypedReference($n, $type, $reference->getInvalidBehavior());
                     }
                 }
             }
-            if ($reference->getAttributes()) {
+            if (null !== $target) {
                 return null;
             }
         }
         if ($this->container->has($type) && !$this->container->findDefinition($type)->isAbstract()) {
             return new TypedReference($type, $type, $reference->getInvalidBehavior());
         }
-        if (null !== ($alias = $this->getCombinedAlias($type) ?? null) && !$this->container->findDefinition($alias)->isAbstract()) {
+        if (null !== ($alias = $this->getCombinedAlias($type)) && !$this->container->findDefinition($alias)->isAbstract()) {
             return new TypedReference($alias, $type, $reference->getInvalidBehavior());
         }
         return null;
@@ -406,8 +414,10 @@ class AutowirePass extends AbstractRecursivePass
         foreach ($container->getDefinitions() as $id => $definition) {
             $this->populateAvailableType($container, $id, $definition);
         }
+        $prev = null;
         foreach ($container->getAliases() as $id => $alias) {
-            $this->populateAutowiringAlias($id);
+            $this->populateAutowiringAlias($id, $prev);
+            $prev = $id;
         }
     }
     /**
@@ -454,7 +464,7 @@ class AutowirePass extends AbstractRecursivePass
     }
     private function createTypeNotFoundMessageCallback(TypedReference $reference, string $label) : \Closure
     {
-        if (null === $this->typesClone->container) {
+        if (!isset($this->typesClone->container)) {
             $this->typesClone->container = new ContainerBuilder($this->container->getParameterBag());
             $this->typesClone->container->setAliases($this->container->getAliases());
             $this->typesClone->container->setDefinitions($this->container->getDefinitions());
@@ -489,13 +499,15 @@ class AutowirePass extends AbstractRecursivePass
                 $parentMsg = \sprintf('is missing a parent class (%s)', $e->getMessage());
             }
             $message = \sprintf('has type "%s" but this class %s.', $type, $parentMsg ?: 'was not found');
-        } elseif ($reference->getAttributes()) {
-            $message = $label;
-            $label = \sprintf('"#[Target(\'%s\')" on', $reference->getName());
         } else {
             $alternatives = $this->createTypeAlternatives($this->container, $reference);
-            $message = $this->container->has($type) ? 'this service is abstract' : 'no such service exists';
-            $message = \sprintf('references %s "%s" but %s.%s', $r->isInterface() ? 'interface' : 'class', $type, $message, $alternatives);
+            if (null !== ($target = \array_filter($reference->getAttributes(), static fn($a) => $a instanceof Target)[0] ?? null)) {
+                $target = null !== $target->name ? "('{$target->name}')" : '';
+                $message = \sprintf('has "#[Target%s]" but no such target exists.%s', $target, $alternatives);
+            } else {
+                $message = $this->container->has($type) ? 'this service is abstract' : 'no such service exists';
+                $message = \sprintf('references %s "%s" but %s.%s', $r->isInterface() ? 'interface' : 'class', $type, $message, $alternatives);
+            }
             if ($r->isInterface() && !$alternatives) {
                 $message .= ' Did you create a class that implements this interface?';
             }
@@ -517,8 +529,10 @@ class AutowirePass extends AbstractRecursivePass
             $this->populateAvailableTypes($container);
         }
         $servicesAndAliases = $container->getServiceIds();
-        if (null !== ($autowiringAliases = $this->autowiringAliases[$type] ?? null) && !isset($autowiringAliases[''])) {
-            return \sprintf(' Available autowiring aliases for this %s are: "$%s".', \class_exists($type, \false) ? 'class' : 'interface', \implode('", "$', $autowiringAliases));
+        $autowiringAliases = $this->autowiringAliases[$type] ?? [];
+        unset($autowiringAliases['']);
+        if ($autowiringAliases) {
+            return \sprintf(' Did you mean to target%s "%s" instead?', 1 < \count($autowiringAliases) ? ' one of' : '', \implode('", "', $autowiringAliases));
         }
         if (!$container->has($type) && \false !== ($key = \array_search(\strtolower($type), \array_map('strtolower', $servicesAndAliases)))) {
             return \sprintf(' Did you mean "%s"?', $servicesAndAliases[$key]);
@@ -552,7 +566,7 @@ class AutowirePass extends AbstractRecursivePass
         }
         return null;
     }
-    private function populateAutowiringAlias(string $id) : void
+    private function populateAutowiringAlias(string $id, string $target = null) : void
     {
         if (!\preg_match('/(?(DEFINE)(?<V>[a-zA-Z_\\x7f-\\xff][a-zA-Z0-9_\\x7f-\\xff]*+))^((?&V)(?:\\\\(?&V))*+)(?: \\$((?&V)))?$/', $id, $m)) {
             return;
@@ -560,6 +574,9 @@ class AutowirePass extends AbstractRecursivePass
         $type = $m[2];
         $name = $m[3] ?? '';
         if (\class_exists($type, \false) || \interface_exists($type, \false)) {
+            if (null !== $target && \str_starts_with($target, '.' . $type . ' $') && (new Target($target = \substr($target, \strlen($type) + 3)))->getParsedName() === $name) {
+                $name = $target;
+            }
             $this->autowiringAliases[$type][$name] = $name;
         }
     }

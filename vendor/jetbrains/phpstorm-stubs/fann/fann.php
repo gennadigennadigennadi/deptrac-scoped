@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 // Start of Fann v.1
 /**
@@ -69,7 +69,7 @@ class FANNConnection
 /**
  * Class FANNConnection
  */
-\class_alias('DEPTRAC_202312\\FANNConnection', 'FANNConnection', \false);
+\class_alias('DEPTRAC_202401\\FANNConnection', 'FANNConnection', \false);
 /**
  * Trains on an entire dataset, for a period of time using the Cascade2 training algorithm
  *

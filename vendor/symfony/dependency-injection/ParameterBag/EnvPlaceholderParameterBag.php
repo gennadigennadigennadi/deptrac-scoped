@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\ParameterBag;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\ParameterBag;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\RuntimeException;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */
@@ -38,7 +38,7 @@ class EnvPlaceholderParameterBag extends ParameterBag
                     // return first result
                 }
             }
-            if (!\preg_match('/^(?:[-.\\w\\\\]*+:)*+\\w++$/', $env)) {
+            if (!\preg_match('/^(?:[-.\\w\\\\]*+:)*+\\w*+$/', $env)) {
                 throw new InvalidArgumentException(\sprintf('Invalid %s name: only "word" characters are allowed.', $name));
             }
             if ($this->has($name) && null !== ($defaultValue = parent::get($name)) && !\is_string($defaultValue)) {

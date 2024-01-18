@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PhpParser\Node\Stmt;
+namespace DEPTRAC_202401\PhpParser\Node\Stmt;
 
-use DEPTRAC_202312\PhpParser\Error;
-use DEPTRAC_202312\PhpParser\Node;
+use DEPTRAC_202401\PhpParser\Error;
+use DEPTRAC_202401\PhpParser\Node;
 class Class_ extends ClassLike
 {
     const MODIFIER_PUBLIC = 1;

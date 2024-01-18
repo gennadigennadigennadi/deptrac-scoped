@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\VarExporter;
+namespace DEPTRAC_202401\Symfony\Component\VarExporter;
 
-use DEPTRAC_202312\Symfony\Component\VarExporter\Exception\LogicException;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\Hydrator;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\LazyObjectRegistry;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Exception\LogicException;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\Hydrator;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\LazyObjectRegistry;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */
@@ -281,6 +281,9 @@ EOPHP;
     {
         $propertyScopes = Hydrator::$propertyScopes[$parent] ??= Hydrator::getPropertyScopes($parent);
         \uksort($propertyScopes, 'strnatcmp');
+        foreach ($propertyScopes as $k => $v) {
+            unset($propertyScopes[$k][3]);
+        }
         $propertyScopes = VarExporter::export($propertyScopes);
         $propertyScopes = \str_replace(VarExporter::export($parent), 'parent::class', $propertyScopes);
         $propertyScopes = \preg_replace("/(?|(,)\n( )       |\n        |,\n    (\\]))/", '$1$2', $propertyScopes);

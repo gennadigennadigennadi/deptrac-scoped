@@ -1,12 +1,12 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PhpParser\Builder;
+namespace DEPTRAC_202401\PhpParser\Builder;
 
-use DEPTRAC_202312\PhpParser;
-use DEPTRAC_202312\PhpParser\BuilderHelpers;
-use DEPTRAC_202312\PhpParser\Node;
-use DEPTRAC_202312\PhpParser\Node\Stmt;
+use DEPTRAC_202401\PhpParser;
+use DEPTRAC_202401\PhpParser\BuilderHelpers;
+use DEPTRAC_202401\PhpParser\Node;
+use DEPTRAC_202401\PhpParser\Node\Stmt;
 class Namespace_ extends Declaration
 {
     private $name;

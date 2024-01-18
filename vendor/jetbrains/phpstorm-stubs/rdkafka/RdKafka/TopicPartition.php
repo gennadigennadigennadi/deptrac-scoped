@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312\RdKafka;
+namespace DEPTRAC_202401\RdKafka;
 
 class TopicPartition
 {

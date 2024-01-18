@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Yaml;
+namespace DEPTRAC_202401\Symfony\Component\Yaml;
 
-use DEPTRAC_202312\Symfony\Component\Yaml\Exception\DumpException;
-use DEPTRAC_202312\Symfony\Component\Yaml\Exception\ParseException;
-use DEPTRAC_202312\Symfony\Component\Yaml\Tag\TaggedValue;
+use DEPTRAC_202401\Symfony\Component\Yaml\Exception\DumpException;
+use DEPTRAC_202401\Symfony\Component\Yaml\Exception\ParseException;
+use DEPTRAC_202401\Symfony\Component\Yaml\Tag\TaggedValue;
 /**
  * Inline implements a YAML parser/dumper for the YAML inline syntax.
  *
@@ -48,7 +48,7 @@ class Inline
      *
      * @throws ParseException
      */
-    public static function parse(string $value = null, int $flags = 0, array &$references = []) : mixed
+    public static function parse(string $value, int $flags = 0, array &$references = []) : mixed
     {
         self::initialize($flags);
         $value = \trim($value);
@@ -138,7 +138,7 @@ class Inline
                     } elseif (\floor($value) == $value && $repr == $value) {
                         // Preserve float data type since storing a whole number will result in integer value.
                         if (!\str_contains($repr, 'E')) {
-                            $repr = $repr . '.0';
+                            $repr .= '.0';
                         }
                     }
                 } else {
@@ -457,7 +457,7 @@ class Inline
                         if ('<<' === $key) {
                             $output += $value;
                         } elseif ($allowOverwrite || !isset($output[$key])) {
-                            if (!$isValueQuoted && \is_string($value) && '' !== $value && '&' === $value[0] && Parser::preg_match(Parser::REFERENCE_PATTERN, $value, $matches)) {
+                            if (!$isValueQuoted && \is_string($value) && '' !== $value && '&' === $value[0] && !self::isBinaryString($value) && Parser::preg_match(Parser::REFERENCE_PATTERN, $value, $matches)) {
                                 $references[$matches['ref']] = $matches['value'];
                                 $value = $matches['value'];
                             }

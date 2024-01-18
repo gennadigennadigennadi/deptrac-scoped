@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -112,4 +112,4 @@ final class SolrObject implements \ArrayAccess
  * read-only.
  * @link https://php.net/manual/en/class.solrobject.php
  */
-\class_alias('DEPTRAC_202312\\SolrObject', 'SolrObject', \false);
+\class_alias('DEPTRAC_202401\\SolrObject', 'SolrObject', \false);

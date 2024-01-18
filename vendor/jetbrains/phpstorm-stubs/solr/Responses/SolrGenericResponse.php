@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -45,4 +45,4 @@ final class SolrGenericResponse extends \SolrResponse
  * This class represents a response from the solr server.
  * @link https://php.net/manual/en/class.solrgenericresponse.php
  */
-\class_alias('DEPTRAC_202312\\SolrGenericResponse', 'SolrGenericResponse', \false);
+\class_alias('DEPTRAC_202401\\SolrGenericResponse', 'SolrGenericResponse', \false);

@@ -1,14 +1,15 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\Doctrine\Deprecations;
+namespace DEPTRAC_202401\Doctrine\Deprecations;
 
-use DEPTRAC_202312\Psr\Log\LoggerInterface;
+use DEPTRAC_202401\Psr\Log\LoggerInterface;
 use function array_key_exists;
 use function array_reduce;
 use function assert;
 use function debug_backtrace;
 use function sprintf;
+use function str_replace;
 use function strpos;
 use function strrpos;
 use function substr;
@@ -115,7 +116,7 @@ class Deprecation
         $backtrace = debug_backtrace(DEBUG_BACKTRACE_IGNORE_ARGS, 2);
         // first check that the caller is not from a tests folder, in which case we always let deprecations pass
         if (isset($backtrace[1]['file'], $backtrace[0]['file']) && strpos($backtrace[1]['file'], DIRECTORY_SEPARATOR . 'tests' . DIRECTORY_SEPARATOR) === \false) {
-            $path = DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . $package . DIRECTORY_SEPARATOR;
+            $path = DIRECTORY_SEPARATOR . 'vendor' . DIRECTORY_SEPARATOR . str_replace('/', DIRECTORY_SEPARATOR, $package) . DIRECTORY_SEPARATOR;
             if (strpos($backtrace[0]['file'], $path) === \false) {
                 return;
             }

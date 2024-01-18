@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\EventDispatcher;
+namespace DEPTRAC_202401\Symfony\Component\EventDispatcher;
 
-use DEPTRAC_202312\Symfony\Contracts\EventDispatcher\Event;
+use DEPTRAC_202401\Symfony\Contracts\EventDispatcher\Event;
 /**
  * Event encapsulation class.
  *
@@ -26,7 +26,7 @@ class GenericEvent extends Event implements \ArrayAccess, \IteratorAggregate
     protected $subject;
     protected $arguments;
     /**
-     * Encapsulate an event with $subject and $args.
+     * Encapsulate an event with $subject and $arguments.
      *
      * @param mixed $subject   The subject of the event, usually an object or a callable
      * @param array $arguments Arguments to store in the event

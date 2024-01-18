@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\VarExporter;
+namespace DEPTRAC_202401\Symfony\Component\VarExporter;
 
-use DEPTRAC_202312\Symfony\Component\VarExporter\Hydrator as PublicHydrator;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\Hydrator;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\LazyObjectRegistry as Registry;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\LazyObjectState;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\LazyObjectTrait;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Hydrator as PublicHydrator;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\Hydrator;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\LazyObjectRegistry as Registry;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\LazyObjectState;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\LazyObjectTrait;
 trait LazyProxyTrait
 {
     use LazyObjectTrait;
@@ -238,7 +238,7 @@ trait LazyProxyTrait
         $scope = \get_parent_class($class);
         $data = [];
         foreach (parent::__sleep() as $name) {
-            $value = $properties[$k = $name] ?? $properties[$k = "\x00*\x00{$name}"] ?? $properties[$k = "\x00{$scope}\x00{$name}"] ?? ($k = null);
+            $value = $properties[$k = $name] ?? $properties[$k = "\x00*\x00{$name}"] ?? $properties[$k = "\x00{$class}\x00{$name}"] ?? $properties[$k = "\x00{$scope}\x00{$name}"] ?? ($k = null);
             if (null === $k) {
                 \trigger_error(\sprintf('serialize(): "%s" returned as member variable from __sleep() but does not exist', $name), \E_USER_NOTICE);
             } else {

@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
-use DEPTRAC_202312\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202401\JetBrains\PhpStorm\Pure;
 /**
  * Zookeeper class.
  * @link https://www.php.net/manual/en/class.zookeeper.php
@@ -373,32 +373,32 @@ class Zookeeper
  * Zookeeper class.
  * @link https://www.php.net/manual/en/class.zookeeper.php
  */
-\class_alias('DEPTRAC_202312\\Zookeeper', 'Zookeeper', \false);
+\class_alias('DEPTRAC_202401\\Zookeeper', 'Zookeeper', \false);
 class ZookeeperException extends \Exception
 {
 }
-\class_alias('DEPTRAC_202312\\ZookeeperException', 'ZookeeperException', \false);
+\class_alias('DEPTRAC_202401\\ZookeeperException', 'ZookeeperException', \false);
 class ZookeeperOperationTimeoutException extends \ZookeeperException
 {
 }
-\class_alias('DEPTRAC_202312\\ZookeeperOperationTimeoutException', 'ZookeeperOperationTimeoutException', \false);
+\class_alias('DEPTRAC_202401\\ZookeeperOperationTimeoutException', 'ZookeeperOperationTimeoutException', \false);
 class ZookeeperConnectionException extends \ZookeeperException
 {
 }
-\class_alias('DEPTRAC_202312\\ZookeeperConnectionException', 'ZookeeperConnectionException', \false);
+\class_alias('DEPTRAC_202401\\ZookeeperConnectionException', 'ZookeeperConnectionException', \false);
 class ZookeeperMarshallingException extends \ZookeeperException
 {
 }
-\class_alias('DEPTRAC_202312\\ZookeeperMarshallingException', 'ZookeeperMarshallingException', \false);
+\class_alias('DEPTRAC_202401\\ZookeeperMarshallingException', 'ZookeeperMarshallingException', \false);
 class ZookeeperAuthenticationException extends \ZookeeperException
 {
 }
-\class_alias('DEPTRAC_202312\\ZookeeperAuthenticationException', 'ZookeeperAuthenticationException', \false);
+\class_alias('DEPTRAC_202401\\ZookeeperAuthenticationException', 'ZookeeperAuthenticationException', \false);
 class ZookeeperSessionException extends \ZookeeperException
 {
 }
-\class_alias('DEPTRAC_202312\\ZookeeperSessionException', 'ZookeeperSessionException', \false);
+\class_alias('DEPTRAC_202401\\ZookeeperSessionException', 'ZookeeperSessionException', \false);
 class ZookeeperNoNodeException extends \ZookeeperException
 {
 }
-\class_alias('DEPTRAC_202312\\ZookeeperNoNodeException', 'ZookeeperNoNodeException', \false);
+\class_alias('DEPTRAC_202401\\ZookeeperNoNodeException', 'ZookeeperNoNodeException', \false);

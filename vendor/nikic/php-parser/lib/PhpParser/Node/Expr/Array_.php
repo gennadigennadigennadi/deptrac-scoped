@@ -1,9 +1,9 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PhpParser\Node\Expr;
+namespace DEPTRAC_202401\PhpParser\Node\Expr;
 
-use DEPTRAC_202312\PhpParser\Node\Expr;
+use DEPTRAC_202401\PhpParser\Node\Expr;
 class Array_ extends Expr
 {
     // For use in "kind" attribute

@@ -1,12 +1,12 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
-use DEPTRAC_202312\JetBrains\PhpStorm\ArrayShape;
-use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_202312\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_202312\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_202312\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202401\JetBrains\PhpStorm\ArrayShape;
+use DEPTRAC_202401\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202401\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202401\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202401\JetBrains\PhpStorm\Pure;
 /**
  * Get the last occurred error
  * @link https://php.net/manual/en/function.error-get-last.php

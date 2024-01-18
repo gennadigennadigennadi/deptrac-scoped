@@ -9,7 +9,7 @@ declare (strict_types=1);
  *
  * @link      http://phpdoc.org
  */
-namespace DEPTRAC_202312\phpDocumentor\GraphViz;
+namespace DEPTRAC_202401\phpDocumentor\GraphViz;
 
 /**
  * Class representing an exception in this GraphViz component.

@@ -1,17 +1,17 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PHPStan\PhpDocParser\Parser;
+namespace DEPTRAC_202401\PHPStan\PhpDocParser\Parser;
 
 use LogicException;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprIntegerNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprStringNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\ConstExpr\ConstFetchNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Lexer\Lexer;
-use DEPTRAC_202312\PHPStan\ShouldNotHappenException;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprIntegerNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprStringNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\ConstExpr\ConstFetchNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Lexer\Lexer;
+use DEPTRAC_202401\PHPStan\ShouldNotHappenException;
 use function array_key_exists;
 use function array_values;
 use function count;
@@ -300,6 +300,14 @@ class PhpDocParser
                     break;
                 case '@mixin':
                     $tagValue = $this->parseMixinTagValue($tokens);
+                    break;
+                case '@psalm-require-extends':
+                case '@phpstan-require-extends':
+                    $tagValue = $this->parseRequireExtendsTagValue($tokens);
+                    break;
+                case '@psalm-require-implements':
+                case '@phpstan-require-implements':
+                    $tagValue = $this->parseRequireImplementsTagValue($tokens);
                     break;
                 case '@deprecated':
                     $tagValue = $this->parseDeprecatedTagValue($tokens);
@@ -603,6 +611,18 @@ class PhpDocParser
         $type = $this->typeParser->parse($tokens);
         $description = $this->parseOptionalDescription($tokens, \true);
         return new Ast\PhpDoc\MixinTagValueNode($type, $description);
+    }
+    private function parseRequireExtendsTagValue(TokenIterator $tokens) : Ast\PhpDoc\RequireExtendsTagValueNode
+    {
+        $type = $this->typeParser->parse($tokens);
+        $description = $this->parseOptionalDescription($tokens, \true);
+        return new Ast\PhpDoc\RequireExtendsTagValueNode($type, $description);
+    }
+    private function parseRequireImplementsTagValue(TokenIterator $tokens) : Ast\PhpDoc\RequireImplementsTagValueNode
+    {
+        $type = $this->typeParser->parse($tokens);
+        $description = $this->parseOptionalDescription($tokens, \true);
+        return new Ast\PhpDoc\RequireImplementsTagValueNode($type, $description);
     }
     private function parseDeprecatedTagValue(TokenIterator $tokens) : Ast\PhpDoc\DeprecatedTagValueNode
     {

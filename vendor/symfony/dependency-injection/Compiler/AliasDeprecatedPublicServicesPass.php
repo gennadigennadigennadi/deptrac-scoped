@@ -8,21 +8,15 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
 final class AliasDeprecatedPublicServicesPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \true;
     private array $aliases = [];
-    protected function processValue(mixed $value, bool $isRoot = \false) : mixed
-    {
-        if ($value instanceof Reference && isset($this->aliases[$id = (string) $value])) {
-            return new Reference($this->aliases[$id], $value->getInvalidBehavior());
-        }
-        return parent::processValue($value, $isRoot);
-    }
     public function process(ContainerBuilder $container) : void
     {
         foreach ($container->findTaggedServiceIds('container.private') as $id => $tags) {
@@ -41,5 +35,12 @@ final class AliasDeprecatedPublicServicesPass extends AbstractRecursivePass
             $this->aliases[$id] = $aliasId;
         }
         parent::process($container);
+    }
+    protected function processValue(mixed $value, bool $isRoot = \false) : mixed
+    {
+        if ($value instanceof Reference && isset($this->aliases[$id = (string) $value])) {
+            return new Reference($this->aliases[$id], $value->getInvalidBehavior());
+        }
+        return parent::processValue($value, $isRoot);
     }
 }

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\Swoole\Server;
+namespace DEPTRAC_202401\Swoole\Server;
 
 class TaskResult
 {

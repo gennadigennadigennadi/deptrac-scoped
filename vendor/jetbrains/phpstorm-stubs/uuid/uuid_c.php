@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 // Start of uuid v.1.1.0
 \define('UUID_VARIANT_NCS', 0);

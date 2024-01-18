@@ -1,63 +1,65 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PHPStan\PhpDocParser\Printer;
+namespace DEPTRAC_202401\PHPStan\PhpDocParser\Printer;
 
 use LogicException;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Attribute;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprArrayNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Node;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagMethodValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagPropertyValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineAnnotation;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineArgument;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineArray;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineArrayItem;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\MethodTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\MethodTagValueParameterNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\MixinTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\ParamOutTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocChildNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\PropertyTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\SelfOutTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\ThrowsTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\TypeAliasImportTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\TypeAliasTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\UsesTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc\VarTagValueNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ArrayShapeItemNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ArrayShapeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ArrayTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\CallableTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\CallableTypeParameterNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ConditionalTypeForParameterNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ConditionalTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ConstTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\GenericTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\IntersectionTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\InvalidTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\NullableTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ObjectShapeItemNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ObjectShapeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\OffsetAccessTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\ThisTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\TypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Type\UnionTypeNode;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Lexer\Lexer;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Parser\TokenIterator;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Attribute;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprArrayNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\ConstExpr\ConstExprNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Node;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagMethodValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagPropertyValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\AssertTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineAnnotation;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineArgument;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineArray;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineArrayItem;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\Doctrine\DoctrineTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\ExtendsTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\ImplementsTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\MethodTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\MethodTagValueParameterNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\MixinTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\ParamOutTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\ParamTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocChildNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\PhpDocTextNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\PropertyTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\RequireExtendsTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\RequireImplementsTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\ReturnTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\SelfOutTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\TemplateTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\ThrowsTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\TypeAliasImportTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\TypeAliasTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\UsesTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc\VarTagValueNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ArrayShapeItemNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ArrayShapeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ArrayTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\CallableTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\CallableTypeParameterNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ConditionalTypeForParameterNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ConditionalTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ConstTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\GenericTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\IdentifierTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\IntersectionTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\InvalidTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\NullableTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ObjectShapeItemNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ObjectShapeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\OffsetAccessTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\ThisTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\TypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Type\UnionTypeNode;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Lexer\Lexer;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Parser\TokenIterator;
 use function array_keys;
 use function array_map;
 use function count;
@@ -207,6 +209,14 @@ final class Printer
             return "{$static}{$returnType}{$node->methodName}{$templateTypes}({$parameters}){$description}";
         }
         if ($node instanceof MixinTagValueNode) {
+            $type = $this->printType($node->type);
+            return trim("{$type} {$node->description}");
+        }
+        if ($node instanceof RequireExtendsTagValueNode) {
+            $type = $this->printType($node->type);
+            return trim("{$type} {$node->description}");
+        }
+        if ($node instanceof RequireImplementsTagValueNode) {
             $type = $this->printType($node->type);
             return trim("{$type} {$node->description}");
         }
@@ -608,6 +618,9 @@ final class Printer
             $subEndPos = $origSubNode->getAttribute(Attribute::END_INDEX);
             if ($subStartPos < 0 || $subEndPos < 0) {
                 throw new LogicException();
+            }
+            if ($subEndPos < $subStartPos) {
+                return $this->print($node);
             }
             if ($subNode === null) {
                 return $this->print($node);

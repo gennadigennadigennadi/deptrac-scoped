@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerBuilder;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerBuilder;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\ParameterNotFoundException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ParameterBag\ParameterBagInterface;
 /**
  * Resolves all parameter placeholders "%somevalue%" to their real values.
  *
@@ -21,6 +21,7 @@ use DEPTRAC_202312\Symfony\Component\DependencyInjection\ParameterBag\ParameterB
  */
 class ResolveParameterPlaceHoldersPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \false;
     private ParameterBagInterface $bag;
     public function __construct(private bool $resolveArrays = \true, private bool $throwOnResolveException = \true)
     {

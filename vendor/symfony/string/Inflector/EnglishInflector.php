@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\String\Inflector;
+namespace DEPTRAC_202401\Symfony\Component\String\Inflector;
 
 final class EnglishInflector implements InflectorInterface
 {
@@ -20,7 +20,7 @@ final class EnglishInflector implements InflectorInterface
     private const PLURAL_MAP = [
         // First entry: plural suffix, reversed
         // Second entry: length of plural suffix
-        // Third entry: Whether the suffix may succeed a vocal
+        // Third entry: Whether the suffix may succeed a vowel
         // Fourth entry: Whether the suffix may succeed a consonant
         // Fifth entry: singular suffix, normal
         // bacteria (bacterium), criteria (criterion), phenomena (phenomenon)
@@ -119,7 +119,7 @@ final class EnglishInflector implements InflectorInterface
     private const SINGULAR_MAP = [
         // First entry: singular suffix, reversed
         // Second entry: length of singular suffix
-        // Third entry: Whether the suffix may succeed a vocal
+        // Third entry: Whether the suffix may succeed a vowel
         // Fourth entry: Whether the suffix may succeed a consonant
         // Fifth entry: plural suffix, normal
         // criterion (criteria)
@@ -180,6 +180,8 @@ final class EnglishInflector implements InflectorInterface
         ['nop', 3, \true, \true, 'pons'],
         // seasons (season), treasons (treason), poisons (poison), lessons (lesson)
         ['nos', 3, \true, \true, 'sons'],
+        // icons (icon)
+        ['noc', 3, \true, \true, 'cons'],
         // bacteria (bacterium), criteria (criterion), phenomena (phenomenon)
         ['no', 2, \true, \true, 'a'],
         // echoes (echo)
@@ -242,12 +244,22 @@ final class EnglishInflector implements InflectorInterface
         'atad',
         // deer
         'reed',
+        // equipment
+        'tnempiuqe',
         // feedback
         'kcabdeef',
         // fish
         'hsif',
+        // health
+        'htlaeh',
+        // history
+        'yrotsih',
         // info
         'ofni',
+        // information
+        'noitamrofni',
+        // money
+        'yenom',
         // moose
         'esoom',
         // series
@@ -256,6 +268,8 @@ final class EnglishInflector implements InflectorInterface
         'peehs',
         // species
         'seiceps',
+        // traffic
+        'ciffart',
     ];
     public function singularize(string $plural) : array
     {
@@ -284,12 +298,12 @@ final class EnglishInflector implements InflectorInterface
                 if ($j === $suffixLength) {
                     // Is there any character preceding the suffix in the plural string?
                     if ($j < $pluralLength) {
-                        $nextIsVocal = \str_contains('aeiou', $lowerPluralRev[$j]);
-                        if (!$map[2] && $nextIsVocal) {
-                            // suffix may not succeed a vocal but next char is one
+                        $nextIsVowel = \str_contains('aeiou', $lowerPluralRev[$j]);
+                        if (!$map[2] && $nextIsVowel) {
+                            // suffix may not succeed a vowel but next char is one
                             break;
                         }
-                        if (!$map[3] && !$nextIsVocal) {
+                        if (!$map[3] && !$nextIsVowel) {
                             // suffix may not succeed a consonant but next char is one
                             break;
                         }
@@ -345,12 +359,12 @@ final class EnglishInflector implements InflectorInterface
                 if ($j === $suffixLength) {
                     // Is there any character preceding the suffix in the plural string?
                     if ($j < $singularLength) {
-                        $nextIsVocal = \str_contains('aeiou', $lowerSingularRev[$j]);
-                        if (!$map[2] && $nextIsVocal) {
-                            // suffix may not succeed a vocal but next char is one
+                        $nextIsVowel = \str_contains('aeiou', $lowerSingularRev[$j]);
+                        if (!$map[2] && $nextIsVowel) {
+                            // suffix may not succeed a vowel but next char is one
                             break;
                         }
-                        if (!$map[3] && !$nextIsVocal) {
+                        if (!$map[3] && !$nextIsVowel) {
                             // suffix may not succeed a consonant but next char is one
                             break;
                         }

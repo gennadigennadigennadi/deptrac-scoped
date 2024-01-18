@@ -22,8 +22,8 @@ https://qossmic.github.io/deptrac
 You can install Deptrac via Composer. We recommend using the
 [deptrac-shim](https://github.com/qossmic/deptrac-shim) package for this:
 
-```console
-$ composer require --dev qossmic/deptrac-shim
+```Shell
+composer require --dev qossmic/deptrac-shim
 ```
 
 Alternatively, you can also use [PHIVE](docs/index.md#phive) or download the
@@ -39,17 +39,17 @@ is stored with the name `deptrac.yaml` in your project's root directory.
 Deptrac can generate a template for you, using the `init` command.
 
 ```console
-$ vendor/bin/deptrac init
+vendor/bin/deptrac init
 ```
 
 When you have this file, you can analyse your code by
 running the `analyse` command:
 
 ```console
-$ vendor/bin/deptrac
+vendor/bin/deptrac
 
 # which is equivalent to
-$ vendor/bin/deptrac analyse --config-file=deptrac.yaml
+vendor/bin/deptrac analyse --config-file=deptrac.yaml
 ```
 
 In order to run Deptrac you need at least PHP 8.1.

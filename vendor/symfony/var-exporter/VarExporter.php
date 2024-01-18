@@ -8,13 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\VarExporter;
+namespace DEPTRAC_202401\Symfony\Component\VarExporter;
 
-use DEPTRAC_202312\Symfony\Component\VarExporter\Exception\ExceptionInterface;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\Exporter;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\Hydrator;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\Registry;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Internal\Values;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Exception\ExceptionInterface;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\Exporter;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\Hydrator;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\Registry;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Internal\Values;
 /**
  * Exports serializable PHP values to PHP code.
  *
@@ -73,7 +73,7 @@ final class VarExporter
         }
         \ksort($states);
         $wakeups = [null];
-        foreach ($states as $k => $v) {
+        foreach ($states as $v) {
             if (\is_array($v)) {
                 $wakeups[-$v[0]] = $v[1];
             } else {

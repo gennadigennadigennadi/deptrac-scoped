@@ -1,9 +1,9 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
-use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_202312\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202401\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202401\JetBrains\PhpStorm\Pure;
 /**
  * Loads a php extension at runtime
  * @param string $extension_filename <p>

@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 /**
  * The ReflectionException class.
@@ -15,4 +15,4 @@ class ReflectionException extends \Exception
  *
  * @link https://php.net/manual/en/class.reflectionexception.php
  */
-\class_alias('DEPTRAC_202312\\ReflectionException', 'ReflectionException', \false);
+\class_alias('DEPTRAC_202401\\ReflectionException', 'ReflectionException', \false);

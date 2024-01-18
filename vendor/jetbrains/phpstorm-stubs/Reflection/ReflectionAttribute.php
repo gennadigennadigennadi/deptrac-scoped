@@ -1,8 +1,8 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
-use DEPTRAC_202312\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202401\JetBrains\PhpStorm\Pure;
 /**
  * @since 8.0
  *
@@ -96,4 +96,4 @@ class ReflectionAttribute implements \Reflector
  *
  * @template T of object
  */
-\class_alias('DEPTRAC_202312\\ReflectionAttribute', 'ReflectionAttribute', \false);
+\class_alias('DEPTRAC_202401\\ReflectionAttribute', 'ReflectionAttribute', \false);

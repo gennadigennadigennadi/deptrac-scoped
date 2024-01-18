@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\String;
+namespace DEPTRAC_202401\Symfony\Component\String;
 
-use DEPTRAC_202312\Symfony\Component\String\Exception\ExceptionInterface;
-use DEPTRAC_202312\Symfony\Component\String\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\String\Exception\ExceptionInterface;
+use DEPTRAC_202401\Symfony\Component\String\Exception\InvalidArgumentException;
 /**
  * Represents a string of Unicode grapheme clusters encoded as UTF-8.
  *
@@ -32,19 +32,25 @@ class UnicodeString extends AbstractUnicodeString
 {
     public function __construct(string $string = '')
     {
-        $this->string = \normalizer_is_normalized($string) ? $string : \normalizer_normalize($string);
-        if (\false === $this->string) {
+        if ('' === $string || \normalizer_is_normalized($this->string = $string)) {
+            return;
+        }
+        if (\false === ($string = \normalizer_normalize($string))) {
             throw new InvalidArgumentException('Invalid UTF-8 string.');
         }
+        $this->string = $string;
     }
     public function append(string ...$suffix) : static
     {
         $str = clone $this;
         $str->string = $this->string . (1 >= \count($suffix) ? $suffix[0] ?? '' : \implode('', $suffix));
-        \normalizer_is_normalized($str->string) ?: ($str->string = \normalizer_normalize($str->string));
-        if (\false === $str->string) {
+        if (\normalizer_is_normalized($str->string)) {
+            return $str;
+        }
+        if (\false === ($string = \normalizer_normalize($str->string))) {
             throw new InvalidArgumentException('Invalid UTF-8 string.');
         }
+        $str->string = $string;
         return $str;
     }
     public function chunk(int $length = 1) : array
@@ -169,10 +175,13 @@ class UnicodeString extends AbstractUnicodeString
     {
         $str = clone $this;
         $str->string = (1 >= \count($prefix) ? $prefix[0] ?? '' : \implode('', $prefix)) . $this->string;
-        \normalizer_is_normalized($str->string) ?: ($str->string = \normalizer_normalize($str->string));
-        if (\false === $str->string) {
+        if (\normalizer_is_normalized($str->string)) {
+            return $str;
+        }
+        if (\false === ($string = \normalizer_normalize($str->string))) {
             throw new InvalidArgumentException('Invalid UTF-8 string.');
         }
+        $str->string = $string;
         return $str;
     }
     public function replace(string $from, string $to) : static
@@ -189,10 +198,13 @@ class UnicodeString extends AbstractUnicodeString
                 $tail = \substr($tail, \strlen($slice) + \strlen($from));
             }
             $str->string = $result . $tail;
-            \normalizer_is_normalized($str->string) ?: ($str->string = \normalizer_normalize($str->string));
-            if (\false === $str->string) {
+            if (\normalizer_is_normalized($str->string)) {
+                return $str;
+            }
+            if (\false === ($string = \normalizer_normalize($str->string))) {
                 throw new InvalidArgumentException('Invalid UTF-8 string.');
             }
+            $str->string = $string;
         }
         return $str;
     }
@@ -214,10 +226,13 @@ class UnicodeString extends AbstractUnicodeString
         $start = $start ? \strlen(\grapheme_substr($this->string, 0, $start)) : 0;
         $length = $length ? \strlen(\grapheme_substr($this->string, $start, $length ?? 2147483647)) : $length;
         $str->string = \substr_replace($this->string, $replacement, $start, $length ?? 2147483647);
-        \normalizer_is_normalized($str->string) ?: ($str->string = \normalizer_normalize($str->string));
-        if (\false === $str->string) {
+        if (\normalizer_is_normalized($str->string)) {
+            return $str;
+        }
+        if (\false === ($string = \normalizer_normalize($str->string))) {
             throw new InvalidArgumentException('Invalid UTF-8 string.');
         }
+        $str->string = $string;
         return $str;
     }
     public function split(string $delimiter, int $limit = null, int $flags = null) : array
@@ -266,6 +281,9 @@ class UnicodeString extends AbstractUnicodeString
         }
         return $prefix === \grapheme_extract($this->string, \strlen($prefix), \GRAPHEME_EXTR_MAXBYTES);
     }
+    /**
+     * @return void
+     */
     public function __wakeup()
     {
         if (!\is_string($this->string)) {

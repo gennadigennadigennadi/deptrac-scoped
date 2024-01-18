@@ -8,7 +8,7 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Config\Resource;
+namespace DEPTRAC_202401\Symfony\Component\Config\Resource;
 
 /**
  * ClassExistenceResource represents a class existence.
@@ -101,7 +101,7 @@ class ClassExistenceResource implements SelfCheckingResourceInterface
     /**
      * @internal
      */
-    public function __wakeup()
+    public function __wakeup() : void
     {
         if (\is_bool($this->exists)) {
             $this->exists = [$this->exists, null];

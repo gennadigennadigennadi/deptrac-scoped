@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Config\Definition\Builder;
+namespace DEPTRAC_202401\Symfony\Component\Config\Definition\Builder;
 
-use DEPTRAC_202312\Symfony\Component\Config\Definition\NodeInterface;
-use DEPTRAC_202312\Symfony\Component\Config\Definition\VariableNode;
+use DEPTRAC_202401\Symfony\Component\Config\Definition\NodeInterface;
+use DEPTRAC_202401\Symfony\Component\Config\Definition\VariableNode;
 /**
  * This class provides a fluent interface for defining a node.
  *
@@ -29,10 +29,10 @@ class VariableNodeDefinition extends NodeDefinition
     protected function createNode() : NodeInterface
     {
         $node = $this->instantiateNode();
-        if (null !== $this->normalization) {
+        if (isset($this->normalization)) {
             $node->setNormalizationClosures($this->normalization->before);
         }
-        if (null !== $this->merge) {
+        if (isset($this->merge)) {
             $node->setAllowOverwrite($this->merge->allowOverwrite);
         }
         if (\true === $this->default) {
@@ -46,7 +46,7 @@ class VariableNodeDefinition extends NodeDefinition
         if ($this->deprecation) {
             $node->setDeprecated($this->deprecation['package'], $this->deprecation['version'], $this->deprecation['message']);
         }
-        if (null !== $this->validation) {
+        if (isset($this->validation)) {
             $node->setFinalValidationClosures($this->validation->rules);
         }
         return $node;

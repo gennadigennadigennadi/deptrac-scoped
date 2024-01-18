@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\EnvNotFoundException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\ParameterCircularReferenceException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\EnvNotFoundException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\ParameterCircularReferenceException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\RuntimeException;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  */
@@ -32,7 +32,7 @@ class EnvVarProcessor implements EnvVarProcessorInterface
     }
     public static function getProvidedTypes() : array
     {
-        return ['base64' => 'string', 'bool' => 'bool', 'not' => 'bool', 'const' => 'bool|int|float|string|array', 'csv' => 'array', 'file' => 'string', 'float' => 'float', 'int' => 'int', 'json' => 'array', 'key' => 'bool|int|float|string|array', 'url' => 'array', 'query_string' => 'array', 'resolve' => 'string', 'default' => 'bool|int|float|string|array', 'string' => 'string', 'trim' => 'string', 'require' => 'bool|int|float|string|array', 'enum' => \BackedEnum::class, 'shuffle' => 'array'];
+        return ['base64' => 'string', 'bool' => 'bool', 'not' => 'bool', 'const' => 'bool|int|float|string|array', 'csv' => 'array', 'file' => 'string', 'float' => 'float', 'int' => 'int', 'json' => 'array', 'key' => 'bool|int|float|string|array', 'url' => 'array', 'query_string' => 'array', 'resolve' => 'string', 'default' => 'bool|int|float|string|array', 'string' => 'string', 'trim' => 'string', 'require' => 'bool|int|float|string|array', 'enum' => \BackedEnum::class, 'shuffle' => 'array', 'defined' => 'bool'];
     }
     public function getEnv(string $prefix, string $name, \Closure $getEnv) : mixed
     {
@@ -66,6 +66,13 @@ class EnvVarProcessor implements EnvVarProcessorInterface
                 throw new RuntimeException(\sprintf('"%s" is not a "%s".', $backedEnumClassName, \BackedEnum::class));
             }
             return $backedEnumClassName::tryFrom($backedEnumValue) ?? throw new RuntimeException(\sprintf('Enum value "%s" is not backed by "%s".', $backedEnumValue, $backedEnumClassName));
+        }
+        if ('defined' === $prefix) {
+            try {
+                return '' !== ($getEnv($name) ?? '');
+            } catch (EnvNotFoundException) {
+                return \false;
+            }
         }
         if ('default' === $prefix) {
             if (\false === $i) {
@@ -101,6 +108,9 @@ class EnvVarProcessor implements EnvVarProcessorInterface
         }
         $returnNull = \false;
         if ('' === $prefix) {
+            if ('' === $name) {
+                return null;
+            }
             $returnNull = \true;
             $prefix = 'string';
         }

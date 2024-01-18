@@ -1,13 +1,13 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
-use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_202312\JetBrains\PhpStorm\Immutable;
-use DEPTRAC_202312\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_202312\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_202312\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_202312\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202401\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202401\JetBrains\PhpStorm\Immutable;
+use DEPTRAC_202401\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202401\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202401\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_202401\JetBrains\PhpStorm\Pure;
 /**
  * The <b>ReflectionExtension</b> class reports information about an extension.
  *
@@ -214,4 +214,4 @@ class ReflectionExtension implements \Reflector
  *
  * @link https://php.net/manual/en/class.reflectionextension.php
  */
-\class_alias('DEPTRAC_202312\\ReflectionExtension', 'ReflectionExtension', \false);
+\class_alias('DEPTRAC_202401\\ReflectionExtension', 'ReflectionExtension', \false);

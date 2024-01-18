@@ -8,10 +8,13 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Console\Event;
+namespace DEPTRAC_202401\Symfony\Component\Console\Event;
 
 /**
- * Allows to do things before the command is executed, like skipping the command or changing the input.
+ * Allows to do things before the command is executed, like skipping the command or executing code before the command is
+ * going to be executed.
+ *
+ * Changing the input arguments will have no effect.
  *
  * @author Fabien Potencier <fabien@symfony.com>
  */

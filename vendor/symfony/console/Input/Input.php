@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Console\Input;
+namespace DEPTRAC_202401\Symfony\Component\Console\Input;
 
-use DEPTRAC_202312\Symfony\Component\Console\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\Console\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\Console\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\Console\Exception\RuntimeException;
 /**
  * Input is the base class for all concrete Input classes.
  *
@@ -26,6 +26,7 @@ use DEPTRAC_202312\Symfony\Component\Console\Exception\RuntimeException;
 abstract class Input implements InputInterface, StreamableInputInterface
 {
     protected $definition;
+    /** @var resource */
     protected $stream;
     protected $options = [];
     protected $arguments = [];

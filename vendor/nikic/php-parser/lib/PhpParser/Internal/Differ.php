@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PhpParser\Internal;
+namespace DEPTRAC_202401\PhpParser\Internal;
 
 /**
  * Implements the Myers diff algorithm.

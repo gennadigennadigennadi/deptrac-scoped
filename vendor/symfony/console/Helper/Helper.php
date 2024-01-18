@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Console\Helper;
+namespace DEPTRAC_202401\Symfony\Component\Console\Helper;
 
-use DEPTRAC_202312\Symfony\Component\Console\Formatter\OutputFormatterInterface;
-use DEPTRAC_202312\Symfony\Component\String\UnicodeString;
+use DEPTRAC_202401\Symfony\Component\Console\Formatter\OutputFormatterInterface;
+use DEPTRAC_202401\Symfony\Component\String\UnicodeString;
 /**
  * Helper is the base class for all helper classes.
  *
@@ -26,7 +26,7 @@ abstract class Helper implements HelperInterface
     public function setHelperSet(HelperSet $helperSet = null)
     {
         if (1 > \func_num_args()) {
-            \DEPTRAC_202312\trigger_deprecation('symfony/console', '6.2', 'Calling "%s()" without any arguments is deprecated, pass null explicitly instead.', __METHOD__);
+            \DEPTRAC_202401\trigger_deprecation('symfony/console', '6.2', 'Calling "%s()" without any arguments is deprecated, pass null explicitly instead.', __METHOD__);
         }
         $this->helperSet = $helperSet;
     }
@@ -78,19 +78,30 @@ abstract class Helper implements HelperInterface
     /**
      * @return string
      */
-    public static function formatTime(int|float $secs)
+    public static function formatTime(int|float $secs, int $precision = 1)
     {
-        static $timeFormats = [[0, '< 1 sec'], [1, '1 sec'], [2, 'secs', 1], [60, '1 min'], [120, 'mins', 60], [3600, '1 hr'], [7200, 'hrs', 3600], [86400, '1 day'], [172800, 'days', 86400]];
-        foreach ($timeFormats as $index => $format) {
-            if ($secs >= $format[0]) {
-                if (isset($timeFormats[$index + 1]) && $secs < $timeFormats[$index + 1][0] || $index == \count($timeFormats) - 1) {
-                    if (2 == \count($format)) {
-                        return $format[1];
-                    }
-                    return \floor($secs / $format[2]) . ' ' . $format[1];
-                }
-            }
+        $secs = (int) \floor($secs);
+        if (0 === $secs) {
+            return '< 1 sec';
         }
+        static $timeFormats = [[1, '1 sec', 'secs'], [60, '1 min', 'mins'], [3600, '1 hr', 'hrs'], [86400, '1 day', 'days']];
+        $times = [];
+        foreach ($timeFormats as $index => $format) {
+            $seconds = isset($timeFormats[$index + 1]) ? $secs % $timeFormats[$index + 1][0] : $secs;
+            if (isset($times[$index - $precision])) {
+                unset($times[$index - $precision]);
+            }
+            if (0 === $seconds) {
+                continue;
+            }
+            $unitCount = $seconds / $format[0];
+            $times[$index] = 1 === $unitCount ? $format[1] : $unitCount . ' ' . $format[2];
+            if ($secs === $seconds) {
+                break;
+            }
+            $secs -= $seconds;
+        }
+        return \implode(', ', \array_reverse($times));
     }
     /**
      * @return string

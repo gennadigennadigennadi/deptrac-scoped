@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ContainerInterface;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\TypedReference;
-use DEPTRAC_202312\Symfony\Contracts\Service\Attribute\Required;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ContainerInterface;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\TypedReference;
+use DEPTRAC_202401\Symfony\Contracts\Service\Attribute\Required;
 /**
  * Looks for definitions with autowiring enabled and registers their corresponding "#[Required]" properties.
  *
@@ -22,6 +22,7 @@ use DEPTRAC_202312\Symfony\Contracts\Service\Attribute\Required;
  */
 class AutowireRequiredPropertiesPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \true;
     protected function processValue(mixed $value, bool $isRoot = \false) : mixed
     {
         $value = parent::processValue($value, $isRoot);
@@ -41,7 +42,7 @@ class AutowireRequiredPropertiesPass extends AbstractRecursivePass
                 continue;
             }
             if ($doc) {
-                \DEPTRAC_202312\trigger_deprecation('symfony/dependency-injection', '6.3', 'Using the "@required" annotation on property "%s::$%s" is deprecated, use the "Symfony\\Contracts\\Service\\Attribute\\Required" attribute instead.', $reflectionProperty->class, $reflectionProperty->name);
+                \DEPTRAC_202401\trigger_deprecation('symfony/dependency-injection', '6.3', 'Using the "@required" annotation on property "%s::$%s" is deprecated, use the "Symfony\\Contracts\\Service\\Attribute\\Required" attribute instead.', $reflectionProperty->class, $reflectionProperty->name);
             }
             if (\array_key_exists($name = $reflectionProperty->getName(), $properties)) {
                 continue;

@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Config\Definition\Builder;
+namespace DEPTRAC_202401\Symfony\Component\Config\Definition\Builder;
 
-use DEPTRAC_202312\Symfony\Component\Config\Definition\BaseNode;
-use DEPTRAC_202312\Symfony\Component\Config\Definition\Exception\InvalidDefinitionException;
-use DEPTRAC_202312\Symfony\Component\Config\Definition\NodeInterface;
+use DEPTRAC_202401\Symfony\Component\Config\Definition\BaseNode;
+use DEPTRAC_202401\Symfony\Component\Config\Definition\Exception\InvalidDefinitionException;
+use DEPTRAC_202401\Symfony\Component\Config\Definition\NodeInterface;
 /**
  * This class provides a fluent interface for defining a node.
  *
@@ -81,7 +81,7 @@ abstract class NodeDefinition implements NodeParentInterface
     /**
      * Returns the parent node.
      */
-    public function end() : NodeParentInterface|NodeBuilder|NodeDefinition|ArrayNodeDefinition|VariableNodeDefinition|null
+    public function end() : NodeParentInterface|NodeBuilder|self|ArrayNodeDefinition|VariableNodeDefinition|null
     {
         return $this->parent;
     }
@@ -93,7 +93,7 @@ abstract class NodeDefinition implements NodeParentInterface
         if ($forceRootNode) {
             $this->parent = null;
         }
-        if (null !== $this->normalization) {
+        if (isset($this->normalization)) {
             $allowedTypes = [];
             foreach ($this->normalization->before as $expr) {
                 $allowedTypes[] = $expr->allowedTypes;
@@ -102,7 +102,7 @@ abstract class NodeDefinition implements NodeParentInterface
             $this->normalization->before = ExprBuilder::buildExpressions($this->normalization->before);
             $this->normalization->declaredTypes = $allowedTypes;
         }
-        if (null !== $this->validation) {
+        if (isset($this->validation)) {
             $this->validation->rules = ExprBuilder::buildExpressions($this->validation->rules);
         }
         $node = $this->createNode();

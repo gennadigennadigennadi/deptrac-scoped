@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -445,4 +445,4 @@ final class SolrDocument implements \ArrayAccess, \Iterator, \Serializable
  * This class represents a Solr document retrieved from a query response.
  * @link https://php.net/manual/en/class.solrinputdocument.php
  */
-\class_alias('DEPTRAC_202312\\SolrDocument', 'SolrDocument', \false);
+\class_alias('DEPTRAC_202401\\SolrDocument', 'SolrDocument', \false);

@@ -8,14 +8,15 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
 /**
  * Replaces env var placeholders by their current values.
  */
 class ResolveEnvPlaceholdersPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \false;
     protected function processValue(mixed $value, bool $isRoot = \false) : mixed
     {
         if (\is_string($value)) {

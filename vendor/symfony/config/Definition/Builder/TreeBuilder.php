@@ -8,9 +8,9 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Config\Definition\Builder;
+namespace DEPTRAC_202401\Symfony\Component\Config\Definition\Builder;
 
-use DEPTRAC_202312\Symfony\Component\Config\Definition\NodeInterface;
+use DEPTRAC_202401\Symfony\Component\Config\Definition\NodeInterface;
 /**
  * This is the entry class for building a config tree.
  *
@@ -18,7 +18,13 @@ use DEPTRAC_202312\Symfony\Component\Config\Definition\NodeInterface;
  */
 class TreeBuilder implements NodeParentInterface
 {
+    /**
+     * @var NodeInterface|null
+     */
     protected $tree;
+    /**
+     * @var NodeDefinition
+     */
     protected $root;
     public function __construct(string $name, string $type = 'array', NodeBuilder $builder = null)
     {
@@ -39,10 +45,7 @@ class TreeBuilder implements NodeParentInterface
      */
     public function buildTree() : NodeInterface
     {
-        if (null !== $this->tree) {
-            return $this->tree;
-        }
-        return $this->tree = $this->root->getNode(\true);
+        return $this->tree ??= $this->root->getNode(\true);
     }
     /**
      * @return void

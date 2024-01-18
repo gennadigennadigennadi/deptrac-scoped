@@ -1,13 +1,13 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
-use DEPTRAC_202312\JetBrains\PhpStorm\Deprecated;
-use DEPTRAC_202312\JetBrains\PhpStorm\Immutable;
-use DEPTRAC_202312\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
-use DEPTRAC_202312\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
-use DEPTRAC_202312\JetBrains\PhpStorm\Internal\TentativeType;
-use DEPTRAC_202312\JetBrains\PhpStorm\Pure;
+use DEPTRAC_202401\JetBrains\PhpStorm\Deprecated;
+use DEPTRAC_202401\JetBrains\PhpStorm\Immutable;
+use DEPTRAC_202401\JetBrains\PhpStorm\Internal\LanguageLevelTypeAware;
+use DEPTRAC_202401\JetBrains\PhpStorm\Internal\PhpStormStubsElementAvailable;
+use DEPTRAC_202401\JetBrains\PhpStorm\Internal\TentativeType;
+use DEPTRAC_202401\JetBrains\PhpStorm\Pure;
 /**
  * @template T of object
  * The <b>ReflectionClass</b> class reports information about a class.
@@ -743,4 +743,4 @@ class ReflectionClass implements \Reflector
  *
  * @link https://php.net/manual/en/class.reflectionclass.php
  */
-\class_alias('DEPTRAC_202312\\ReflectionClass', 'ReflectionClass', \false);
+\class_alias('DEPTRAC_202401\\ReflectionClass', 'ReflectionClass', \false);

@@ -1,7 +1,7 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\Swoole\WebSocket;
+namespace DEPTRAC_202401\Swoole\WebSocket;
 
 class Frame
 {

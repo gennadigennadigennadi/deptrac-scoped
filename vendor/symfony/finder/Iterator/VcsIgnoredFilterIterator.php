@@ -8,26 +8,23 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Finder\Iterator;
+namespace DEPTRAC_202401\Symfony\Component\Finder\Iterator;
 
-use DEPTRAC_202312\Symfony\Component\Finder\Gitignore;
+use DEPTRAC_202401\Symfony\Component\Finder\Gitignore;
 /**
  * @extends \FilterIterator<string, \SplFileInfo>
  */
 final class VcsIgnoredFilterIterator extends \FilterIterator
 {
-    /**
-     * @var string
-     */
-    private $baseDir;
+    private string $baseDir;
     /**
      * @var array<string, array{0: string, 1: string}|null>
      */
-    private $gitignoreFilesCache = [];
+    private array $gitignoreFilesCache = [];
     /**
      * @var array<string, bool>
      */
-    private $ignoredPathsCache = [];
+    private array $ignoredPathsCache = [];
     /**
      * @param \Iterator<string, \SplFileInfo> $iterator
      */

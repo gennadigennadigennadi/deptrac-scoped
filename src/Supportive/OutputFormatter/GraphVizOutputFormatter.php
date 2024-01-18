@@ -3,10 +3,10 @@
 declare (strict_types=1);
 namespace Qossmic\Deptrac\Supportive\OutputFormatter;
 
-use DEPTRAC_202312\phpDocumentor\GraphViz\Edge;
-use DEPTRAC_202312\phpDocumentor\GraphViz\Exception;
-use DEPTRAC_202312\phpDocumentor\GraphViz\Graph;
-use DEPTRAC_202312\phpDocumentor\GraphViz\Node;
+use DEPTRAC_202401\phpDocumentor\GraphViz\Edge;
+use DEPTRAC_202401\phpDocumentor\GraphViz\Exception;
+use DEPTRAC_202401\phpDocumentor\GraphViz\Graph;
+use DEPTRAC_202401\phpDocumentor\GraphViz\Node;
 use Qossmic\Deptrac\Contract\OutputFormatter\OutputException;
 use Qossmic\Deptrac\Contract\OutputFormatter\OutputFormatterInput;
 use Qossmic\Deptrac\Contract\OutputFormatter\OutputFormatterInterface;
@@ -188,7 +188,7 @@ abstract class GraphVizOutputFormatter implements OutputFormatterInterface
         return 'cluster_' . $groupName;
     }
     /**
-     * @throws \Qossmic\Deptrac\Contract\OutputFormatter\OutputException
+     * @throws OutputException
      */
     protected abstract function output(Graph $graph, OutputInterface $output, OutputFormatterInput $outputFormatterInput) : void;
 }

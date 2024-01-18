@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312\Psr\Log;
+namespace DEPTRAC_202401\Psr\Log;
 
 /**
  * This is a simple Logger trait that classes unable to extend AbstractLogger

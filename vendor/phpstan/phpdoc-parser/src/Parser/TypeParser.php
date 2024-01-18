@@ -1,14 +1,16 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PHPStan\PhpDocParser\Parser;
+namespace DEPTRAC_202401\PHPStan\PhpDocParser\Parser;
 
 use LogicException;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Lexer\Lexer;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Lexer\Lexer;
 use function in_array;
 use function str_replace;
+use function strlen;
 use function strpos;
+use function substr_compare;
 use function trim;
 class TypeParser
 {
@@ -270,8 +272,10 @@ class TypeParser
         if (!$tokens->tryConsumeTokenType(Lexer::TOKEN_CLOSE_ANGLE_BRACKET)) {
             return \false;
         }
+        $endTag = '</' . $htmlTagName . '>';
+        $endTagSearchOffset = -strlen($endTag);
         while (!$tokens->isCurrentTokenType(Lexer::TOKEN_END)) {
-            if ($tokens->tryConsumeTokenType(Lexer::TOKEN_OPEN_ANGLE_BRACKET) && strpos($tokens->currentTokenValue(), '/' . $htmlTagName . '>') !== \false) {
+            if ($tokens->tryConsumeTokenType(Lexer::TOKEN_OPEN_ANGLE_BRACKET) && strpos($tokens->currentTokenValue(), '/' . $htmlTagName . '>') !== \false || substr_compare($tokens->currentTokenValue(), $endTag, $endTagSearchOffset) === 0) {
                 return \true;
             }
             $tokens->next();

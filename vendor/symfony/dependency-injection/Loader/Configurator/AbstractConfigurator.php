@@ -8,27 +8,30 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Loader\Configurator;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Loader\Configurator;
 
-use DEPTRAC_202312\Symfony\Component\Config\Loader\ParamConfigurator;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Alias;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\ArgumentInterface;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Parameter;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_202312\Symfony\Component\ExpressionLanguage\Expression;
+use DEPTRAC_202401\Symfony\Component\Config\Loader\ParamConfigurator;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Alias;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\AbstractArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\ArgumentInterface;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Parameter;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Component\ExpressionLanguage\Expression;
 abstract class AbstractConfigurator
 {
     public const FACTORY = 'unknown';
     /**
-     * @var callable(mixed, bool)|null
+     * @var \Closure(mixed, bool):mixed|null
      */
     public static $valuePreProcessor;
     /** @internal */
     protected Definition|Alias|null $definition = null;
+    /**
+     * @return mixed
+     */
     public function __call(string $method, array $args)
     {
         if (\method_exists($this, 'set' . $method)) {
@@ -40,6 +43,9 @@ abstract class AbstractConfigurator
     {
         throw new \BadMethodCallException('Cannot serialize ' . __CLASS__);
     }
+    /**
+     * @return void
+     */
     public function __wakeup()
     {
         throw new \BadMethodCallException('Cannot unserialize ' . __CLASS__);

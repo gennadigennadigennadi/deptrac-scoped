@@ -1,10 +1,10 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PHPStan\PhpDocParser\Ast\PhpDoc;
+namespace DEPTRAC_202401\PHPStan\PhpDocParser\Ast\PhpDoc;
 
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\Node;
-use DEPTRAC_202312\PHPStan\PhpDocParser\Ast\NodeAttributes;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\Node;
+use DEPTRAC_202401\PHPStan\PhpDocParser\Ast\NodeAttributes;
 use function array_column;
 use function array_filter;
 use function array_map;
@@ -127,6 +127,24 @@ class PhpDocNode implements Node
     {
         return array_filter(array_column($this->getTagsByName($tagName), 'value'), static function (PhpDocTagValueNode $value) : bool {
             return $value instanceof MixinTagValueNode;
+        });
+    }
+    /**
+     * @return RequireExtendsTagValueNode[]
+     */
+    public function getRequireExtendsTagValues(string $tagName = '@phpstan-require-extends') : array
+    {
+        return array_filter(array_column($this->getTagsByName($tagName), 'value'), static function (PhpDocTagValueNode $value) : bool {
+            return $value instanceof RequireExtendsTagValueNode;
+        });
+    }
+    /**
+     * @return RequireImplementsTagValueNode[]
+     */
+    public function getRequireImplementsTagValues(string $tagName = '@phpstan-require-implements') : array
+    {
+        return array_filter(array_column($this->getTagsByName($tagName), 'value'), static function (PhpDocTagValueNode $value) : bool {
+            return $value instanceof RequireImplementsTagValueNode;
         });
     }
     /**

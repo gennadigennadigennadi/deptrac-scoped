@@ -8,12 +8,12 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\Console\Completion;
+namespace DEPTRAC_202401\Symfony\Component\Console\Completion;
 
-use DEPTRAC_202312\Symfony\Component\Console\Exception\RuntimeException;
-use DEPTRAC_202312\Symfony\Component\Console\Input\ArgvInput;
-use DEPTRAC_202312\Symfony\Component\Console\Input\InputDefinition;
-use DEPTRAC_202312\Symfony\Component\Console\Input\InputOption;
+use DEPTRAC_202401\Symfony\Component\Console\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\Console\Input\ArgvInput;
+use DEPTRAC_202401\Symfony\Component\Console\Input\InputDefinition;
+use DEPTRAC_202401\Symfony\Component\Console\Input\InputOption;
 /**
  * An input specialized for shell completion.
  *
@@ -28,11 +28,11 @@ final class CompletionInput extends ArgvInput
     public const TYPE_OPTION_VALUE = 'option_value';
     public const TYPE_OPTION_NAME = 'option_name';
     public const TYPE_NONE = 'none';
-    private $tokens;
-    private $currentIndex;
-    private $completionType;
-    private $completionName;
-    private $completionValue = '';
+    private array $tokens;
+    private int $currentIndex;
+    private string $completionType;
+    private ?string $completionName = null;
+    private string $completionValue = '';
     /**
      * Converts a terminal string into tokens.
      *
@@ -121,7 +121,9 @@ final class CompletionInput extends ArgvInput
      * TYPE_OPTION_NAME    when completing the name of an input option
      * TYPE_NONE           when nothing should be completed
      *
-     * @return string One of self::TYPE_* constants. TYPE_OPTION_NAME and TYPE_NONE are already implemented by the Console component
+     * TYPE_OPTION_NAME and TYPE_NONE are already implemented by the Console component.
+     *
+     * @return self::TYPE_*
      */
     public function getCompletionType() : string
     {

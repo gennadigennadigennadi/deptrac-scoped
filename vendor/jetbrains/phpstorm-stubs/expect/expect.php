@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 \define('EXP_GLOB', 1);
 \define('EXP_EXACT', 2);

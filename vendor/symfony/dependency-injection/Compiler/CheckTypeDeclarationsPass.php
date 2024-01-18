@@ -8,23 +8,23 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\DependencyInjection\Compiler;
+namespace DEPTRAC_202401\Symfony\Component\DependencyInjection\Compiler;
 
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Container;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Definition;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\InvalidParameterTypeException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Exception\RuntimeException;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ExpressionLanguage;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Parameter;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\Reference;
-use DEPTRAC_202312\Symfony\Component\DependencyInjection\ServiceLocator;
-use DEPTRAC_202312\Symfony\Component\ExpressionLanguage\Expression;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\IteratorArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\RewindableGenerator;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\ServiceClosureArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Argument\ServiceLocatorArgument;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Container;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Definition;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\InvalidParameterTypeException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ExpressionLanguage;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Parameter;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ParameterBag\EnvPlaceholderParameterBag;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\Reference;
+use DEPTRAC_202401\Symfony\Component\DependencyInjection\ServiceLocator;
+use DEPTRAC_202401\Symfony\Component\ExpressionLanguage\Expression;
 /**
  * Checks whether injected parameters are compatible with type declarations.
  *
@@ -39,6 +39,7 @@ use DEPTRAC_202312\Symfony\Component\ExpressionLanguage\Expression;
  */
 final class CheckTypeDeclarationsPass extends AbstractRecursivePass
 {
+    protected bool $skipScalars = \true;
     private const SCALAR_TYPES = ['int' => \true, 'float' => \true, 'bool' => \true, 'string' => \true];
     private const BUILTIN_TYPES = ['array' => \true, 'bool' => \true, 'callable' => \true, 'float' => \true, 'int' => \true, 'iterable' => \true, 'object' => \true, 'string' => \true];
     private bool $autoload;

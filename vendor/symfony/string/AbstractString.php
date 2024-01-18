@@ -8,11 +8,11 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\String;
+namespace DEPTRAC_202401\Symfony\Component\String;
 
-use DEPTRAC_202312\Symfony\Component\String\Exception\ExceptionInterface;
-use DEPTRAC_202312\Symfony\Component\String\Exception\InvalidArgumentException;
-use DEPTRAC_202312\Symfony\Component\String\Exception\RuntimeException;
+use DEPTRAC_202401\Symfony\Component\String\Exception\ExceptionInterface;
+use DEPTRAC_202401\Symfony\Component\String\Exception\InvalidArgumentException;
+use DEPTRAC_202401\Symfony\Component\String\Exception\RuntimeException;
 /**
  * Represents a string of abstract characters.
  *
@@ -351,9 +351,7 @@ abstract class AbstractString implements \Stringable, \JsonSerializable
         if ($this->ignoreCase) {
             $delimiter .= 'i';
         }
-        \set_error_handler(static function ($t, $m) {
-            throw new InvalidArgumentException($m);
-        });
+        \set_error_handler(static fn($t, $m) => throw new InvalidArgumentException($m));
         try {
             if (\false === ($chunks = \preg_split($delimiter, $this->string, $limit, $flags))) {
                 throw new RuntimeException('Splitting failed with error: ' . \preg_last_error_msg());
@@ -399,20 +397,13 @@ abstract class AbstractString implements \Stringable, \JsonSerializable
             $b->string = $this->string;
             return $b;
         }
-        \set_error_handler(static function ($t, $m) {
-            throw new InvalidArgumentException($m);
-        });
         try {
-            try {
-                $b->string = \mb_convert_encoding($this->string, $toEncoding, 'UTF-8');
-            } catch (InvalidArgumentException $e) {
-                if (!\function_exists('iconv')) {
-                    throw $e;
-                }
-                $b->string = \iconv('UTF-8', $toEncoding, $this->string);
+            $b->string = \mb_convert_encoding($this->string, $toEncoding, 'UTF-8');
+        } catch (\ValueError $e) {
+            if (!\function_exists('iconv')) {
+                throw new InvalidArgumentException($e->getMessage(), $e->getCode(), $e);
             }
-        } finally {
-            \restore_error_handler();
+            $b->string = \iconv('UTF-8', $toEncoding, $this->string);
         }
         return $b;
     }

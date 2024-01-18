@@ -1,6 +1,6 @@
 <?php
 
-namespace DEPTRAC_202312;
+namespace DEPTRAC_202401;
 
 /**
  * Helper autocomplete for php solr extension.
@@ -57,4 +57,4 @@ final class SolrPingResponse extends \SolrResponse
  * This class represents a response to a ping request to the server
  * @link https://php.net/manual/en/class.solrpingresponse.php
  */
-\class_alias('DEPTRAC_202312\\SolrPingResponse', 'SolrPingResponse', \false);
+\class_alias('DEPTRAC_202401\\SolrPingResponse', 'SolrPingResponse', \false);

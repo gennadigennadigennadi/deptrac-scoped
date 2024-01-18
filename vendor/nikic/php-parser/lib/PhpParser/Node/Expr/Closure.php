@@ -1,11 +1,11 @@
 <?php
 
 declare (strict_types=1);
-namespace DEPTRAC_202312\PhpParser\Node\Expr;
+namespace DEPTRAC_202401\PhpParser\Node\Expr;
 
-use DEPTRAC_202312\PhpParser\Node;
-use DEPTRAC_202312\PhpParser\Node\Expr;
-use DEPTRAC_202312\PhpParser\Node\FunctionLike;
+use DEPTRAC_202401\PhpParser\Node;
+use DEPTRAC_202401\PhpParser\Node\Expr;
+use DEPTRAC_202401\PhpParser\Node\FunctionLike;
 class Closure extends Expr implements FunctionLike
 {
     /** @var bool Whether the closure is static */

@@ -8,10 +8,10 @@
  * For the full copyright and license information, please view the LICENSE
  * file that was distributed with this source code.
  */
-namespace DEPTRAC_202312\Symfony\Component\VarExporter\Internal;
+namespace DEPTRAC_202401\Symfony\Component\VarExporter\Internal;
 
-use DEPTRAC_202312\Symfony\Component\VarExporter\Exception\ClassNotFoundException;
-use DEPTRAC_202312\Symfony\Component\VarExporter\Exception\NotInstantiableTypeException;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Exception\ClassNotFoundException;
+use DEPTRAC_202401\Symfony\Component\VarExporter\Exception\NotInstantiableTypeException;
 /**
  * @author Nicolas Grekas <p@tchwork.com>
  *
@@ -19,11 +19,11 @@ use DEPTRAC_202312\Symfony\Component\VarExporter\Exception\NotInstantiableTypeEx
  */
 class Registry
 {
-    public static $reflectors = [];
-    public static $prototypes = [];
-    public static $factories = [];
-    public static $cloneable = [];
-    public static $instantiableWithoutConstructor = [];
+    public static array $reflectors = [];
+    public static array $prototypes = [];
+    public static array $factories = [];
+    public static array $cloneable = [];
+    public static array $instantiableWithoutConstructor = [];
     public $classes = [];
     public function __construct(array $classes)
     {
